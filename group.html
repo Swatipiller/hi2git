@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile | Hi2</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+
+    <!-- Dark mode -->
+    <!-- <script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script> -->
+
+    <script>
+      const storedTheme = localStorage.getItem("theme");
+
+      const getPreferredTheme = () => {
+        if (storedTheme) {
+          return storedTheme;
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      };
+
+      const setTheme = function (theme) {
+        if (
+          theme === "auto" &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-bs-theme", theme);
+        }
+      };
+
+      //  setTheme(getPreferredTheme())
+
+      window.addEventListener("DOMContentLoaded", () => {
+        var el = document.querySelector(".theme-icon-active");
+        if (el != "undefined" && el != null) {
+          const showActiveTheme = (theme) => {
+            const activeThemeIcon = document.querySelector(
+              ".theme-icon-active use"
+            );
+            const btnToActive = document.querySelector(
+              `[data-bs-theme-value="${theme}"]`
+            );
+            const svgOfActiveBtn = btnToActive
+              .querySelector(".mode-switch use")
+              .getAttribute("href");
+
+            document
+              .querySelectorAll("[data-bs-theme-value]")
+              .forEach((element) => {
+                element.classList.remove("active");
+              });
+
+            btnToActive.classList.add("active");
+            activeThemeIcon.setAttribute("href", svgOfActiveBtn);
+          };
+
+          window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", () => {
+              if (storedTheme !== "light" || storedTheme !== "dark") {
+                setTheme(getPreferredTheme());
+              }
+            });
+
+          showActiveTheme(getPreferredTheme());
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                const theme = toggle.getAttribute("data-bs-theme-value");
+                localStorage.setItem("theme", theme);
+                setTheme(theme);
+                showActiveTheme(theme);
+              });
+            });
+        }
+      });
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    />
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/dropzone/dist/dropzone.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/glightbox-master/dist/css/glightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/choices.js/public/assets/styles/choices.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <!-- Theme CSS -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
+  </head>
+
+  <body>
+    <!-- Pre loader -->
+    <div class="preloader">
+      <div class="preloader-item">
+        <div class="spinner-grow text-success"></div>
+      </div>
+    </div>
+    <!-- =======================
+Header START -->
+    <header class="navbar-light fixed-top header-static bg-mode">
+      <!-- Logo Nav START -->
+      <nav
+        class="navbar navbar-expand-lg navbar-top px-3 py-2 text-bg-primary shadow fixed-top"
+      >
+        <div class="container-xxl">
+          <!-- Logo START -->
+          <a
+            href="/"
+            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+          >
+            <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
+          </a>
+          <!-- Logo END -->
+
+          <!-- Responsive navbar toggler -->
+          <button
+            class="navbar-toggler ms-auto icon-md btn btn-light p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-animation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          <!-- Main navbar START -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Nav Search START -->
+            <div
+              class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0"
+            >
+              <div class="nav-item w-100">
+                <form
+                  class="rounded position-relative col-12 col-lg-auto mb-2 mb-lg-0 ms-lg-3"
+                >
+                  <input
+                    class="form-control ps-5 bg-light rounded-pill"
+                    type="search"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                    type="submit"
+                    ><i class="bi bi-search fs-5"> </i
+                  ></button>
+                </form>
+              </div>
+            </div>
+            <!-- Nav Search END -->
+
+            <ul
+              class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
+            >
+              <!-- profile dropdown  -->
+              <li class="nav-item ms-4 dropdown">
+                <a
+                  class="nav-link text-white fw-semibold btn p-0"
+                  href="#"
+                  id="profileDropdown"
+                  role="button"
+                  data-bs-auto-close="outside"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="avatar-img rounded-circle"
+                    src="assets/images/avatar/15.jpg"
+                    alt=""
+                  />
+                  Rosy
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+                  aria-labelledby="profileDropdown"
+                >
+                  <!-- Profile info -->
+                  <li class="px-3">
+                    <div class="d-flex align-items-center position-relative">
+                      <!-- Avatar -->
+                      <div class="avatar me-3">
+                        <img
+                          class="avatar-img rounded-circle"
+                          src="assets/images/avatar/15.jpg"
+                          alt="avatar"
+                        />
+                      </div>
+                      <div>
+                        <a class="h6 stretched-link" href="#">Lori Ferguson</a>
+                        <p class="small m-0">Web Developer</p>
+                      </div>
+                    </div>
+                    <a
+                      class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
+                      href="my-profile.html"
+                      >View profile</a
+                    >
+                  </li>
+                  <!-- Links -->
+                  <li
+                    ><a class="dropdown-item" href="settings.html"
+                      ><i class="bi bi-gear fa-fw me-2"></i>Settings &amp;
+                      Privacy</a
+                    ></li
+                  >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://support.webestica.com/"
+                      target="_blank"
+                    >
+                      <i class="fa-fw bi bi-life-preserver me-2"></i>Support
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/index.html"
+                      target="_blank"
+                    >
+                      <i class="fa-fw bi bi-card-text me-2"></i>Documentation
+                    </a>
+                  </li>
+                  <li class="dropdown-divider"></li>
+                  <li
+                    ><a
+                      class="dropdown-item bg-danger-soft-hover"
+                      href="sign-in-advance.html"
+                      ><i class="bi bi-power fa-fw me-2"></i>Sign Out</a
+                    ></li
+                  >
+                  <li> <hr class="dropdown-divider" /></li>
+                  <!-- Dark mode options START -->
+                  <li>
+                    <div
+                      class="modeswitch-item theme-icon-active d-flex justify-content-center gap-3 align-items-center p-2 pb-0"
+                    >
+                      <span>Mode:</span>
+                      <button
+                        type="button"
+                        class="btn btn-modeswitch nav-link text-primary-hover mb-0 active"
+                        data-bs-theme-value="light"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Light"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-sun fa-fw mode-switch"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                          ></path>
+                          <use href="#"></use>
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-modeswitch nav-link text-primary-hover mb-0"
+                        data-bs-theme-value="dark"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Dark"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-moon-stars fa-fw mode-switch"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+                          ></path>
+                          <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                          ></path>
+                          <use href="#"></use>
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-modeswitch nav-link text-primary-hover mb-0"
+                        data-bs-theme-value="auto"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Auto"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-circle-half fa-fw mode-switch"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                          ></path>
+                          <use href="#"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <!-- Dark mode options END-->
+                </ul>
+              </li>
+              <!-- home -->
+              <li class="nav-item ms-4">
+                <a class="nav-link icon-md btn btn-link p-0" href="/">
+                  <img src="./assets/images/icon/icon-home.png" alt="Home" />
+                </a>
+              </li>
+              <!-- messaging  -->
+              <li class="nav-item ms-4">
+                <!-- <a
+                  class="nav-link icon-md btn btn-link p-0"
+                  href="messaging.html"
+                > -->
+                <a class="nav-link icon-md btn btn-link p-0" href="#">
+                  <img src="./assets/images/icon/icon-chats.png" alt="Chats" />
+                </a>
+              </li>
+              <!-- notification  -->
+              <li class="nav-item dropdown ms-4">
+                <a
+                  class="nav-link icon-md btn btn-link p-0"
+                  href="#"
+                  id="notifDropdown"
+                  role="button"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  <!-- <span class="badge-notif animation-blink"></span> -->
+                  <img
+                    src="./assets/images/icon/icon-notification.png"
+                    alt="Notification"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+                  aria-labelledby="notifDropdown"
+                >
+                  <div class="card">
+                    <div
+                      class="card-header d-flex justify-content-between align-items-center"
+                    >
+                      <h6 class="m-0"
+                        >Notifications
+                        <span
+                          class="badge bg-danger bg-opacity-10 text-danger ms-2"
+                          >4 new</span
+                        ></h6
+                      >
+                      <a class="small" href="#">Clear all</a>
+                    </div>
+                    <div class="card-body p-0">
+                      <ul class="list-group list-group-flush list-unstyled p-2">
+                        <!-- Notif item -->
+                        <li>
+                          <div
+                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/avatar/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3">
+                              <div class="d-flex">
+                                <p class="small mb-2"
+                                  ><b>Judy Nguyen</b> sent you a friend
+                                  request.</p
+                                >
+                                <p class="small ms-4 text-nowrap">Just now</p>
+                              </div>
+                              <div class="d-flex">
+                                <button class="btn btn-sm py-1 btn-primary me-2"
+                                  >Accept
+                                </button>
+                                <button class="btn btn-sm py-1 btn-danger-soft"
+                                  >Delete
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- Notif item -->
+                        <li>
+                          <div
+                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/avatar/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3 d-flex">
+                              <div>
+                                <p class="small mb-2"
+                                  >Wish <b>Amanda Reed</b> a happy birthday (Nov
+                                  12)</p
+                                >
+                                <button
+                                  class="btn btn-sm btn-outline-light py-1 me-2"
+                                  >Say happy birthday 🎂</button
+                                >
+                              </div>
+                              <p class="small ms-3">2min</p>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- Notif item -->
+                        <li>
+                          <a
+                            href="#"
+                            class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <div class="avatar-img rounded-circle bg-success"
+                                ><span
+                                  class="text-white position-absolute top-50 start-50 translate-middle fw-bold"
+                                  >WB</span
+                                ></div
+                              >
+                            </div>
+                            <div class="ms-sm-3">
+                              <div class="d-flex">
+                                <p class="small mb-2"
+                                  >Webestica has 15 like and 1 new activity</p
+                                >
+                                <p class="small ms-3">1hr</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- Notif item -->
+                        <li>
+                          <a
+                            href="#"
+                            class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/logo/12.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3 d-flex">
+                              <p class="small mb-2"
+                                ><b>Bootstrap in the news:</b> The search
+                                giant’s parent company, Alphabet, just joined an
+                                exclusive club of tech stocks.</p
+                              >
+                              <p class="small ms-3">4hr</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="#" class="btn btn-sm btn-primary-soft"
+                        >See all incoming activity</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- megamenu dropdown -->
+              <li class="nav-item dropdown ms-3">
+                <a
+                  class="nav-link icon-md btn btn-link p-0"
+                  href="#"
+                  id="megamenuDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  <img src="./assets/images/icon/icon-menu.png" alt="Menu" />
+                </a>
+                <div
+                  class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+                  aria-labelledby="megamenuDropdown"
+                >
+                  <!-- <div class="card">
+                    <div
+                      class="card-header d-flex justify-content-between align-items-center"
+                    >
+                      <h6 class="m-0"
+                        >Notifications
+                        <span
+                          class="badge bg-danger bg-opacity-10 text-danger ms-2"
+                          >4 new</span
+                        ></h6
+                      >
+                      <a class="small" href="#">Clear all</a>
+                    </div>
+                    <div class="card-body p-0">
+                      <ul class="list-group list-group-flush list-unstyled p-2">
+                        
+                        <li>
+                          <div
+                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/avatar/01.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3">
+                              <div class="d-flex">
+                                <p class="small mb-2"
+                                  ><b>Judy Nguyen</b> sent you a friend
+                                  request.</p
+                                >
+                                <p class="small ms-3 text-nowrap">Just now</p>
+                              </div>
+                              <div class="d-flex">
+                                <button class="btn btn-sm py-1 btn-primary me-2"
+                                  >Accept
+                                </button>
+                                <button class="btn btn-sm py-1 btn-danger-soft"
+                                  >Delete
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li>
+                          <div
+                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/avatar/02.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3 d-flex">
+                              <div>
+                                <p class="small mb-2"
+                                  >Wish <b>Amanda Reed</b> a happy birthday (Nov
+                                  12)</p
+                                >
+                                <button
+                                  class="btn btn-sm btn-outline-light py-1 me-2"
+                                  >Say happy birthday 🎂</button
+                                >
+                              </div>
+                              <p class="small ms-3">2min</p>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li>
+                          <a
+                            href="#"
+                            class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <div class="avatar-img rounded-circle bg-success"
+                                ><span
+                                  class="text-white position-absolute top-50 start-50 translate-middle fw-bold"
+                                  >WB</span
+                                ></div
+                              >
+                            </div>
+                            <div class="ms-sm-3">
+                              <div class="d-flex">
+                                <p class="small mb-2"
+                                  >Webestica has 15 like and 1 new activity</p
+                                >
+                                <p class="small ms-3">1hr</p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a
+                            href="#"
+                            class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1"
+                          >
+                            <div
+                              class="avatar text-center d-none d-sm-inline-block"
+                            >
+                              <img
+                                class="avatar-img rounded-circle"
+                                src="assets/images/logo/12.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ms-sm-3 d-flex">
+                              <p class="small mb-2"
+                                ><b>Bootstrap in the news:</b> The search giant’s
+                                parent company, Alphabet, just joined an exclusive
+                                club of tech stocks.</p
+                              >
+                              <p class="small ms-3">4hr</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="#" class="btn btn-sm btn-primary-soft"
+                        >See all incoming activity</a
+                      >
+                    </div>
+                  </div> -->
+                </div>
+              </li>
+              <!-- Notification dropdown END -->
+
+              <!-- Profile START -->
+            </ul>
+          </div>
+          <!-- Main navbar END -->
+
+          <!-- Nav right END -->
+        </div>
+      </nav>
+      <!-- Logo Nav END -->
+    </header>
+    <!-- =======================
+Header END -->
+
+    <main class="group-main mb-3">
+      <!-- Container START -->
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Sidenav START -->
+          <div class="col-lg-3">
+            <!-- Advanced filter responsive toggler START -->
+            <!-- Divider -->
+            <div class="d-flex align-items-center mb-4 d-lg-none">
+              <button
+                class="border-0 bg-transparent"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="btn btn-primary"
+                  ><i class="fa-solid fa-sliders-h"></i
+                ></span>
+                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Settings</span>
+              </button>
+            </div>
+            <!-- Advanced filter responsive toggler END -->
+
+            <nav class="navbar navbar-light navbar-expand-lg mx-0">
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+              >
+                <!-- Offcanvas header -->
+                <!-- <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close text-reset ms-auto"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div> -->
+
+                <!-- Offcanvas body -->
+                <div class="offcanvas-body p-0  position-fixed w-25 pe-4">
+                  <!-- Card START -->
+                  <div class="card shadow w-100 h-100vh bg-primary">
+                   
+                    <!-- Card body START -->
+                    <div class="card-body">
+                         <p class="h6 text-light fw-bold p-3 border-bottom"
+                      >Groups</p
+                    >
+                      <!-- Side Nav START -->
+                      <ul
+                        class="nav nav-tabs  gap-2 nav-pills nav-pills-soft flex-column fw-bold  border-0 border-bottom"
+                      >
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                          <a
+                            class="nav-link d-flex mb-0 active"
+                            href="#group-feed-tab-1"
+                            data-bs-toggle="tab"
+                          >
+                            <i class="bi bi-rss-fill me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Feed</span></a
+                          >
+                        </li>
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                          <a
+                            class="nav-link d-flex mb-0"
+                            href="#group-discover-tab-2"
+                            data-bs-toggle="tab"
+                          >
+                            <i
+                              class="bi bi-search me-2 h-20px fs-5 fa-fw"
+                            ></i
+                            ><span class="">Discover </span></a
+                          >
+                        </li>
+                        <li class="nav-item" >
+                          <a
+                            class="nav-link d-flex mb-0"
+                            href="./group-create.html"
+                            
+                          >
+                          <img src="./assets/images/icon/icon-addgreen.png"  class="me-2 h-20px fs-5 fa-fw" alt="">
+                            
+                            <span class="">Create New Group </span></a
+                          >
+                        </li>
+                        </ul>
+                        <ul class="border-0 list-unstyled border-bottom gap-2 nav-pills nav-pills-soft">
+                         <li class="nav-item">
+                          <a
+                            class="nav-link d-flex mb-0"
+                            href="#"
+                            
+                          >
+                            <i
+                              class="bi bi-people-fill me-2 h-20px fs-5 fa-fw"
+                            ></i
+                            ><span class="">Your Groups</span></a
+                          >
+                          <div class="group-member d-flex my-2 align-items-center ms-3">
+                  <ul class="list-unstyled d-flex mb-0">
+                    <li class="group-member-item-1">
+                      <div class="group-member-img">
+                        <img src="./assets/images/bob-1.png" alt="">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="group-member-img ms-1">
+                        <img src="./assets/images/sofia.jpg" alt="">
+                      </div>
+                    </li>
+                  </ul>
+                  <span class="group-member-name muted ms-2 text-light fw-light">Bob and Sofia</span>
+                </div>
+                        </li>
+                        </ul>
+                        <ul class="border-0 list-unstyled  gap-2 nav-pills nav-pills-soft">
+                        <li class="nav-item" >
+                          <a
+                            class="nav-link d-flex mb-0"
+                            href="#"
+                            
+                          >
+                            <i
+                              class="bi bi-people-fill me-2 h-20px fs-5 fa-fw"
+                            ></i
+                            ><span class="">Groups Joined </span> 
+                           </a
+                          > <p class="ms-3 small text-light">You have not joined any group yet!</p>
+                        </li>
+                      </ul>
+                      <!-- Side Nav END -->
+                    </div>
+                    <!-- Card body END -->
+                    <!-- Card footer -->
+                  </div>
+                  <!-- Card END -->
+                </div>
+                <!-- Offcanvas body -->
+              </div>
+            </nav>
+          </div>
+          <!-- Sidenav END -->
+
+          <!-- Main content START -->
+          <div class="col-lg-6 vstack gap-4">
+            <!-- Setting Tab content START -->
+            <div class="tab-content py-0 mb-0">
+              <!-- Account setting tab START -->
+              <div
+                class="tab-pane show active fade"
+                id="group-feed-tab-1"
+              >
+              <div class="containet-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="h5 text-dark fw-semibold">Recent Activity</p>
+                        <div class="card shadow my-3 mt-3">
+              <!-- Card header START -->
+                            <div class="card-header border-0 pb-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-story me-2">
+                                    <a href="#!">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="">
+                                    </a>
+                                    </div>
+                                    <!-- Info -->
+                                    <div>
+                                    <div class="nav">
+                                        <h6 class="nav-item card-title mb-0">
+                                        <a href="#!"> Lori Ferguson </a></h6>
+                                        <!-- <span class="nav-item small"> 2hr</span> -->
+                                    </div>
+                                    <span class="small text-muted">10 hours ago</span>
+                                    <!-- <p class="mb-0 small">Web Developer at Webestica</p> -->
+                                    </div>
+                                </div>
+                                <!-- Card feed action dropdown START -->
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-three-dots"></i>
+                                    </a>
+                                    <!-- Card feed action dropdown menu -->
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction">
+                                    <li><a class="dropdown-item py-0" href="#">
+                                        <i class="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+
+                                    <li><a class="dropdown-item py-0" href="#">
+                                        <i class="bi bi-bell fa-fw pe-2"></i>Turn on
+                                        notification for this post</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item py-0" href="#">
+                                        <i class="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item py-0" href="#">
+                                        <i class="bi bi-person-x fa-fw pe-2"></i>Unfollow lori
+                                        ferguson
+                                        </a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item py-0" href="#">
+                                        <i class="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Card feed action dropdown END -->
+                                </div>
+                            </div>
+              <!-- Card header END -->
+              <!-- Card body START -->
+                            <div class="card-body">
+                                <p>"Start your day with a smile and see how you make everyone
+                                smile..."</p>
+                                <!-- Card img -->
+                                <img class="card-img" src="assets/images/post/3by2/01.jpg" alt="Post">
+                                <!-- Feed react START -->
+                                <ul class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between my-3">
+                                <li class="nav-item">
+                                    <!-- <a
+                                    class="nav-link active"
+                                    href="#!"
+                                    data-bs-container="body"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    data-bs-html="true"
+                                    data-bs-custom-class="tooltip-text-start"
+                                    data-bs-title="Frances Guerrero<br> Lori Stevens<br> Billy Vasquez<br> Judy Nguyen<br> Larry Lawson<br> Amanda Reed<br> Louis Crawford"
+                                    >
+                                    <i class="bi bi-hand-thumbs-up-fill pe-1"></i>Liked
+                                    (56)</a
+                                    > -->
+                                    <a class="text-secondary d-inline-flex align-items-center" href="#!">
+                                    <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i>Like
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-secondary d-inline-flex align-items-center" href="#!">
+                                    <i class="bi bi-chat-right-text pe-2 fs-5"></i>Comment</a>
+                                </li>
+                                <!-- Card share action START -->
+                                <li class="nav-item dropdown ms-sm-auto d-none">
+                                    <a class="nav-link mb-0" href="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-reply-fill flip-horizontal ps-1"></i>Share
+                                    (3)
+                                    </a>
+                                    <!-- Card share action dropdown menu -->
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction">
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-envelope fa-fw pe-2"></i>Send via
+                                        Direct Message</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-link fa-fw pe-2"></i>Copy link to
+                                        post</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-share fa-fw pe-2"></i>Share post via
+                                        …</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="bi bi-pencil-square fa-fw pe-2"></i>Share to
+                                        News Feed</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Card share action END -->
+                                </ul>
+                                <!-- Feed react END -->
+
+                                <!-- Add comment -->
+                                <div class="d-flex mb-3">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-xs me-2">
+                                    <a href="#!">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/15.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- Comment box  -->
+                                <form class="nav nav-item w-100 position-relative">
+                                    <textarea data-autoresize="" class="form-control pe-5 rounded-pill bg-info border-0 comment-box" rows="1" placeholder="Add a public comment..."></textarea>
+                                    <button class="nav-link bg-transparent px-3 position-absolute top-50 end-0 translate-middle-y border-0" type="button">
+                                    <i class="bi bi-emoji-laughing text-darksuccess"> </i>
+                                    </button>
+                                </form>
+                                </div>
+                                <!-- Comment wrap START -->
+                                <ul class="comment-wrap list-unstyled d-none">
+                                <!-- Comment item START -->
+                                <li class="comment-item">
+                                    <div class="d-flex position-relative">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-xs">
+                                        <a href="#!"><img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ms-2">
+                                        <!-- Comment by -->
+                                        <div class="bg-light rounded-start-top-0 p-3 rounded">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-1">
+                                            <a href="#!"> Frances Guerrero </a></h6>
+                                            <small class="ms-2">5hr</small>
+                                        </div>
+                                        <p class="small mb-0">Removed demands expense account in outward tedious
+                                            do. Particular way thoroughly unaffected
+                                            projection.</p>
+                                        </div>
+                                        <!-- Comment react -->
+                                        <ul class="nav nav-divider py-2 small">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> Like (3)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> Reply</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> View 5 replies</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    <!-- Comment item nested START -->
+                                    <ul class="comment-item-nested list-unstyled">
+                                    <!-- Comment item START -->
+                                    <li class="comment-item">
+                                        <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-xs">
+                                            <a href="#!"><img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt=""></a>
+                                        </div>
+                                        <!-- Comment by -->
+                                        <div class="ms-2">
+                                            <div class="bg-light p-3 rounded">
+                                            <div class="d-flex justify-content-between">
+                                                <h6 class="mb-1">
+                                                <a href="#!"> Lori Stevens </a>
+                                                </h6>
+                                                <small class="ms-2">2hr</small>
+                                            </div>
+                                            <p class="small mb-0">See resolved goodness felicity shy civility
+                                                domestic had but Drawings offended yet answered
+                                                Jennings perceive.</p>
+                                            </div>
+                                            <!-- Comment react -->
+                                            <ul class="nav nav-divider py-2 small">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#!"> Like (5)</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#!"> Reply</a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <!-- Comment item END -->
+                                    <!-- Comment item START -->
+                                    <li class="comment-item">
+                                        <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatar avatar-story avatar-xs">
+                                            <a href="#!"><img class="avatar-img rounded-circle" src="assets/images/avatar/15.jpg" alt=""></a>
+                                        </div>
+                                        <!-- Comment by -->
+                                        <div class="ms-2">
+                                            <div class="bg-light p-3 rounded">
+                                            <div class="d-flex justify-content-between">
+                                                <h6 class="mb-1">
+                                                <a href="#!"> Billy Vasquez </a>
+                                                </h6>
+                                                <small class="ms-2">15min</small>
+                                            </div>
+                                            <p class="small mb-0">Wishing calling is warrant settled was
+                                                lucky.</p>
+                                            </div>
+                                            <!-- Comment react -->
+                                            <ul class="nav nav-divider py-2 small">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#!"> Like</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#!"> Reply</a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <!-- Comment item END -->
+                                    </ul>
+                                    <!-- Load more replies -->
+                                    <a href="#!" role="button" class="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center mb-3 ms-5" data-bs-toggle="button" aria-pressed="true">
+                                    <div class="spinner-dots me-2">
+                                        <span class="spinner-dot"></span>
+                                        <span class="spinner-dot"></span>
+                                        <span class="spinner-dot"></span>
+                                    </div>
+                                    Load more replies
+                                    </a>
+                                    <!-- Comment item nested END -->
+                                </li>
+                                <!-- Comment item END -->
+                                <!-- Comment item START -->
+                                <li class="comment-item">
+                                    <div class="d-flex">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-xs">
+                                        <a href="#!"><img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt=""></a>
+                                    </div>
+                                    <!-- Comment by -->
+                                    <div class="ms-2">
+                                        <div class="bg-light p-3 rounded">
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="mb-1">
+                                            <a href="#!"> Frances Guerrero </a>
+                                            </h6>
+                                            <small class="ms-2">4min</small>
+                                        </div>
+                                        <p class="small mb-0">Removed demands expense account in outward tedious
+                                            do. Particular way thoroughly unaffected
+                                            projection.</p>
+                                        </div>
+                                        <!-- Comment react -->
+                                        <ul class="nav nav-divider pt-2 small">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> Like (1)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> Reply</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#!"> View 6 replies</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </li>
+                                <!-- Comment item END -->
+                                </ul>
+                                <!-- Comment wrap END -->
+                            </div>
+              <!-- Card body END -->
+              <!-- Card footer START -->
+                            <div class="card-footer border-0 pt-0 d-none">
+                                <!-- Load more comments -->
+                                <a href="#!" role="button" class="btn btn-link btn-link-loader btn-sm text-secondary d-flex align-items-center" data-bs-toggle="button" aria-pressed="true">
+                                <div class="spinner-dots me-2">
+                                    <span class="spinner-dot"></span>
+                                    <span class="spinner-dot"></span>
+                                    <span class="spinner-dot"></span>
+                                </div>
+                                Load more comments
+                                </a>
+                            </div>
+              <!-- Card footer END -->
+                        </div>
+                        <div class="card shadow my-3">
+              <!-- Card header START -->
+              <div class="card-header border-0 pb-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <!-- Avatar -->
+                    <div class="avatar avatar-story me-2">
+                      <a href="#!">
+                        <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="">
+                      </a>
+                    </div>
+                    <!-- Info -->
+                    <div>
+                      <div class="nav">
+                        <h6 class="nav-item card-title mb-0">
+                          <a href="#!"> Judy Nguyen </a></h6>
+                        <!-- <span class="nav-item small"> 2hr</span> -->
+                      </div>
+                      <span class="small text-muted">10 hours ago</span>
+                      <!-- <p class="mb-0 small">Web Developer at Webestica</p> -->
+                    </div>
+                  </div>
+                  <!-- Card feed action dropdown START -->
+                  <div class="dropdown">
+                    <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-three-dots"></i>
+                    </a>
+                    <!-- Card feed action dropdown menu -->
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction">
+                      <li><a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-bookmark fa-fw pe-2"></i>Save post</a></li>
+                      <li><hr class="dropdown-divider"></li>
+
+                      <li><a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-bell fa-fw pe-2"></i>Turn on
+                          notification for this post</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-x-circle fa-fw pe-2"></i>Hide post</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-person-x fa-fw pe-2"></i>Unfollow Judy
+                          Nguyen
+                        </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-flag fa-fw pe-2"></i>Report post</a></li>
+                    </ul>
+                  </div>
+                  <!-- Card feed action dropdown END -->
+                </div>
+              </div>
+
+              <!-- Card header START -->
+              <!-- Card body START -->
+              <div class="card-body">
+                <p>Good Vibes!!!</p>
+                <!-- Card feed grid START -->
+                <div class="d-flex justify-content-between">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <!-- Grid img -->
+                      <a class="h-100" href="assets/images/post/1by1/03.jpg" data-glightbox="" data-gallery="image-popup">
+                        <img class="rounded img-fluid" src="assets/images/post/1by1/03.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <!-- Grid img -->
+                      <a href="assets/images/post/3by2/01.jpg" data-glightbox="" data-gallery="image-popup">
+                        <img class="rounded img-fluid" src="assets/images/post/3by2/01.jpg" alt="Image">
+                      </a>
+                      <!-- Grid img -->
+                      <div class="position-relative bg-dark mt-3 rounded">
+                        <div class="hover-actions-item position-absolute top-50 start-50 translate-middle z-index-9">
+                          <a class="btn btn-link text-white" href="#">
+                            View all
+                          </a>
+                        </div>
+                        <a href="assets/images/post/3by2/02.jpg" data-glightbox="" data-gallery="image-popup">
+                          <img class="img-fluid opacity-50 rounded" src="assets/images/post/3by2/02.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card feed grid END -->
+
+                <!-- Feed react START -->
+                <ul class="nav nav-stack py-2 small">
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#!">
+                      <i class="bi bi-hand-thumbs-up me-1 icon-sm fs-6 bg-indigo text-white rounded-circle"></i>
+                      <i class="bi bi-heart me-1 icon-sm fs-6 bg-danger text-white rounded-circle"></i>
+                      126
+                    </a>
+                  </li>
+                  <li class="nav-item ms-sm-auto">
+                    <a class="nav-link text-secondary" href="#!">
+                      <i class="bi bi-chat-right pe-2"></i>(12)</a>
+                  </li>
+                </ul>
+                <!-- Feed react END -->
+                <!-- Feed react START -->
+                <ul class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between mb-3">
+                  <li class="nav-item">
+                    <!-- <a
+                      class="nav-link active"
+                      href="#!"
+                      data-bs-container="body"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-html="true"
+                      data-bs-custom-class="tooltip-text-start"
+                      data-bs-title="Frances Guerrero<br> Lori Stevens<br> Billy Vasquez<br> Judy Nguyen<br> Larry Lawson<br> Amanda Reed<br> Louis Crawford"
+                    >
+                      <i class="bi bi-hand-thumbs-up-fill pe-1"></i>Liked
+                      (56)</a
+                    > -->
+                    <a class="text-secondary d-inline-flex align-items-center" href="#!">
+                      <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i>Like
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-secondary d-inline-flex align-items-center" href="#!">
+                      <i class="bi bi-chat-right-text pe-2 fs-5"></i>Comment</a>
+                  </li>
+                  <!-- Card share action START -->
+                  <li class="nav-item dropdown ms-sm-auto d-none">
+                    <a class="nav-link mb-0" href="#" id="cardShareAction" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-reply-fill flip-horizontal ps-1"></i>Share
+                      (3)
+                    </a>
+                    <!-- Card share action dropdown menu -->
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction">
+                      <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-envelope fa-fw pe-2"></i>Send via
+                          Direct Message</a></li>
+                      <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-bookmark-check fa-fw pe-2"></i>Bookmark
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-link fa-fw pe-2"></i>Copy link to
+                          post</a></li>
+                      <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-share fa-fw pe-2"></i>Share post via
+                          …</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">
+                          <i class="bi bi-pencil-square fa-fw pe-2"></i>Share to
+                          News Feed</a></li>
+                    </ul>
+                  </li>
+                  <!-- Card share action END -->
+                </ul>
+                <!-- Feed react END -->
+
+                <!-- Add comment -->
+                <div class="d-flex mb-3">
+                  <!-- Avatar -->
+                  <div class="avatar avatar-xs me-2">
+                    <a href="#!">
+                      <img class="avatar-img rounded-circle" src="assets/images/avatar/15.jpg" alt="">
+                    </a>
+                  </div>
+                  <!-- Comment box  -->
+                  <form class="nav nav-item w-100 position-relative">
+                    <textarea data-autoresize="" class="form-control pe-5 rounded-pill bg-info border-0 comment-box" rows="1" placeholder="Add a public comment..."></textarea>
+                    <button class="nav-link bg-transparent px-3 position-absolute top-50 end-0 translate-middle-y border-0" type="button">
+                      <i class="bi bi-emoji-laughing text-darksuccess"> </i>
+                    </button>
+                  </form>
+                </div>
+
+                <!-- Comment wrap START -->
+                <ul class="comment-wrap list-unstyled">
+                  <!-- Comment item START -->
+                  <li class="comment-item">
+                    <div class="d-flex">
+                      <!-- Avatar -->
+                      <div class="avatar avatar-xs">
+                        <a href="#">
+                          <img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="ms-2">
+                        <!-- Comment by -->
+                        <div class="bg-light rounded-start-top-0 p-3 rounded">
+                          <div class="d-flex justify-content-between">
+                            <h6 class="mb-1">
+                              <a href="#!"> Frances Guerrero </a></h6>
+                            <small class="ms-2">5hr</small>
+                          </div>
+                          <p class="small mb-0">Nice</p>
+                        </div>
+                        <!-- Comment rect -->
+                        
+                      </div>
+                    </div>
+                    <!-- Comment item nested START -->
+                   
+                    <!-- Load more replies -->
+                    
+                  </li>
+                 
+                  <!-- Comment item END -->
+                </ul>
+                <!-- Comment wrap END -->
+              </div>
+              <!-- Card body END -->
+              <!-- Card footer START -->
+              
+              <!-- Card footer END -->
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p class="h5 text-dark fw-semibold mb-0">Suggested for you</p>
+                        <p class="samll text-dark ">Groups you might be interested in</p>
+                        <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/gaming.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Gaming</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                         <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/travel-concept-with-baggage.png" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Travel</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                        <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/art.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0">Art</p>
+                            <p class="imgsubheading text-center small ">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                
+              </div>
+              <!-- Account setting tab END -->
+
+              <!-- Notification tab START -->
+              <div class="tab-pane fade" id="group-discover-tab-2">
+              <div class="containet-fluid">
+              <div class="row">
+                <p class="h5 text-dark fw-semibold mb-0">All Groups</p>
+                <p class="samll text-dark ">Groups you might be interested in</p>
+                <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/gaming.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Gaming</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/travel-concept-with-baggage.png" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Travel</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/gk.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">GK</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/kids.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Kids fun</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+                 <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/art.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Art</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+                <div class="col-4">
+                  <div class="card shadow my-3 mt-3">
+                            <img src="./assets/images/design.jpg" class=" mb-3 h-150px rounded-2" alt="">
+                            <p class="imgname fw-bold h5 text-center mb-0 ">Design</p>
+                            <p class="imgsubheading text-center small">10 members</p>
+                            <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">Join Group</button>
+                        </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <!-- Notification tab END -->
+
+              <!-- Privacy and safety tab START -->
+            
+              <!-- Privacy and safety tab END -->
+
+              <!-- Communications tab START -->
+
+              <!-- Close account tab END -->
+            </div>
+            <!-- Setting Tab content END -->
+          </div>
+        </div>
+        <!-- Row END -->
+      </div>
+      <!-- Container END -->
+    </main>
+
+    <!-- =======================
+JS libraries, plugins and custom scripts -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vendors -->
+    <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
+    <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+
+    <!-- Theme Functions -->
+    <script src="assets/js/functions.js"></script>
+    <!-- <script>
+      $(document).ready(function(){
+        $('#editBioBtn').
+      })
+    </script> -->
+  </body>
+</html>
