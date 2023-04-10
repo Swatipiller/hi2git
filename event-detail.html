@@ -3,7 +3,6 @@
   <head>
     <title>Event Details | Hi2</title>
 
-    <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -12,153 +11,18 @@
     <meta name="author" content="" />
     <meta name="description" content="" />
 
-    <!-- Dark mode -->
-    <!-- <script>
-		const storedTheme = localStorage.getItem('theme')
- 
-		const getPreferredTheme = () => {
-			if (storedTheme) {
-				return storedTheme
-			}
-			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-		}
+    <script></script>
 
-		const setTheme = function (theme) {
-			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				document.documentElement.setAttribute('data-bs-theme', 'dark')
-			} else {
-				document.documentElement.setAttribute('data-bs-theme', theme)
-			}
-		}
-
-		setTheme(getPreferredTheme())
-
-		window.addEventListener('DOMContentLoaded', () => {
-		    var el = document.querySelector('.theme-icon-active');
-			if(el != 'undefined' && el != null) {
-				const showActiveTheme = theme => {
-				const activeThemeIcon = document.querySelector('.theme-icon-active use')
-				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
-
-				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-					element.classList.remove('active')
-				})
-
-				btnToActive.classList.add('active')
-				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-			}
-
-			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-				if (storedTheme !== 'light' || storedTheme !== 'dark') {
-					setTheme(getPreferredTheme())
-				}
-			})
-
-			showActiveTheme(getPreferredTheme())
-
-			document.querySelectorAll('[data-bs-theme-value]')
-				.forEach(toggle => {
-					toggle.addEventListener('click', () => {
-						const theme = toggle.getAttribute('data-bs-theme-value')
-						localStorage.setItem('theme', theme)
-						setTheme(theme)
-						showActiveTheme(theme)
-					})
-				})
-
-			}
-		})
-		
-	</script> -->
-
-    <script>
-      const storedTheme = localStorage.getItem("theme");
-
-      const getPreferredTheme = () => {
-        if (storedTheme) {
-          return storedTheme;
-        }
-        return window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-      };
-
-      const setTheme = function (theme) {
-        if (
-          theme === "auto" &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches
-        ) {
-          document.documentElement.setAttribute("data-bs-theme", "dark");
-        } else {
-          document.documentElement.setAttribute("data-bs-theme", theme);
-        }
-      };
-
-      //  setTheme(getPreferredTheme())
-
-      window.addEventListener("DOMContentLoaded", () => {
-        var el = document.querySelector(".theme-icon-active");
-        if (el != "undefined" && el != null) {
-          const showActiveTheme = (theme) => {
-            const activeThemeIcon = document.querySelector(
-              ".theme-icon-active use"
-            );
-            const btnToActive = document.querySelector(
-              `[data-bs-theme-value="${theme}"]`
-            );
-            const svgOfActiveBtn = btnToActive
-              .querySelector(".mode-switch use")
-              .getAttribute("href");
-
-            document
-              .querySelectorAll("[data-bs-theme-value]")
-              .forEach((element) => {
-                element.classList.remove("active");
-              });
-
-            btnToActive.classList.add("active");
-            activeThemeIcon.setAttribute("href", svgOfActiveBtn);
-          };
-
-          window
-            .matchMedia("(prefers-color-scheme: dark)")
-            .addEventListener("change", () => {
-              if (storedTheme !== "light" || storedTheme !== "dark") {
-                setTheme(getPreferredTheme());
-              }
-            });
-
-          showActiveTheme(getPreferredTheme());
-
-          document
-            .querySelectorAll("[data-bs-theme-value]")
-            .forEach((toggle) => {
-              toggle.addEventListener("click", () => {
-                const theme = toggle.getAttribute("data-bs-theme-value");
-                localStorage.setItem("theme", theme);
-                setTheme(theme);
-                showActiveTheme(theme);
-              });
-            });
-        }
-      });
-    </script>
-
-    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
     />
 
-    <!-- Plugins CSS -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -190,8 +54,6 @@
       href="assets/vendor/flatpickr/dist/flatpickr.min.css"
     />
 
-    <!-- Theme CSS -->
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
@@ -201,30 +63,24 @@
   </head>
 
   <body>
-    <!-- Pre loader -->
     <div class="preloader">
       <div class="preloader-item">
         <div class="spinner-grow text-success"></div>
       </div>
     </div>
-    <!-- =======================
-Header START -->
+
     <header class="navbar-light fixed-top header-static bg-mode">
-      <!-- Logo Nav START -->
       <nav
         class="navbar navbar-expand-lg navbar-top px-3 py-2 text-bg-primary shadow fixed-top"
       >
         <div class="container-xxl">
-          <!-- Logo START -->
           <a
             href="/"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
           >
             <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
           </a>
-          <!-- Logo END -->
 
-          <!-- Responsive navbar toggler -->
           <button
             class="navbar-toggler ms-auto icon-md btn btn-light p-0"
             type="button"
@@ -241,9 +97,7 @@ Header START -->
             </span>
           </button>
 
-          <!-- Main navbar START -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- Nav Search START -->
             <div
               class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0"
             >
@@ -260,17 +114,16 @@ Header START -->
                   <button
                     class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
                     type="submit"
-                    ><i class="bi bi-search fs-5"> </i
-                  ></button>
+                  >
+                    <i class="bi bi-search fs-5"> </i>
+                  </button>
                 </form>
               </div>
             </div>
-            <!-- Nav Search END -->
 
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
             >
-              <!-- profile dropdown  -->
               <li class="nav-item ms-4 dropdown">
                 <a
                   class="nav-link text-white fw-semibold btn p-0"
@@ -292,10 +145,8 @@ Header START -->
                   class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
                   aria-labelledby="profileDropdown"
                 >
-                  <!-- Profile info -->
                   <li class="px-3">
                     <div class="d-flex align-items-center position-relative">
-                      <!-- Avatar -->
                       <div class="avatar me-3">
                         <img
                           class="avatar-img rounded-circle"
@@ -314,13 +165,13 @@ Header START -->
                       >View profile</a
                     >
                   </li>
-                  <!-- Links -->
-                  <li
-                    ><a class="dropdown-item" href="settings.html"
+
+                  <li>
+                    <a class="dropdown-item" href="settings.html"
                       ><i class="bi bi-gear fa-fw me-2"></i>Settings &amp;
                       Privacy</a
-                    ></li
-                  >
+                    >
+                  </li>
                   <li>
                     <a
                       class="dropdown-item"
@@ -340,15 +191,15 @@ Header START -->
                     </a>
                   </li>
                   <li class="dropdown-divider"></li>
-                  <li
-                    ><a
+                  <li>
+                    <a
                       class="dropdown-item bg-danger-soft-hover"
                       href="sign-in-advance.html"
                       ><i class="bi bi-power fa-fw me-2"></i>Sign Out</a
-                    ></li
-                  >
-                  <li> <hr class="dropdown-divider" /></li>
-                  <!-- Dark mode options START -->
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
                   <li>
                     <div
                       class="modeswitch-item theme-icon-active d-flex justify-content-center gap-3 align-items-center p-2 pb-0"
@@ -425,26 +276,21 @@ Header START -->
                       </button>
                     </div>
                   </li>
-                  <!-- Dark mode options END-->
                 </ul>
               </li>
-              <!-- home -->
+
               <li class="nav-item ms-4">
                 <a class="nav-link icon-md btn btn-link p-0" href="/">
                   <img src="./assets/images/icon/icon-home.png" alt="Home" />
                 </a>
               </li>
-              <!-- messaging  -->
+
               <li class="nav-item ms-4">
-                <!-- <a
-                  class="nav-link icon-md btn btn-link p-0"
-                  href="messaging.html"
-                > -->
                 <a class="nav-link icon-md btn btn-link p-0" href="#">
                   <img src="./assets/images/icon/icon-chats.png" alt="Chats" />
                 </a>
               </li>
-              <!-- notification  -->
+
               <li class="nav-item dropdown ms-4">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
@@ -454,155 +300,13 @@ Header START -->
                   aria-expanded="false"
                   data-bs-auto-close="outside"
                 >
-                  <!-- <span class="badge-notif animation-blink"></span> -->
                   <img
                     src="./assets/images/icon/icon-notification.png"
                     alt="Notification"
                   />
                 </a>
-                <div
-                  class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
-                  aria-labelledby="notifDropdown"
-                >
-                  <div class="card">
-                    <div
-                      class="card-header d-flex justify-content-between align-items-center"
-                    >
-                      <h6 class="m-0"
-                        >Notifications
-                        <span
-                          class="badge bg-danger bg-opacity-10 text-danger ms-2"
-                          >4 new</span
-                        ></h6
-                      >
-                      <a class="small" href="#">Clear all</a>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="list-group list-group-flush list-unstyled p-2">
-                        <!-- Notif item -->
-                        <li>
-                          <div
-                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/avatar/01.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3">
-                              <div class="d-flex">
-                                <p class="small mb-2"
-                                  ><b>Judy Nguyen</b> sent you a friend
-                                  request.</p
-                                >
-                                <p class="small ms-4 text-nowrap">Just now</p>
-                              </div>
-                              <div class="d-flex">
-                                <button class="btn btn-sm py-1 btn-primary me-2"
-                                  >Accept
-                                </button>
-                                <button class="btn btn-sm py-1 btn-danger-soft"
-                                  >Delete
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <!-- Notif item -->
-                        <li>
-                          <div
-                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/avatar/02.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3 d-flex">
-                              <div>
-                                <p class="small mb-2"
-                                  >Wish <b>Amanda Reed</b> a happy birthday (Nov
-                                  12)</p
-                                >
-                                <button
-                                  class="btn btn-sm btn-outline-light py-1 me-2"
-                                  >Say happy birthday 🎂</button
-                                >
-                              </div>
-                              <p class="small ms-3">2min</p>
-                            </div>
-                          </div>
-                        </li>
-                        <!-- Notif item -->
-                        <li>
-                          <a
-                            href="#"
-                            class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <div class="avatar-img rounded-circle bg-success"
-                                ><span
-                                  class="text-white position-absolute top-50 start-50 translate-middle fw-bold"
-                                  >WB</span
-                                ></div
-                              >
-                            </div>
-                            <div class="ms-sm-3">
-                              <div class="d-flex">
-                                <p class="small mb-2"
-                                  >Webestica has 15 like and 1 new activity</p
-                                >
-                                <p class="small ms-3">1hr</p>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <!-- Notif item -->
-                        <li>
-                          <a
-                            href="#"
-                            class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/logo/12.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3 d-flex">
-                              <p class="small mb-2"
-                                ><b>Bootstrap in the news:</b> The search
-                                giant’s parent company, Alphabet, just joined an
-                                exclusive club of tech stocks.</p
-                              >
-                              <p class="small ms-3">4hr</p>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                      <a href="#" class="btn btn-sm btn-primary-soft"
-                        >See all incoming activity</a
-                      >
-                    </div>
-                  </div>
-                </div>
               </li>
-              <!-- megamenu dropdown -->
+
               <li class="nav-item dropdown ms-3">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
@@ -618,168 +322,18 @@ Header START -->
                 <div
                   class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
                   aria-labelledby="megamenuDropdown"
-                >
-                  <!-- <div class="card">
-                    <div
-                      class="card-header d-flex justify-content-between align-items-center"
-                    >
-                      <h6 class="m-0"
-                        >Notifications
-                        <span
-                          class="badge bg-danger bg-opacity-10 text-danger ms-2"
-                          >4 new</span
-                        ></h6
-                      >
-                      <a class="small" href="#">Clear all</a>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="list-group list-group-flush list-unstyled p-2">
-                        
-                        <li>
-                          <div
-                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/avatar/01.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3">
-                              <div class="d-flex">
-                                <p class="small mb-2"
-                                  ><b>Judy Nguyen</b> sent you a friend
-                                  request.</p
-                                >
-                                <p class="small ms-3 text-nowrap">Just now</p>
-                              </div>
-                              <div class="d-flex">
-                                <button class="btn btn-sm py-1 btn-primary me-2"
-                                  >Accept
-                                </button>
-                                <button class="btn btn-sm py-1 btn-danger-soft"
-                                  >Delete
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        
-                        <li>
-                          <div
-                            class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/avatar/02.jpg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3 d-flex">
-                              <div>
-                                <p class="small mb-2"
-                                  >Wish <b>Amanda Reed</b> a happy birthday (Nov
-                                  12)</p
-                                >
-                                <button
-                                  class="btn btn-sm btn-outline-light py-1 me-2"
-                                  >Say happy birthday 🎂</button
-                                >
-                              </div>
-                              <p class="small ms-3">2min</p>
-                            </div>
-                          </div>
-                        </li>
-                        
-                        <li>
-                          <a
-                            href="#"
-                            class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <div class="avatar-img rounded-circle bg-success"
-                                ><span
-                                  class="text-white position-absolute top-50 start-50 translate-middle fw-bold"
-                                  >WB</span
-                                ></div
-                              >
-                            </div>
-                            <div class="ms-sm-3">
-                              <div class="d-flex">
-                                <p class="small mb-2"
-                                  >Webestica has 15 like and 1 new activity</p
-                                >
-                                <p class="small ms-3">1hr</p>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        
-                        <li>
-                          <a
-                            href="#"
-                            class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1"
-                          >
-                            <div
-                              class="avatar text-center d-none d-sm-inline-block"
-                            >
-                              <img
-                                class="avatar-img rounded-circle"
-                                src="assets/images/logo/12.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="ms-sm-3 d-flex">
-                              <p class="small mb-2"
-                                ><b>Bootstrap in the news:</b> The search giant’s
-                                parent company, Alphabet, just joined an exclusive
-                                club of tech stocks.</p
-                              >
-                              <p class="small ms-3">4hr</p>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-footer text-center">
-                      <a href="#" class="btn btn-sm btn-primary-soft"
-                        >See all incoming activity</a
-                      >
-                    </div>
-                  </div> -->
-                </div>
+                ></div>
               </li>
-              <!-- Notification dropdown END -->
-
-              <!-- Profile START -->
             </ul>
           </div>
-          <!-- Main navbar END -->
-
-          <!-- Nav right END -->
         </div>
       </nav>
-      <!-- Logo Nav END -->
     </header>
-    <!-- =======================
-Header END -->
 
     <main class="group-main mb-3">
-      <!-- Container START -->
       <div class="container-fluid">
         <div class="row">
-          <!-- Sidenav START -->
           <div class="col-lg-3">
-            <!-- Advanced filter responsive toggler START -->
-            <!-- Divider -->
             <div class="d-flex align-items-center mb-4 d-lg-none">
               <button
                 class="border-0 bg-transparent"
@@ -794,7 +348,6 @@ Header END -->
                 <span class="h6 mb-0 fw-bold d-lg-none ms-2">Settings</span>
               </button>
             </div>
-            <!-- Advanced filter responsive toggler END -->
 
             <nav class="navbar navbar-light navbar-expand-lg mx-0">
               <div
@@ -802,45 +355,27 @@ Header END -->
                 tabindex="-1"
                 id="offcanvasNavbar"
               >
-                <!-- Offcanvas header -->
-                <!-- <div class="offcanvas-header">
-                  <button
-                    type="button"
-                    class="btn-close text-reset ms-auto"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div> -->
-
-                <!-- Offcanvas body -->
                 <div class="offcanvas-body p-0">
-                  <!-- Card START -->
                   <div class="card shadow w-100 bg-primary">
-                    <!-- Card body START -->
                     <div class="card-body">
-                      <!-- <p class="h6 text-light fw-bold p-3 border-bottom"
-                        >Events</p
-                      > -->
-
                       <nav
                         class="border-bottom"
                         style="--bs-breadcrumb-divider: '<'"
                         aria-label="breadcrumb"
                       >
                         <ol class="breadcrumb mb-1">
-                          <li class="breadcrumb-item h5 text-light fw-bold"
-                            ><a href="/event.html" class="text-light"
-                              >Event</a
-                            ></li
-                          >
+                          <li class="breadcrumb-item h5 text-light fw-bold">
+                            <a href="/event.html" class="text-light">Event</a>
+                          </li>
                           <li
                             class="breadcrumb-item h5 text-light fw-bold active"
                             aria-current="page"
-                            >Detail</li
                           >
+                            Detail
+                          </li>
                         </ol>
                       </nav>
-                      <!-- Side Nav START -->
+
                       <ul
                         class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0"
                       >
@@ -858,14 +393,8 @@ Header END -->
                           >
                         </li>
                       </ul>
-
-                      <!-- Side Nav END -->
                     </div>
-                    <!-- Card body END -->
-                    <!-- Card footer -->
                   </div>
-
-                  <!-- Card END -->
                 </div>
                 <div class="card shadow my-2">
                   <div class="card-body">
@@ -878,9 +407,9 @@ Header END -->
                             alt=""
                             class="mb-3 h-100px rounded-2"
                           />
-                          <p class="h6 fw-bold text-dark ps-2"
-                            >Book <span class="small muted">Rs-20</span></p
-                          >
+                          <p class="h6 fw-bold text-dark ps-2">
+                            Book <span class="small muted">Rs-20</span>
+                          </p>
                         </div>
                         <div class="card shadow w-200px mb-3">
                           <img
@@ -888,9 +417,9 @@ Header END -->
                             alt=""
                             class="mb-3 h-100px rounded-2"
                           />
-                          <p class="h6 fw-bold text-dark ps-2"
-                            >Laptop <span class="small muted">Rs-100</span></p
-                          >
+                          <p class="h6 fw-bold text-dark ps-2">
+                            Laptop <span class="small muted">Rs-100</span>
+                          </p>
                         </div>
                       </div>
                       <div class="d-flex">
@@ -900,9 +429,9 @@ Header END -->
                             alt=""
                             class="mb-3 h-100px rounded-2"
                           />
-                          <p class="h6 fw-bold text-dark ps-2"
-                            >Car <span class="small muted">Rs-9,200</span></p
-                          >
+                          <p class="h6 fw-bold text-dark ps-2">
+                            Car <span class="small muted">Rs-9,200</span>
+                          </p>
                         </div>
                         <div class="card shadow w-200px mb-3">
                           <img
@@ -910,10 +439,9 @@ Header END -->
                             alt=""
                             class="mb-3 h-100px rounded-2"
                           />
-                          <p class="h6 fw-bold text-dark ps-2"
-                            >Flower Plant
-                            <span class="small muted">Rs-20</span></p
-                          >
+                          <p class="h6 fw-bold text-dark ps-2">
+                            Flower Plant <span class="small muted">Rs-20</span>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -921,14 +449,16 @@ Header END -->
                   <button
                     type="button"
                     class="btn btn-info py-4 fs-5 fw-bold text-darksuccess"
-                    >See All</button
                   >
+                    See All
+                  </button>
                 </div>
                 <div class="card border-0 mb-3 shadow my-2">
                   <div class="card-body">
                     <h3
                       class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center"
-                      >Your Groups
+                    >
+                      Your Groups
                     </h3>
 
                     <div class="group-member d-flex my-2 align-items-center">
@@ -954,13 +484,14 @@ Header END -->
                   <div class="card-body">
                     <h3
                       class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center"
-                      >Friends Suggestions
+                    >
+                      Friends Suggestions
                       <a
                         href="#"
                         class="small fw-semibold text-darksuccess ms-auto"
                         >See All</a
-                      ></h3
-                    >
+                      >
+                    </h3>
 
                     <div class="mt-3 d-flex align-items-center">
                       <img
@@ -972,9 +503,9 @@ Header END -->
                       <div class="ms-3">
                         <p class="mb-0">Bob</p>
                         <p class="mb-1 small text-black-50">0 Mutual friend</p>
-                        <div class="btn btn-gradient fw-semibold"
-                          >Add Friend</div
-                        >
+                        <div class="btn btn-gradient fw-semibold">
+                          Add Friend
+                        </div>
                       </div>
                     </div>
                     <div class="mt-3 d-flex align-items-center">
@@ -987,199 +518,291 @@ Header END -->
                       <div class="ms-3">
                         <p class="mb-0">John</p>
                         <p class="mb-1 small text-black-50">0 Mutual friend</p>
-                        <div class="btn btn-gradient fw-semibold"
-                          >Add Friend</div
-                        >
+                        <div class="btn btn-gradient fw-semibold">
+                          Add Friend
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Offcanvas body -->
               </div>
             </nav>
           </div>
-          <!-- Sidenav END -->
 
-          <!-- Main content START -->
           <div class="col-lg-6 vstack gap-4">
-            <div class="event-detail-banner ">
+            <div class="event-detail-banner">
               <img
                 src="./assets/images/kids.jpg"
                 class="h-100 rounded-2 w-100"
                 alt=""
               />
             </div>
-            <div class="event-banner-desc d-flex justify-content-between ">
+            <div class="event-banner-desc d-flex justify-content-between">
               <div class="future-event-para mb-2">
-                <p class="text-primary small mb-0 my-1">Sat, Mar 19 at 3:00 PM-7:00 PM</p>
-                <p class="imgname fw-bold h5 mb-0 text-dark my-2">Kids Workshop</p>
-                <p class="imgsubheading mb-0 small text-muted my-1"
-                  >Created By: James B.</p
-                >
-                
+                <p class="text-primary small mb-0 my-1">
+                  Sat, Mar 19 at 3:00 PM-7:00 PM
+                </p>
+                <p class="imgname fw-bold h5 mb-0 text-dark my-2">
+                  Kids Workshop
+                </p>
+                <p class="imgsubheading mb-0 small text-muted my-1">
+                  Created By: James B.
+                </p>
               </div>
               <div class="">
-                <button type="button" class="btn btn-primary w-200px">Interested</button>
-                <a href="#" class="btn fs-4 px-2 py-0  bg-secondary text-light" id="" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="bi bi-three-dots"></i>
-                    </a>
+                <button type="button" class="btn btn-primary w-200px">
+                  Interested
+                </button>
+                <a
+                  href="#"
+                  class="btn fs-4 px-2 py-0 bg-secondary text-light"
+                  id=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-three-dots"></i>
+                </a>
               </div>
             </div>
             <div class="row">
-                <div class="col-5">
-                    <div class="card border-0 shadow mb-3">
-              <div class="card-body">
-                <h3 class="h6 fw-bold text-dark">Details</h3>
+              <div class="col-5">
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-dark">Details</h3>
 
-                <ul class="list-unstyled fw-semibold text-primary mb-0">
-                  <li class="my-2">
-                    <a href="#">
-                        <i class="bi bi-stopwatch" style="width: 20px" class="me-3"></i><span class="text-muted ms-2">hr</span>
-                    </a>
-                  </li>
-                  <li class="my-2">
-                    <a href="#">
-                      <i class="bi bi-geo-alt" style="width: 20px" class="me-3"></i><span class="text-muted ms-2">Paris</span>
-                    </a>
-                  </li>
-                  <li class="my-2">
-                    <a href="#">
-                        <i class="bi bi-calendar-check" style="width: 20px" class="me-3"></i><span class="text-muted ms-2">2 going . 44 interested</span>
-                    </a>
-                  </li>
-                  <li class="my-2">
-                    <a href="#">
-                        <i class="bi bi-globe-americas" style="width: 20px" class="me-3"></i><span class="text-muted ms-2">Public(Anyone on or off Hi2)</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card border-0 shadow mb-3">
-              <div class="card-body">
-                <div class="">
-                <h3 class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center">Guests
-                  <a href="#" class="small fw-semibold text-darksuccess ms-auto"></a></h3>
-                  <div class="d-flex justify-content-around my-4">
-                    <div class="going d-flex flex-column justify-content-center align-items-center">
-                        <span class="text-muted fw-bold">2</span>
-                        <span class="text-muted fw-bold">Going</span>
-                    </div>
-                    <div class="intersted d-flex flex-column justify-content-center align-items-center">
-                        <span class="text-muted fw-bold">44</span>
-                        <span class="text-muted fw-bold">Interested</span>
-                    </div>
+                    <ul class="list-unstyled fw-semibold text-primary mb-0">
+                      <li class="my-2">
+                        <a href="#">
+                          <i
+                            class="bi bi-stopwatch"
+                            style="width: 20px"
+                            class="me-3"
+                          ></i
+                          ><span class="text-muted ms-2">hr</span>
+                        </a>
+                      </li>
+                      <li class="my-2">
+                        <a href="#">
+                          <i
+                            class="bi bi-geo-alt"
+                            style="width: 20px"
+                            class="me-3"
+                          ></i
+                          ><span class="text-muted ms-2">Paris</span>
+                        </a>
+                      </li>
+                      <li class="my-2">
+                        <a href="#">
+                          <i
+                            class="bi bi-calendar-check"
+                            style="width: 20px"
+                            class="me-3"
+                          ></i
+                          ><span class="text-muted ms-2"
+                            >2 going . 44 interested</span
+                          >
+                        </a>
+                      </li>
+                      <li class="my-2">
+                        <a href="#">
+                          <i
+                            class="bi bi-globe-americas"
+                            style="width: 20px"
+                            class="me-3"
+                          ></i
+                          ><span class="text-muted ms-2"
+                            >Public(Anyone on or off Hi2)</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-          <div class="">
-                  <h3 class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center">Go with Friends
-                  <a href="#" class="small fw-semibold text-darksuccess ms-auto"></a></h3>
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-body">
+                    <div class="">
+                      <h3
+                        class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center"
+                      >
+                        Guests
+                        <a
+                          href="#"
+                          class="small fw-semibold text-darksuccess ms-auto"
+                        ></a>
+                      </h3>
+                      <div class="d-flex justify-content-around my-4">
+                        <div
+                          class="going d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <span class="text-muted fw-bold">2</span>
+                          <span class="text-muted fw-bold">Going</span>
+                        </div>
+                        <div
+                          class="intersted d-flex flex-column justify-content-center align-items-center"
+                        >
+                          <span class="text-muted fw-bold">44</span>
+                          <span class="text-muted fw-bold">Interested</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <h3
+                        class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center"
+                      >
+                        Go with Friends
+                        <a
+                          href="#"
+                          class="small fw-semibold text-darksuccess ms-auto"
+                        ></a>
+                      </h3>
 
-                <div class="mt-3 d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/images/bob.png" alt="Bob" width="40px" class="border border-2 border-warning rounded-circle">
-                    <p class="mb-0 ms-3">Bob</p>
-                </div>
-                  <div class="ms-3">
-                    <div class="btn btn-gradient fw-semibold">Invite</div>
-                  </div>
-                </div>
-                <div class="mt-3 d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center">
-                    <img src="./assets/images/john.png" alt="john" width="40px" class="border border-2 border-warning rounded-circle">
-                  <p class="mb-0 ms-3">John</p> 
-                </div>
-                  <div class="ms-3">
-                    <div class="btn btn-gradient fw-semibold">Invite</div>
-                  </div>
-                </div>
-          </div>
-              </div>
-            </div>
-                </div>
-                <div class="col-7">
-                    <div class="card border-0 shadow mb-3">
-                        <div class="card-body" style="background-color: #F1EAEA;">
-                            <h3 class="h6 fw-bold text-dark">Meet your host</h3>
-                        <div class="text-center">
-                            <img src="./assets/images/smiling-confident-businesswoman-posing-with-arms-folded.png" alt="" class="h-50 rounded-circle w-50">
-                            <div class="">
-                                <p class="fw-bold text-dark mb-0">Kids Zone</p>
-                                <p class="text-muted">1.6K past events . 18K followers</p>
-                            </div>
-                            <hr>
-                            <p class="text-muted">Ideas to have workshops for children during events, parties  or at home with families. Simple activities for children.</p>
-                            <div>
-                                <button type="button" class="btn btn-primary">Follow</button>
-                            </div>
+                      <div
+                        class="mt-3 d-flex align-items-center justify-content-between"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="./assets/images/bob.png"
+                            alt="Bob"
+                            width="40px"
+                            class="border border-2 border-warning rounded-circle"
+                          />
+                          <p class="mb-0 ms-3">Bob</p>
                         </div>
+                        <div class="ms-3">
+                          <div class="btn btn-gradient fw-semibold">Invite</div>
                         </div>
+                      </div>
+                      <div
+                        class="mt-3 d-flex align-items-center justify-content-between"
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="./assets/images/john.png"
+                            alt="john"
+                            width="40px"
+                            class="border border-2 border-warning rounded-circle"
+                          />
+                          <p class="mb-0 ms-3">John</p>
+                        </div>
+                        <div class="ms-3">
+                          <div class="btn btn-gradient fw-semibold">Invite</div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-7">
+                <div class="card border-0 shadow mb-3">
+                  <div class="card-body" style="background-color: #f1eaea">
+                    <h3 class="h6 fw-bold text-dark">Meet your host</h3>
+                    <div class="text-center">
+                      <img
+                        src="./assets/images/smiling-confident-businesswoman-posing-with-arms-folded.png"
+                        alt=""
+                        class="h-50 rounded-circle w-50"
+                      />
+                      <div class="">
+                        <p class="fw-bold text-dark mb-0">Kids Zone</p>
+                        <p class="text-muted">
+                          1.6K past events . 18K followers
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="text-muted">
+                        Ideas to have workshops for children during events,
+                        parties or at home with families. Simple activities for
+                        children.
+                      </p>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          Follow
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="row">
-                    <p class="h5 text-dark fw-semibold mb-0">Recommended Events</p>
+              <p class="h5 text-dark fw-semibold mb-0">Recommended Events</p>
 
-                  
-                    
-                    <div class="col-6">
-                      <div class="card shadow my-3 mt-3">
-                        <a href="#">
-                          <img src="./assets/images/silhouette-person-standing-beach-cloudy-sky-during-breathtaking-sunset.jpg" class="mb-3 h-200px w-100 rounded-2" alt="">
-                          <div class="future-event-para ms-3 mb-2">
-                            <p class="imgname fw-bold h5 mb-0 text-dark">Night trek</p>
-                            <p class="imgsubheading mb-0 small text-dark">Create By: JK group</p>
-                            <p class="imgsubheading mb-0 text-primary small">Sat,Mar 19</p>
-                            <p class="imgsubheading mb-0 small text-muted"><span>1 interested</span>
-                            </p>
-                          </div>
-                        </a>
-                        <button type="button" class="btn btn-info py-4 fs-5 fw-bold text-dark">interested</button>
-                      </div>
+              <div class="col-6">
+                <div class="card shadow my-3 mt-3">
+                  <a href="#">
+                    <img
+                      src="./assets/images/silhouette-person-standing-beach-cloudy-sky-during-breathtaking-sunset.jpg"
+                      class="mb-3 h-200px w-100 rounded-2"
+                      alt=""
+                    />
+                    <div class="future-event-para ms-3 mb-2">
+                      <p class="imgname fw-bold h5 mb-0 text-dark">
+                        Night trek
+                      </p>
+                      <p class="imgsubheading mb-0 small text-dark">
+                        Create By: JK group
+                      </p>
+                      <p class="imgsubheading mb-0 text-primary small">
+                        Sat,Mar 19
+                      </p>
+                      <p class="imgsubheading mb-0 small text-muted">
+                        <span>1 interested</span>
+                      </p>
                     </div>
-                    <div class="col-6">
-                      <div class="card shadow my-3 mt-3">
-                        <a href="#">
-                          <img src="./assets/images/grunge_party_0410.jpg" class="mb-3 h-200px w-100 rounded-2" alt="">
-                          <div class="future-event-para ms-3 mb-2">
-                            <p class="imgname fw-bold h5 mb-0 text-dark">Shopping Festival</p>
-                            <p class="imgsubheading mb-0 small text-dark">Create By: PNW Fashion</p>
-                            <p class="imgsubheading mb-0 text-primary small">Sat,Mar 19</p>
-                            <p class="imgsubheading mb-0 small text-muted"><span>1 interested</span>
-                              <span class="ms-3">1 Going</span></p>
-                          </div>
-                        </a>
-                        <button type="button" class="btn btn-info py-4 fs-5 fw-bold text-dark">interested</button>
-                      </div>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-info py-4 fs-5 fw-bold text-dark"
+                  >
+                    interested
+                  </button>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card shadow my-3 mt-3">
+                  <a href="#">
+                    <img
+                      src="./assets/images/grunge_party_0410.jpg"
+                      class="mb-3 h-200px w-100 rounded-2"
+                      alt=""
+                    />
+                    <div class="future-event-para ms-3 mb-2">
+                      <p class="imgname fw-bold h5 mb-0 text-dark">
+                        Shopping Festival
+                      </p>
+                      <p class="imgsubheading mb-0 small text-dark">
+                        Create By: PNW Fashion
+                      </p>
+                      <p class="imgsubheading mb-0 text-primary small">
+                        Sat,Mar 19
+                      </p>
+                      <p class="imgsubheading mb-0 small text-muted">
+                        <span>1 interested</span>
+                        <span class="ms-3">1 Going</span>
+                      </p>
                     </div>
-                  </div>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-info py-4 fs-5 fw-bold text-dark"
+                  >
+                    interested
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Setting Tab content END -->
         </div>
       </div>
-      <!-- Row END -->
-
-      <!-- Container END -->
     </main>
 
-    <!-- =======================
-JS libraries, plugins and custom scripts -->
-
-    <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Vendors -->
     <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
     <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
-    <!-- Theme Functions -->
     <script src="assets/js/functions.js"></script>
-    <!-- <script>
-      $(document).ready(function(){
-        $('#editBioBtn').
-      })
-    </script> -->
   </body>
 </html>
