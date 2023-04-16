@@ -57,8 +57,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group-create.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/creatw-new-listing.css" />
+        <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
   </head>
 
@@ -306,7 +311,6 @@
                   />
                 </a>
               </li>
-
               <li class="nav-item dropdown ms-3">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
@@ -399,74 +403,143 @@
                 tabindex="-1"
                 id="offcanvasNavbar"
               >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
-                  <div class="card shadow w-100 h-100vh bg-primary">
+                <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
+                  <div class="card shadow w-100 h-100vh bg-primary custom-scrollbar" style="max-height: 130vh">
                     <div class="card-body">
-                      <nav
-                        style="--bs-breadcrumb-divider: '<'"
-                        aria-label="breadcrumb"
-                      >
-                        <ol class="breadcrumb border-bottom">
-                          <li class="breadcrumb-item fs-5 text-light fw-bold">
-                            <a href="./group.html" class="text-light">Groups</a>
+                      <nav  style="--bs-breadcrumb-divider: '<'" aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-1">
+                          <li class="breadcrumb-item h5 text-light fw-bold">
+                            <a href="marketplace.html" class="text-light">Back</a>
                           </li>
-                          <li
-                            class="breadcrumb-item active fs-5 text-success fw-bold"
-                            aria-current="page"
-                          >
-                            Create Group
+                          <li class="breadcrumb-item h5 text-light fw-bold active" aria-current="page">
+                            Marketplace
                           </li>
                         </ol>
                       </nav>
-                      <p class="h6 text-light fw-bold py-3">Create Group</p>
-                      <div class="create-group-form">
-                        <form>
-                          <div class="mb-3">
-                            <label
-                              for="groupname"
-                              class="form-label visually-hidden"
-                              >Email address</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="groupname"
-                              placeholder="Group Name"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <div class="">
-                              <textarea
-                                class="form-control"
-                                placeholder="Description"
-                                rows="5"
-                              ></textarea>
-                              <label
-                                for="floatingTextarea"
-                                class="visually-hidden"
-                                >Comments</label
-                              >
+
+                     <p class="h5  fw-bold text-success">Item for sale</p>
+                     <div class="d-flex mb-3 align-items-center">
+                              <div class="avatar me-2">
+                                <a href="#!">
+                                  <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="">
+                                </a>
+                              </div>
+
+                              <div>
+                                <div class="nav">
+                                  <h6 class="nav-item card-title mb-0">
+                                    <a href="#" class="text-light"> Lori Ferguson </a>
+                                  </h6>
+                                </div>
+                              </div>
                             </div>
+                    
+
+                      <ul
+                        class="border-0 list-unstyled border-bottom border-secondary gap-2 nav-pills nav-pills-soft"
+                      >
+                        <li class="nav-item">
+                          <form>
+                              
+                            <div class="row align-items-center">
+                            <div class="col-12">
+                              <div class="mb-3 white-outline-box">
+                                <button class="btn white-btn" type="button">
+                                 <i class="bi bi-camera pe-1"></i> Add cover photo
+                              </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Title">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Pricing Є">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <select type="text" class="form-control bg-transparent">
+                                    <option>Availability</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <select type="text" class="form-control bg-transparent">
+                                    <option>Category</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <textarea type="textarea" class="form-control bg-transparent" placeholder="Description"></textarea>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Contract Email Id">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Contract Number">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Contract Person">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Origin Country">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Origin State">
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="mb-3">
+                                  <input type="text" class="form-control bg-transparent" placeholder="Origin City">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="mb-3 text-center">
+                               <button type="submit" class="btn btn-gradient px-5 w-100">
+                                 Post
+                               </button>
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="groupformFile"
-                              class="form-label text-light"
-                              >Upload group image</label
-                            >
-                            <input
-                              class="form-control"
-                              type="file"
-                              id="groupformFile"
-                            />
-                          </div>
-                          <div class="mb-3 text-center">
-                            <button type="submit" class="btn btn-gradient px-5">
-                              Submit
-                            </button>
-                          </div>
-                        </form>
-                      </div>
+                            </form>
+                        </li>
+                      </ul>
+                      <ul
+                        class="border-0 list-unstyled gap-2 nav-pills nav-pills-soft"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link d-flex mb-0 align-items-center fw-bold px-0"
+                            href="#"
+                          >
+                            <i class="bi bi-app-indicator me-2 fs-6"></i
+                            ><span class="">Category</span></a
+                          >
+
+                          <ul class="list-unstyled ps-4 text-white">
+                            <li class="my-2">Vehicle</li>
+                            <li class="my-2">Property Rental</li>
+                            <li class="my-2">Apparel</li>
+                            <li class="my-2">Electronics</li>
+                            <li class="my-2">Entertainment</li>
+                          </ul>
+                        </li>
+                      </ul>
+
                     </div>
                   </div>
                 </div>
@@ -474,28 +547,48 @@
             </nav>
           </div>
 
-          <div class="col-lg-6 vstack">
-            <div class="create-group-banner">
-              <img
-                src="./assets/images/field-hockey-players-during-tournament-game.jpg"
-                class="rounded-2 h-100 opacity-4 w-100"
-                alt=""
-              />
+          <div class="col-lg-6 vstack gap-4">
+                  
+            <div class="tab-content py-0 mb-0">
+              <div class="tab-pane fade active show" id="group-discover-tab-2">
+                <div class="container-fluid">
+                  <div class="row">
+                    <h2 class="h5 text-dark mt-2">Preview</h2>
+                    <div class="row mt-5 align-items-center">
+                    <div class="col-6 text-center">
+                       <h5 class="">Your Listing Preview</h5>
+                       <p>As you create your listing, you can preview <br>how it will appear to marketplace.</p>
+                    </div>
+                    <div class="col-6">
+                       <h5 class="mb-3">Title</h5>
+                       <p class="fw-bold h6 mb-2 text-dark my-2">Price</p>
+                       <p class="mb-3 small text-secondary lh-sm">Listed a few seconds ago in paris</p>
+                       <p class="fw-bold h6 mb-2 text-dark my-2">Details</p>
+                       <p class="mb-3 small text-secondary lh-sm">Description will appear here</p>
+                       <p class="fw-bold h6 mb-2 text-dark my-2">Location</p>
+                       <p class="mb-3 small text-secondary lh-sm"></p>
+                       <p class="fw-bold h6 mb-2 text-dark my-2">Seller Information</p>
+                       <div class="d-flex mb-3 align-items-center">
+                              <div class="avatar me-2">
+                                <a href="#!">
+                                  <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="">
+                                </a>
+                              </div>
+
+                              <div>
+                                <div class="nav">
+                                  <h6 class="nav-item card-title mb-0">
+                                    <a href="#" class="mb-3 small text-secondary lh-sm"> Lori Ferguson </a>
+                                  </h6>
+                                </div>
+                              </div>
+                            </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="create-group-name mt-3">
-              <p class="h5 text-dark fw-bold mb-0 opacity-75">Group Name</p>
-              <p class="small text-dark">1 member</p>
-            </div>
-            <div
-              class="create-group-details d-flex justify-content-between w-25"
-            >
-              <p class="h5 text-dark fw-bold opacity-75">Post</p>
-              <p class="h5 text-dark fw-bold opacity-75">About</p>
-              <p class="h5 text-dark fw-bold opacity-75">Members</p>
-            </div>
-            <p class="small text-dark">
-              You can use this once you create a group
-            </p>
           </div>
         </div>
       </div>
@@ -509,5 +602,6 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+        <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
   </body>
 </html>

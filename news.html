@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Profile | Hi2</title>
+    <title>News | Hi2</title>
 
     <meta charset="utf-8" />
     <meta
@@ -57,9 +57,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group-create.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/news.css" />
   </head>
 
   <body>
@@ -374,132 +373,157 @@
       </nav>
     </header>
 
-    <main class="group-main mb-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="d-flex align-items-center mb-4 d-lg-none">
-              <button
-                class="border-0 bg-transparent"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-              >
-                <span class="btn btn-primary"
-                  ><i class="fa-solid fa-sliders-h"></i
-                ></span>
-                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Settings</span>
-              </button>
-            </div>
+    <main>
+      <div class="container-xl">
+        <div class="row g-4 mt-2">
+          <div class="col-xl-9">
+              <div class="single_post">
+                  <h4 class="blog_titles">News</h4>
+                  <p class="text-primary">News from all around the world</h4>
+                    <p class="h5">Breaking News</p>
+        
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <nav class="navbar navbar-light navbar-expand-lg mx-0">
-              <div
-                class="offcanvas offcanvas-start"
-                tabindex="-1"
-                id="offcanvasNavbar"
-              >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
-                  <div class="card shadow w-100 h-100vh bg-primary">
-                    <div class="card-body">
-                      <nav
-                        style="--bs-breadcrumb-divider: '<'"
-                        aria-label="breadcrumb"
-                      >
-                        <ol class="breadcrumb border-bottom">
-                          <li class="breadcrumb-item fs-5 text-light fw-bold">
-                            <a href="./group.html" class="text-light">Groups</a>
-                          </li>
-                          <li
-                            class="breadcrumb-item active fs-5 text-success fw-bold"
-                            aria-current="page"
-                          >
-                            Create Group
-                          </li>
-                        </ol>
-                      </nav>
-                      <p class="h6 text-light fw-bold py-3">Create Group</p>
-                      <div class="create-group-form">
-                        <form>
-                          <div class="mb-3">
-                            <label
-                              for="groupname"
-                              class="form-label visually-hidden"
-                              >Email address</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="groupname"
-                              placeholder="Group Name"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <div class="">
-                              <textarea
-                                class="form-control"
-                                placeholder="Description"
-                                rows="5"
-                              ></textarea>
-                              <label
-                                for="floatingTextarea"
-                                class="visually-hidden"
-                                >Comments</label
-                              >
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label
-                              for="groupformFile"
-                              class="form-label text-light"
-                              >Upload group image</label
-                            >
-                            <input
-                              class="form-control"
-                              type="file"
-                              id="groupformFile"
-                            />
-                          </div>
-                          <div class="mb-3 text-center">
-                            <button type="submit" class="btn btn-gradient px-5">
-                              Submit
-                            </button>
-                          </div>
-                        </form>
-                      </div>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+            <h3 class="ovelay-tag">Nature</h3>
+      <img src="assets/images/blogs/classmates-friends-bag-school-education.jpg" alt="" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>TOI Sports .6hrs ago</h3>
+        <p>Changing sports landsacpe in australia</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <h3 class="ovelay-tag">Sports</h3>
+      <img src="assets/images/blogs/waterfall-rocky-altai-mountains.jpg" alt="" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+      <div class="carousel-caption">
+        <h3>TOI Sports .6hrs ago</h3>
+        <p>Changing sports landsacpe in australia</p>
+      </div>
+      </div> 
+    </div>
+  </div>
+  
+</div>
+
+                </div>
+                <div class="related_post mt-5">
+                  <div class="content_title">
+                      <h5>Latest News</h5>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="blog_post blog_style2 box_shadow1">
+                                <div class="blog_img">
+                                    <a href="blog-single.html">
+                                        <img src="assets\images\blogs\classmates-friends-bag-school-education.jpg" alt="blog_small_img2">
+                                    </a>
+                                </div>
+                                <div class="blog_content bg-white">
+                                    <div class="blog_text">
+                                        <h5 class="blog_title"><a href="blog-single.html">On the other hand we provide denounce</a></h5>
+                                        <ul class="list_none blog_meta">
+                                            <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                                            <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
+                                        </ul>
+                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                      <div class="col-md-6">
+                            <div class="blog_post blog_style2 box_shadow1">
+                                <div class="blog_img">
+                                    <a href="blog-single.html">
+                                        <img src="assets\images\blog\field-hockey-players-during-tournament-game.jpg" alt="blog_small_img3">
+                                    </a>
+                                </div>
+                                <div class="blog_content bg-white">
+                                    <div class="blog_text">
+                                        <h5 class="blog_title"><a href="blog-single.html">Why is a ticket to Lagos so expensive?</a></h5>
+                                        <ul class="list_none blog_meta">
+                                            <li><a href="#"><i class="ti-calendar"></i> April 14, 2018</a></li>
+                                            <li><a href="#"><i class="ti-comments"></i> 2 Comment</a></li>
+                                        </ul>
+                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                   </div>
                 </div>
-              </div>
-            </nav>
-          </div>
+            </div>
+          <div class="col-xl-3 mt-4 pt-2 mt-xl-0 pt-xl-0">
+              <div class="sidebar">
+                 
+                  <div class="widget">
+                      <h5 class="widget_title">Latest News</h5>
+                        <ul class="widget_recent_post">
+                            <li>
+                                <div class="post_footer">
+                                    <div class="post_img">
+                                        <a href="#"><img src="assets\images\blogs\women-making-preparations-wedding.jpg" alt="letest_post1"></a>
+                                    </div>
+                                    <div class="post_content">
+                                        <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                        <p class="small m-0">April 14, 2018</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                                    <div class="post_img">
+                                        <a href="#"><img src="assets\images\blogs\classmates-friends-bag-school-education.jpg" alt="letest_post2"></a>
+                                    </div>
+                                    <div class="post_content">
+                                        <p class="text-secondary">Sports</p>
+                                        <h6><a href="#">What trainning do Vollyboll player needs?</a></h6>
+                                        <p class="small m-0">Feb 22, 2023</p>
+                                    </div>
+                                </div>
+                            </li>
 
-          <div class="col-lg-6 vstack">
-            <div class="create-group-banner">
-              <img
-                src="./assets/images/field-hockey-players-during-tournament-game.jpg"
-                class="rounded-2 h-100 opacity-4 w-100"
-                alt=""
-              />
+                            <li>
+                                <div class="post_footer">
+                                    <div class="post_img">
+                                        <a href="#"><img src="assets\images\blogs\field-hockey-players-during-tournament-game.jpg" alt="letest_post3"></a>
+                                    </div>
+                                    <div class="post_content">
+                                        <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
+                                        <p class="small m-0">April 14, 2018</p>
+                                    </div>
+                                </div>
+                            </li>
+                      </ul>
+                    </div>
+                    <h5 class="widget_title">Categories</h5>
+                    <div class="widget">
+                        <div class="search_form">
+                            <form> 
+                                <input required="" class="form-control" placeholder="Search..." type="text">
+                                <button type="submit" title="Subscribe" class="btn icon_search" name="submit" value="Submit">
+                                    <i class="ion-ios-search-strong"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="create-group-name mt-3">
-              <p class="h5 text-dark fw-bold mb-0 opacity-75">Group Name</p>
-              <p class="small text-dark">1 member</p>
-            </div>
-            <div
-              class="create-group-details d-flex justify-content-between w-25"
-            >
-              <p class="h5 text-dark fw-bold opacity-75">Post</p>
-              <p class="h5 text-dark fw-bold opacity-75">About</p>
-              <p class="h5 text-dark fw-bold opacity-75">Members</p>
-            </div>
-            <p class="small text-dark">
-              You can use this once you create a group
-            </p>
-          </div>
         </div>
       </div>
     </main>
+
+
+
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
