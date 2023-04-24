@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>News | Hi2</title>
+    <title>Profile | Hi2</title>
 
     <meta charset="utf-8" />
     <meta
@@ -57,16 +57,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/news.css" />
   </head>
 
   <body>
-    <div class="preloader">
+<!--     <div class="preloader">
       <div class="preloader-item">
         <div class="spinner-grow text-success"></div>
       </div>
-    </div>
+    </div> -->
 
     <header class="navbar-light fixed-top header-static bg-mode">
       <nav
@@ -373,237 +373,136 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container-xl">
-        <div class="row g-4 mt-2">
-          <div class="col-xl-8">
-              <div class="single_post">
-                  <h4 class="blog_titles">News</h4>
-                  <p class="text-primary">News from all around the world</h4>
-                    <p class="h5">Breaking News</p>
-        
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-  </div>
-  
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-            <h3 class="ovelay-tag">Nature</h3>
-      <img src="assets/images/blogs/classmates-friends-bag-school-education.jpg" alt="" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>TOI Sports .6hrs ago</h3>
-        <p>Changing sports landsacpe in australia</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <h3 class="ovelay-tag">Sports</h3>
-      <img src="assets/images/blogs/waterfall-rocky-altai-mountains.jpg" alt="" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-      <div class="carousel-caption">
-        <h3>TOI Sports .6hrs ago</h3>
-        <p>Changing sports landsacpe in australia</p>
-      </div>
-      </div> 
-    </div>
-  </div>
-  
-</div>
-
-                </div>
-
+    <main class="group-main mb-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center mb-4 d-lg-none">
+              <button
+                class="border-0 bg-transparent"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="btn btn-primary"
+                  ><i class="fa-solid fa-sliders-h"></i
+                ></span>
+                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Settings</span>
+              </button>
             </div>
-          <div class="col-xl-4 g-4 mt-4">
-              <div class="sidebar">
-                 
-                  <div class="widget">
-                      <h5 class="widget_title">Trending</h5>
-                        <ul class="widget_recent_post pl-0">
-                            <li>
-                                <div class="post_footer">
-                                    <div class="post_img">
-                                        <a href="#"><img src="assets\images\blogs\women-making-preparations-wedding.jpg" alt="letest_post1"></a>
-                                    </div>
-                                    <div class="post_content">
-                                        <p class="text-secondary">Sports</p>
-                                        <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                        <p class="small m-0">April 14, 2018</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="post_footer">
-                                    <div class="post_img">
-                                        <a href="#"><img src="assets\images\blogs\classmates-friends-bag-school-education.jpg" alt="letest_post2"></a>
-                                    </div>
-                                    <div class="post_content">
-                                        <p class="text-secondary">Sports</p>
-                                        <h6><a href="#">What trainning do Vollyboll player needs?</a></h6>
-                                        <p class="small m-0">Feb 22, 2023</p>
-                                    </div>
-                                </div>
-                            </li>
 
-                            <li>
-                                <div class="post_footer">
-                                    <div class="post_img">
-                                        <a href="#"><img src="assets\images\blogs\field-hockey-players-during-tournament-game.jpg" alt="letest_post3"></a>
-                                    </div>
-                                    <div class="post_content">
-                                      <p class="text-secondary">Sports</p>
-                                        <h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                        <p class="small m-0">April 14, 2018</p>
-                                    </div>
+            <nav class="navbar navbar-light navbar-expand-lg mx-0">
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+              >
+                <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
+                  <div class="card shadow w-100 h-100vh bg-primary">
+                    <div class="card-body">
+                      <p class="h6 text-light fw-bold">Pages</p>
+<ul
+                        class="border-0 list-unstyled gap-2 nav-pills nav-pills-soft"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link d-flex mb-0 align-items-center fw-bold px-0"
+                            href="#"
+                          >
+                            <i class="bi bi-flag me-2 fs-6"></i
+                            ><span class="">Your Pages</span></a
+                          >
+
+                          <ul class="list-unstyled ps-0 text-white">
+                            <li data-bs-dismiss="offcanvas">
+                            <a href="#chat-2" class="nav-link text-start" id="chat-2-tab" role="tab" aria-selected="false" tabindex="-1">
+                              <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar me-2">
+                                  <img class="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="">
                                 </div>
-                            </li>
+                                <div class="flex-grow-1 d-block">
+                                  <h6 class="mb-0 mt-1">Art Design</h6>
+                                 
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                         <li data-bs-dismiss="offcanvas">
+                            <a href="#chat-2" class="nav-link text-start" id="chat-2-tab" role="tab" aria-selected="false" tabindex="-1">
+                              <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar me-2">
+                                  <img class="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="">
+                                </div>
+                                <div class="flex-grow-1 d-block">
+                                  <h6 class="mb-0 mt-1">GK Interiors</h6>
+                                  
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul
+                        class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0 border-bottom border-secondary"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="btn btn-gradient d-flex align-items-center justify-content-center mb-3"
+                            href="create-new-listing.html"
+                          >
+                            <span class="bi bi-plus-circle me-2 fs-5"></span>
+
+                            Create New Page
+                          </a>
+                        </li>
+                      </ul>
+
+                      <ul
+                        class="border-0 list-unstyled gap-2 nav-pills nav-pills-soft"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link d-flex mb-0 align-items-center fw-bold px-0"
+                            href="#"
+                          >
+                            <i class="bi bi-app-indicator me-2 fs-6"></i
+                            ><span class="">Category</span></a
+                          >
+
+                          <ul class="list-unstyled ps-0 text-white">
+                            <li class="my-2"> <i class="bi bi-app-indicator me-2 fs-6"></i
+                            >Discover</li>
+                            <li class="my-2"> <i class="bi bi-app-indicator me-2 fs-6"></i
+                            >Liked Pages</li>
+                            <li class="my-2"> <i class="bi bi-app-indicator me-2 fs-6"></i
+                            >Invitations</li>
+                          </ul>
+                        </li>
                       </ul>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-xl-12 col-lg-12">
-                               <div class="related_post mt-5">
-                  <div class="content_title">
-                      <h5>Latest News</h5>
-                    </div>
-                    <div class="row">
-
- <div class="wrapper">
-
-      <div class="">
-        <input
-          class="checkbox-all"
-          id="all"
-          type="radio"
-          name="checkbox"
-          checked=""
-        />
-        <label for="all">all</label>
-        <input class="checkbox-js" id="js" type="radio" name="checkbox" />
-        <label for="js">Politics</label>
-        <input class="checkbox-react" id="react" type="radio" name="checkbox" />
-        <label for="react">Sports</label>
-        <input class="checkbox-html" id="html" type="radio" name="checkbox" />
-        <label for="html">Education</label>
-        <input class="checkbox-vue" id="vue" type="radio" name="checkbox" />
-        <label for="vue">Grooming</label>
-        <input
-          class="checkbox-angular"
-          id="angular"
-          type="radio"
-          name="checkbox"
-        />
-        <label for="angular">Nature</label>
-        <div class="seperator"></div>
-        <!-- project cards-->
-        <div class="row cards">
-          <div class="project js col-lg-4">
-                  <div class="">
-                            <div class="blog_post blog_style2 box_shadow1 card">
-                                <div class="blog_img">
-                                    <a href="blog-single.html">
-                                        <img src="assets\images\blogs\field-hockey-players-during-tournament-game.jpg" alt="blog_small_img2">
-                                    </a>
-                                </div>
-                                <div class="blog_content bg-white">
-                                    <div class="blog_text">
-                                        <span>Politics</span>
-                                        <h5 class="blog_title"><a href="blog-single.html">What training do vollybol player needs?</a></h5>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="#"><i class="ti-calendar"></i> Feb 22, 2023</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-          </div>
-           <div class="project react  col-lg-4">
-                  <div class="">
-                            <div class="blog_post blog_style2 box_shadow1 card">
-                                <div class="blog_img">
-                                    <a href="blog-single.html">
-                                        <img src="assets\images\blogs\field-hockey-players-during-tournament-game.jpg" alt="blog_small_img2">
-                                    </a>
-                                </div>
-                                <div class="blog_content bg-white">
-                                    <div class="blog_text">
-                                        <span>Grooming</span>
-                                        <h5 class="blog_title"><a href="blog-single.html">What training do vollybol player needs?</a></h5>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="#"><i class="ti-calendar"></i> Feb 22, 2023</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-          </div>
-           <div class="project vue  col-lg-4">
-                  <div class="">
-                            <div class="blog_post blog_style2 box_shadow1 card">
-                                <div class="blog_img">
-                                    <a href="blog-single.html">
-                                        <img src="assets\images\blogs\field-hockey-players-during-tournament-game.jpg" alt="blog_small_img2">
-                                    </a>
-                                </div>
-                                <div class="blog_content bg-white">
-                                    <div class="blog_text">
-                                        <span>Sorts</span>
-                                        <h5 class="blog_title"><a href="blog-single.html">What training do vollybol player needs?</a></h5>
-                                        <ul class="list_none blog_meta">
-                                            <li><a href="#"><i class="ti-calendar"></i> Feb 22, 2023</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--  <div class="wrapper">
-
-      <div class="container">
-        <input
-          class="checkbox-all"
-          id="all"
-          type="radio"
-          name="checkbox"
-          checked=""
-        />
-        <label for="all">all</label>
-        <input class="checkbox-politics" id="politics" type="radio" name="checkbox" />
-        <label for="politics">Politics</label>
-        <input class="checkbox-sports" id="sports" type="radio" name="checkbox" />
-        <label for="sports">Sports</label>
-        <input class="checkbox-education" id="education" type="radio" name="checkbox" />
-        <label for="education">Education</label>
-        <input class="checkbox-grooming" id="grooming" type="radio" name="checkbox" />
-        <label for="grooming">Grooming</label>
-        <input class="checkbox-nature" id="nature" type="radio" name="checkbox" />
-        <label for="nature">Nature</label>
-        <div class="seperator"></div>-->
-        <!-- project cards-->
-      
-      </div>
-    </div> 
-
-
-
                   </div>
                 </div>
-            </div>
+              </div>
+            </nav>
+          </div>
 
+          <div class="col-lg-6 vstack gap-4">
+            <div class="tab-content py-0 mb-0">
+              <div class="tab-pane fade active show" id="group-discover-tab-2">
+                <div class="container-fluid">
+                  <div class="row">
+                    <h2 class="h5 text-dark mt-2">Pages you Manage</h2>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-
-
-
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
