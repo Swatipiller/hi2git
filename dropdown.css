@@ -1,0 +1,101 @@
+/*.dropdown {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    line-height: initial;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 15px 15px 10px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 340px;
+    z-index: 9;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s linear 0s;
+}*/
+
+.dropdown-animation.dropdown-menu
+{
+    padding: 15px 15px 10px;
+}
+
+.dropdown-animation.dropdown-menu::before
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -10px;
+    right: 20px;
+}
+
+.dropdown-animation.dropdown-menu.show
+{
+        margin-top: 10px;
+}
+.dropdown-animation.dropdown-menu > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 31.6%;
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+.dropdown-animation.dropdown-menu > li:nth-child(3n) {
+    margin-right: 0;
+}
+.dropdown-animation.dropdown-menu > li:last-child{
+	margin-bottom: 0
+}
+.dropdown-animation.dropdown-menu > li > a {
+    border-radius: 5px;
+    color: #1f273f;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 6px;
+    text-align: center;
+    width: 100%;
+}
+.dropdown-animation.dropdown-menu > li > a:hover{
+	background: #f3f3f3;
+}
+.dropdown-animation.dropdown-menu > li > a.logout {
+    background: #ff7373;
+    border-color: #ff2727;
+    color: #fff;
+}
+.dropdown-animation.dropdown-menu > li > a i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdown-animation.dropdown-menu > li > a i > img{
+    width: 30px;
+}
+.dropdown-animation.dropdown-menu > li.logout {
+    vertical-align: middle;
+    width: 100%;
+}
+.dropdown-animation.dropdown-menu > li.logout > a {
+    background: #ede5ff none repeat scroll 0 0;
+    display: inline-block;
+    padding: 7px 0;
+}
+.dropdown-animation.dropdown-menu > li.logout > a i {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.dropdown-animation.dropdown-menu > li.logout > a:hover{
+	background: #ff7373;
+    color: #fff;
+}
+.dropdown-animation.dropdown-menu > li.logout > a:hover i{
+	color: #fff;
+}
