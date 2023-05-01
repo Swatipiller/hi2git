@@ -57,8 +57,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group-create.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/creatw-new-listing.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/create-story.css" />
+        <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
   </head>
 
@@ -330,6 +336,8 @@
       </nav>
     </header>
 
+
+
     <main class="group-main mb-3">
       <div class="container-fluid">
         <div class="row">
@@ -349,80 +357,129 @@
               </button>
             </div>
 
-            <nav class="navbar navbar-light navbar-expand-lg mx-0">
+            <nav class="navbar navbar-light navbar-expand-lg mx-0  custom-scrollbar" style="max-height: 300px">
               <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasNavbar"
               >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
-                  <div class="card shadow w-100 h-100vh bg-primary">
+                <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
+                  <div class="card shadow w-100 h-100vh bg-primary custom-scrollbar" style="max-height: 130vh">
                     <div class="card-body">
-                      <nav
-                        style="--bs-breadcrumb-divider: '<'"
-                        aria-label="breadcrumb"
-                      >
-                        <ol class="breadcrumb border-bottom">
-                          <li class="breadcrumb-item fs-5 text-light fw-bold">
-                            <a href="./group.html" class="text-light">Groups</a>
-                          </li>
-                          <li
-                            class="breadcrumb-item active fs-5 text-success fw-bold"
-                            aria-current="page"
-                          >
-                            Create Group
-                          </li>
-                        </ol>
-                      </nav>
-                      <p class="h6 text-light fw-bold py-3">Create Group</p>
-                      <div class="create-group-form">
-                        <form>
-                          <div class="mb-3">
-                            <label
-                              for="groupname"
-                              class="form-label visually-hidden"
-                              >Email address</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="groupname"
-                              placeholder="Group Name"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <div class="">
-                              <textarea
-                                class="form-control"
-                                placeholder="Description"
-                                rows="5"
-                              ></textarea>
-                              <label
-                                for="floatingTextarea"
-                                class="visually-hidden"
-                                >Comments</label
-                              >
+                     <div class="d-flex align-items-center justify-content-between mb-3">
+                     <p class="h5  fw-bold text-light mb-0">Your Story</p>
+                     <span class="bi bi-gear text-white"></span>
+                     </div>
+                     <div class="d-flex mb-3 align-items-center border-bottom pb-4">
+                              <div class="avatar me-2">
+                                <a href="#!">
+                                  <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="">
+                                </a>
+                              </div>
+
+                              <div>
+                                <div class="nav">
+                                  <h6 class="nav-item card-title mb-0">
+                                    <a href="#" class="text-light"> Rosy </a>
+                                  </h6>
+                                </div>
+                              </div>
                             </div>
+                    
+  <form>
+                              
+                            <div class="row align-items-center">
+                            <div class="col-12">
+                              <div class="mb-2">
+                                <textarea>Start typing...</textarea>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="mb-2">
+                                <select class="form-control">
+                                  <option>Sample</option>
+                                </select>
+                              </div>
+                            </div>
+                             <div class="col-12">
+                              <div class="mb-2 white-box px-2 py-2">
+                                <h3 class="h6 fw-bold text-dark mb-2">Background</h3>
+                                  <div class="color-grid d-flex">
+                                    <div class="single-color color-1">
+                                    </div>
+                                    <div class="single-color color-2">
+                                    </div>
+                                    <div class="single-color color-3">
+                                    </div>
+                                    <div class="single-color color-4">
+                                    </div>
+                                    <div class="single-color color-5">
+                                    </div>
+                                    <div class="single-color color-6">
+                                    </div>
+                                    <div class="single-color color-7">
+                                    </div>
+                                    <div class="single-color color-3">
+                                    </div>
+                                    <div class="single-color color-4">
+                                    </div>
+                                    <div class="single-color color-5">
+                                    </div>
+                                    <div class="single-color color-2">
+                                    </div>
+                                    <div class="single-color color-3">
+                                    </div>
+                                  </div>
+                              </div>
+                             </div>
+                             <div class="col-12">
+                              <div class="mb-2 white-box px-2 py-2">
+                                <h3 class="h6 fw-bold text-dark mb-2">Frame</h3>
+                                  <div class="color-grid d-flex">
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-1.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-2.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-3.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-4.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-5.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-6.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-7.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-8.png"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-9.png"/>
+                                    </div>
+                                  </div>
+                              </div>
+                             </div>
+                             <div class="col-lg-12 mt-2 mb-4 mx-2">
+                                <div class="btn btn-light btn-transparent width-equal-btn fw-semibold"data-bs-toggle="modal" data-bs-target="#modalCreateFeed" id="modalLabelCreateFeed">Discard</div>
+                                <div class="btn btn-gradient fw-semibold width-equal-btn">Add to Story</div>
+                             </div>
+
+          
+                            </div>
+
+                            <div class="mb-3 text-center">
+                               <button type="submit" class="btn btn-gradient px-5 w-100">
+                                 Post
+                               </button>
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="groupformFile"
-                              class="form-label text-light"
-                              >Upload group image</label
-                            >
-                            <input
-                              class="form-control"
-                              type="file"
-                              id="groupformFile"
-                            />
-                          </div>
-                          <div class="mb-3 text-center">
-                            <button type="submit" class="btn btn-gradient px-5">
-                              Submit
-                            </button>
-                          </div>
-                        </form>
-                      </div>
+                            </form>
                     </div>
                   </div>
                 </div>
@@ -430,30 +487,128 @@
             </nav>
           </div>
 
-          <div class="col-lg-6 vstack">
-            <div class="create-group-banner">
-              <img
-                src="./assets/images/field-hockey-players-during-tournament-game.jpg"
-                class="rounded-2 h-100 opacity-4 w-100"
-                alt=""
-              />
+<div class="col-lg-9 vstack gap-4">
+            <div class="mb-0">
+              <div class="">
+                <div class="containet-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      
+                      <div class="card shadow preview-box">
+                      <p class="h5 text-light px-3 pt-3 fw-semibold">Preview</p>
+                        <div class="card-body mb-5 mt-2 pb-3">
+                           <div class="row justify-content-center align-items-center">
+                              <div class="col-lg-3">
+                                <div class="create-story d-flex align-items-center">
+                                 <div>
+                                  <textarea>Start Typing...</textarea>
+                                 </div>
+                                </div>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="group-discover-tab-2" role="tabpanel">
+                <div class="containet-fluid">
+                  <div class="row">
+                    <p class="h5 text-dark fw-semibold mb-0">All Groups</p>
+                    <p class="samll text-dark">
+                      Groups you might be interested in
+                    </p>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/gaming.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Gaming
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/travel-concept-with-baggage.png" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Travel
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/gk.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">GK</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/kids.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Kids fun
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/art.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">Art</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/design.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Design
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="create-group-name mt-3">
-              <p class="h5 text-dark fw-bold mb-0 opacity-75">Group Name</p>
-              <p class="small text-dark">1 member</p>
-            </div>
-            <div
-              class="create-group-details d-flex justify-content-between w-25"
-            >
-              <p class="h5 text-dark fw-bold opacity-75">Post</p>
-              <p class="h5 text-dark fw-bold opacity-75">About</p>
-              <p class="h5 text-dark fw-bold opacity-75">Members</p>
-            </div>
-            <p class="small text-dark">
-              You can use this once you create a group
-            </p>
           </div>
-        </div>
+
+
+
       </div>
     </main>
 
@@ -465,5 +620,47 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+    <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
+
+
+                           <div
+      class="modal fade"
+      id="modalCreateFeed"
+      tabindex="-1"
+      aria-labelledby="modalLabelCreateFeed"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-info border-bottom-0 py-1">
+            <h5 class="modal-title" id="modalLabelCreateFeed">Discard Story</h5>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              class="btn p-0 text-black"
+            >
+              <i class="bi bi-x-circle fs-3"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+               <p class="mb-0">Are you sure you want to discard settings?</p>
+          </div>
+
+          <div class="modal-footer row border-0">
+           
+            <div class="col-lg-12">
+              <div class="text-right" style="text-align: right;">
+              <button type="button" style="border: 1px solid #131c61;height: 38px;" class="btn">Continue Editing</button>
+              <button type="button" class="btn btn-gradient">Discard</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Profile | Hi2</title>
+    <title>Radio Details | Hi2</title>
 
     <meta charset="utf-8" />
     <meta
@@ -57,9 +57,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group-create.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/homepage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/event.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/event-detail.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/radio-details.css" />
   </head>
 
   <body>
@@ -330,129 +332,173 @@
       </nav>
     </header>
 
-    <main class="group-main mb-3">
+    <main class="group-main mb-3 px-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3">
-            <div class="d-flex align-items-center mb-4 d-lg-none">
-              <button
-                class="border-0 bg-transparent"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-              >
-                <span class="btn btn-primary"
-                  ><i class="fa-solid fa-sliders-h"></i
-                ></span>
-                <span class="h6 mb-0 fw-bold d-lg-none ms-2">Settings</span>
-              </button>
-            </div>
-
-            <nav class="navbar navbar-light navbar-expand-lg mx-0">
-              <div
-                class="offcanvas offcanvas-start"
-                tabindex="-1"
-                id="offcanvasNavbar"
-              >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
-                  <div class="card shadow w-100 h-100vh bg-primary">
-                    <div class="card-body">
-                      <nav
-                        style="--bs-breadcrumb-divider: '<'"
-                        aria-label="breadcrumb"
-                      >
-                        <ol class="breadcrumb border-bottom">
-                          <li class="breadcrumb-item fs-5 text-light fw-bold">
-                            <a href="./group.html" class="text-light">Groups</a>
+          <div class="col-lg-12">
+             <nav class=""                         style="--bs-breadcrumb-divider: '<'"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-1">
+                          <li class="breadcrumb-item h5 text-dark fw-bold">
+                            <a href="/event.html" class="text-dark">Back</a>
                           </li>
                           <li
-                            class="breadcrumb-item active fs-5 text-success fw-bold"
+                            class="breadcrumb-item h5 text-dark fw-bold active"
                             aria-current="page"
                           >
-                            Create Group
+                            Red FM
                           </li>
                         </ol>
                       </nav>
-                      <p class="h6 text-light fw-bold py-3">Create Group</p>
-                      <div class="create-group-form">
-                        <form>
-                          <div class="mb-3">
-                            <label
-                              for="groupname"
-                              class="form-label visually-hidden"
-                              >Email address</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="groupname"
-                              placeholder="Group Name"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <div class="">
-                              <textarea
-                                class="form-control"
-                                placeholder="Description"
-                                rows="5"
-                              ></textarea>
-                              <label
-                                for="floatingTextarea"
-                                class="visually-hidden"
-                                >Comments</label
-                              >
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label
-                              for="groupformFile"
-                              class="form-label text-light"
-                              >Upload group image</label
-                            >
-                            <input
-                              class="form-control"
-                              type="file"
-                              id="groupformFile"
-                            />
-                          </div>
-                          <div class="mb-3 text-center">
-                            <button type="submit" class="btn btn-gradient px-5">
-                              Submit
-                            </button>
-                          </div>
-                        </form>
+          </div>
+        </div>
+        
+
+      <div class="row">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img src="assets/images/radio/NoPath_yk@2x.png" alt="" style="width: 130px">
+              <div class="future-event-para mb-2 mx-4">
+                <p class="imgname fw-bold h4 mb-2 text-dark my-2">
+                  RED FM93.5
+                <p class="text-dark small fw-bold mb-0 my-1">
+                  By Becca Banyard 
+                </p>
+                </p>
+                <p class="imgsubheading mb-0 small fw-bold text-dark my-1">
+                  5.0
+                </p>
+              </div>
+            </div>
+            <div class="card border-corner shadow mb-3 mt-4"  style="background-color: #f1eaea">
+                  <div class="card-body">
+                    <h3 class="h6 fw-bold text-dark mb-3">Popular Now</h3>
+                    <div class="d-flex align-items-center mb-3" style="justify-content: space-between;">
+                      <div class="d-flex align-items-center">
+                      <img src="./assets/images/avatar/10.jpg" alt="" class="squre-image">
+                      <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          <span class="bi bi-play"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="justify-content: space-between;">
+                      <div class="d-flex align-items-center">
+                      <img src="./assets/images/avatar/09.jpg" alt="" class="squre-image">
+                      <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          <span class="bi bi-play"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="justify-content: space-between;">
+                      <div class="d-flex align-items-center">
+                      <img src="./assets/images/avatar/08.jpg" alt="" class="squre-image">
+                      <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          <span class="bi bi-play"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="justify-content: space-between;">
+                      <div class="d-flex align-items-center">
+                      <img src="./assets/images/avatar/06.jpg" alt="" class="squre-image">
+                      <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          <span class="bi bi-play"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3" style="justify-content: space-between;">
+                      <div class="d-flex align-items-center">
+                      <img src="./assets/images/avatar/05.jpg" alt="" class="squre-image">
+                      <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-primary">
+                          <span class="bi bi-play"></span>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex align-items-center mb-3 light-grrn-gradient">
+                <img src="assets/images/radio/n_8433.png" class="border-corner" alt="" style="width: 160px;height: 110px;border-radius: 8px">
+              <div class="future-event-para mb-2 mx-4 text-center">
+                <p class="imgname fw-bold h6 small mb-2 text-dark my-2">
+                  Imagine - John Lennon
+                <p class="text-dark small fw-bold mb-0 my-1 h6 mt-3">
+                  Red FM
+                </p>
+                <p class="imgsubheading mb-0 small fw-bold text-dark my-1">
+                  93.5
+                </p>
               </div>
-            </nav>
-          </div>
+            </div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="h6 fw-bold text-dark mb-0">Release Now</p>
 
-          <div class="col-lg-6 vstack">
-            <div class="create-group-banner">
-              <img
-                src="./assets/images/field-hockey-players-during-tournament-game.jpg"
-                class="rounded-2 h-100 opacity-4 w-100"
-                alt=""
-              />
+              <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_9_cwb@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_11_cwg@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_10_cwe@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
+                            <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_9_cwb@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_11_cwg@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card shadow my-0 mt-3">
+                  <a href="#">
+                    <img src="./assets/images/radio/NoPath_-_Copy_10_cwe@2x.png" class="mb-0 h-150px w-100 rounded-2" alt="">
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="create-group-name mt-3">
-              <p class="h5 text-dark fw-bold mb-0 opacity-75">Group Name</p>
-              <p class="small text-dark">1 member</p>
-            </div>
-            <div
-              class="create-group-details d-flex justify-content-between w-25"
-            >
-              <p class="h5 text-dark fw-bold opacity-75">Post</p>
-              <p class="h5 text-dark fw-bold opacity-75">About</p>
-              <p class="h5 text-dark fw-bold opacity-75">Members</p>
-            </div>
-            <p class="small text-dark">
-              You can use this once you create a group
-            </p>
           </div>
+      </div>    
+
+
         </div>
       </div>
     </main>

@@ -57,8 +57,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/notifications.css" />
   </head>
 
   <body>
@@ -164,7 +165,7 @@
                     >
                   </li>
 
-<li>
+                 <li>
                     <a class="dropdown-item d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseOne" href="#"
                       >
                       <span>
@@ -176,7 +177,7 @@
                       </a
                     >
                     <ul class="sub-cus-drop-memu-two collapse"  id="collapseOne" data-bs-parent="#accordion">
-                      <li>
+<li>
                            <a class="dropdown-item" href="account-settings.html"
                       ><i class="bi bi-gear fa-fw me-2 text-success"></i>Account Settings</a>
                       </li>
@@ -332,7 +333,333 @@
     <main class="group-main mb-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3">
+       
+
+          <div class="col-lg-6 vstack gap-4">
+            <div class="tab-content py-0 mb-0">
+              <div class="tab-pane show active fade" id="group-feed-tab-1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mt-2">
+                      <p class="h5 mb-2 mt-3 text-dark fw-bold">Notification Settings</p>
+                      <p class="h6 text-secondary fw-normal">Hi2 will send you all the important notifications related to your account.</p>
+                      <p class="h5 mb-2 mt-3 text-primary fw-bold">What Notificatoins you Recieve</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                    <div class="card shadow bg-info mt-3 p-3 border-corner overflow-hidden">
+                    <div class="">
+                        <div class="">
+                          <div class="accordion collapseble-accordion" id="accordionExample">
+  <div class="accordion-item card-body border-corner">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <div class="d-flex align-items-center">
+          <div class="">
+            <span class="bi bi-chat-left text-dark fs-3"></span>
+          </div>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Comments</p>
+            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
+          </div>
+       </div>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body px-0 pb-0">
+        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
+        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox" checked="">
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-envelope text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+        <div class="d-flex align-items-center"  style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item card-body border-corner border-0">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed  px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <div class="d-flex align-items-center">
+          <div class="">
+            <span class="bi bi-people text-dark fs-3"></span>
+          </div>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">People You May Know</p>
+            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
+          </div>
+       </div>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body  px-0 pb-0">
+        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
+        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox" checked="">
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-envelope text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+        <div class="d-flex align-items-center"  style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item card-body border-corner border-0">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <div class="d-flex align-items-center">
+          <div class="">
+            <span class="bi bi-people text-dark fs-3"></span>
+          </div>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Groups</p>
+            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
+          </div>
+       </div>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body  px-0 pb-0">
+        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
+        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox" checked="">
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-envelope text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+        <div class="d-flex align-items-center"  style="justify-content: space-between">
+          <div class="d-flex align-items-center">
+            <span class="bi bi-chat-left text-dark fs-6"></span>
+          <div class="px-3">
+            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
+          </div>
+          </div>
+          <div class="px-3">
+            <input type="checkbox">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="group-discover-tab-2">
+                <div class="containet-fluid">
+                  <div class="row">
+                    <p class="h5 text-dark fw-semibold mb-0">All Groups</p>
+                    <p class="samll text-dark">
+                      Groups you might be interested in
+                    </p>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/gaming.jpg"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Gaming
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/travel-concept-with-baggage.png"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Travel
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/gk.jpg"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">GK</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/kids.jpg"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Kids fun
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/art.jpg"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">Art</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img
+                          src="./assets/images/design.jpg"
+                          class="mb-3 h-150px rounded-2"
+                          alt=""
+                        />
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Design
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-info py-4 fs-5 fw-semibold"
+                        >
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+             <div class="col-lg-3">
             <div class="d-flex align-items-center mb-4 d-lg-none">
               <button
                 class="border-0 bg-transparent"
@@ -354,230 +681,68 @@
                 tabindex="-1"
                 id="offcanvasNavbar"
               >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
+                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
                   <div class="card shadow w-100 h-100vh bg-primary">
                     <div class="card-body">
-                      <p class="h6 text-light fw-bold">Marketplace</p>
+                      <p class="h6 text-light fw-bold p-3 border-bottom">
+                        Settings
+                      </p>
 
                       <ul
-                        class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0 border-bottom border-secondary"
+                        class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0"
                       >
                         <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <form
-                            class="rounded position-relative col-12 col-lg-auto my-2"
-                          >
-                            <input
-                              class="form-control ps-5 bg-info rounded-pill"
-                              type="search"
-                              placeholder="Search..."
-                              aria-label="Search"
-                            />
-                            <button
-                              class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
-                              type="submit"
-                            >
-                              <i class="bi bi-search fs-5"> </i>
-                            </button>
-                          </form>
-                        </li>
-                        <li class="nav-item">
                           <a
-                            class="btn btn-gradient d-flex align-items-center justify-content-center mb-3"
-                            href="create-new-listing.html"
+                            class="nav-link d-flex mb-0"
+                            href="#group-feed-tab-1"
+                            data-bs-toggle="tab"
                           >
-                            <span class="bi bi-plus-circle me-2 fs-5"></span>
-
-                            Create New Listing
-                          </a>
+                            <i class="bi bi-person-gear me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Account settings</span></a
+                          >
                         </li>
-                      </ul>
-
-                      <ul
-                        class="border-0 list-unstyled border-bottom border-secondary gap-2 nav-pills nav-pills-soft"
-                      >
-                        <li class="nav-item">
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
                           <a
-                            class="nav-link d-flex mb-0 align-items-center fw-bold px-0"
-                            href="#"
+                            class="nav-link d-flex mb-0"
+                            href="privacy-checkup.html"
                           >
-                            <i class="bi bi-filter-left me-2 fs-4"></i
-                            ><span class="">Filters</span></a
+                            <i class="bi bi-shield-shaded me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Privacy Checkup </span></a
                           >
-                          <form>
-                            <div class="row">
-                              <div class="col-12">
-                               <label class="form-label text-white">Price</label>
-                              </div>
-                            </div>
-                            <div class="row align-items-center">
-                              <div class="col-5">
-                                <div class="mb-0">
-                                  <input type="text" class="form-control text-center bg-transparent" placeholder="Min">
-                                </div>
-                              </div>
-                              <div class="col-2">
-                                <div class="mb-0 text-center">
-                                <span class="text-success">To</span>
-                              </div>
-                              </div>
-                              <div class="col-5">
-                                <div class="mb-0">
-                                  <input type="text" class="form-control text-center bg-transparent" placeholder="Max">
-                                </div>
-                              </div>
-                              </div>
-                              <div class="col-12 text-right" style="text-align: right;">
-                               <button class="btn text-white bg-transparent">Cancel</button>
-                               <button class="btn text-success  bg-transparent" style="padding-right: 0">Save</button>
-                              </div>
-                              
-                            <div class="row align-items-center">
-                            <div class="col-12">
-                               <label class="form-label text-white">Location</label>
-                            </div>
-                              <div class="col-12">
-                                <div class="mb-3">
-                                  <input type="text" class="form-control bg-transparent" placeholder="Choose Location">
-                                </div>
-                              </div>
-                            </div>
-
-                            </form>
                         </li>
-                      </ul>
-                      <ul
-                        class="border-0 list-unstyled gap-2 nav-pills nav-pills-soft"
-                      >
-                        <li class="nav-item">
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
                           <a
-                            class="nav-link d-flex mb-0 align-items-center fw-bold px-0"
-                            href="#"
+                            class="nav-link d-flex mb-0"
+                            href="public-posts.html"
                           >
-                            <i class="bi bi-app-indicator me-2 fs-6"></i
-                            ><span class="">Category</span></a
+                            <i class="bi bi-globe-asia-australia me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Public posts </span></a
                           >
-
-                          <ul class="list-unstyled ps-4 text-white">
-                            <li class="my-2">Vehicle</li>
-                            <li class="my-2">Property Rental</li>
-                            <li class="my-2">Apparel</li>
-                            <li class="my-2">Electronics</li>
-                            <li class="my-2">Entertainment</li>
-                          </ul>
+                        </li>                 
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                          <a
+                            class="nav-link d-flex mb-0"
+                            href="blocking.html"
+                          >
+                            <i class="bi bi-slash-circle me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Blocking </span></a
+                          >
                         </li>
-                      </ul>
+                        <li class="nav-item" data-bs-dismiss="offcanvas">
+                          <a
+                            class="nav-link d-flex mb-0 active"
+                            href="notifications.html"
+                          >
+                            <i class="bi bi-bell me-2 h-20px fs-5 fa-fw"></i
+                            ><span class="">Notifications </span></a
+                          >
+                        </li>
+                        </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </nav>
-          </div>
-
-          <div class="col-lg-6 vstack gap-4">
-            <div class="tab-content py-0 mb-0">
-              <div class="tab-pane fade active show" id="group-discover-tab-2">
-                <div class="container-fluid">
-                  <div class="row">
-                    <h2 class="h5 text-dark mt-2">Today's pick</h2>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-1.jpg"
-                          class="mb-3 h-200px rounded-2"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">Book</p>
-                          <p class="text-secondary">&euro; 20</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-2.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5"><a href="marketplace-details.html">Laptop</a></p>
-                          <p class="text-secondary">&euro; 100</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-3.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">Car</p>
-                          <p class="text-secondary">&euro; 9,200</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-4.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">
-                            Flower Plant
-                          </p>
-                          <p class="text-secondary">&euro; 20</p>
-                        </div>
-                      </div>
-                    </div>
-                                        <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-2.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">Laptop</p>
-                          <p class="text-secondary">&euro; 100</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-3.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">Car</p>
-                          <p class="text-secondary">&euro; 9,200</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/marketplace-4.jpg"
-                          class="mb-3 h-200px rounded-2 object-fit-cover"
-                          alt=""
-                        />
-                        <div class="card-body py-0">
-                          <p class="fw-bold mb-0 text-black fs-5">
-                            Flower Plant
-                          </p>
-                          <p class="text-secondary">&euro; 20</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
