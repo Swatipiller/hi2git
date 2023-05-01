@@ -18071,7 +18071,7 @@ span.flatpickr-weekday,
 
 .stories .story > .item-link > .item-preview img {
   border-radius: 50%;
-  border: 2px solid #fff;
+ /* border: 2px solid #fff;*/
 }
 
 .stories .story.seen {

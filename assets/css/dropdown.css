@@ -17,12 +17,12 @@
 	transition: all 0.2s linear 0s;
 }*/
 
-.dropdown-menu
+.cus-drop-memu.dropdown-menu
 {
     padding: 15px 15px 10px;
 }
 
-.dropdown-menu::before
+.cus-drop-memu.dropdown-menu::before
 {
     position: absolute;
     content: "";
@@ -35,24 +35,54 @@
     right: 20px;
 }
 
-.dropdown-menu.show
+.cus-drop-memu.dropdown-menu.show
 {
         margin-top: 10px;
 }
-.dropdown-menu > li {
+
+
+.cus-drop-memu-two.dropdown-menu
+{
+    padding: 15px 15px 10px;
+}
+
+.cus-drop-memu-two.dropdown-menu::before
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -10px;
+    right: 20px;
+}
+
+.cus-drop-memu-two.dropdown-menu.show
+{
+        margin-top: 10px;
+}
+
+.cus-drop-memu-two.dropdown-menu > li > a {
+    color: #1f273f;
+    font-size: 14px;
+}
+
+.cus-drop-memu.dropdown-menu > li {
     display: inline-block;
     vertical-align: top;
     width: 31.6%;
     margin-right: 4px;
     margin-bottom: 8px;
 }
-.dropdown-menu > li:nth-child(3n) {
+.cus-drop-memu.dropdown-menu > li:nth-child(3n) {
     margin-right: 0;
 }
-.dropdown-menu > li:last-child{
+.cus-drop-memu.dropdown-menu > li:last-child{
 	margin-bottom: 0
 }
-.dropdown-menu > li > a {
+.cus-drop-memu.dropdown-menu > li > a {
     border-radius: 5px;
     color: #1f273f;
     display: inline-block;
@@ -61,41 +91,59 @@
     text-align: center;
     width: 100%;
 }
-.dropdown-menu > li > a:hover{
+.cus-drop-memu.dropdown-menu > li > a:hover{
 	background: #f3f3f3;
 }
-.dropdown-menu > li > a.logout {
+.cus-drop-memu.dropdown-menu > li > a.logout {
     background: #ff7373;
     border-color: #ff2727;
     color: #fff;
 }
-.dropdown-menu > li > a i {
+.cus-drop-memu.dropdown-menu > li > a i {
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.dropdown-menu > li > a i > img{
+.cus-drop-memu.dropdown-menu > li > a i > img{
     width: 30px;
 }
-.dropdown-menu > li.logout {
+.cus-drop-memu.dropdown-menu > li.logout {
     vertical-align: middle;
     width: 100%;
 }
-.dropdown-menu > li.logout > a {
+.cus-drop-memu.dropdown-menu > li.logout > a {
     background: #ede5ff none repeat scroll 0 0;
     display: inline-block;
     padding: 7px 0;
 }
-.dropdown-menu > li.logout > a i {
+.cus-drop-memu.dropdown-menu > li.logout > a i {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
 }
-.dropdown-menu > li.logout > a:hover{
+.cus-drop-memu.dropdown-menu > li.logout > a:hover{
 	background: #ff7373;
     color: #fff;
 }
-.dropdown-menu > li.logout > a:hover i{
+.cus-drop-memu.dropdown-menu > li.logout > a:hover i{
 	color: #fff;
+}
+
+
+
+
+.sub-cus-drop-memu-two > li > a {
+    color: #1f273f;
+    font-size: 14px;
+}
+
+.sub-cus-drop-memu-two
+{
+    padding-left: 20px;
+}
+
+.sub-cus-drop-memu-two > li
+{
+    list-style: none;
 }

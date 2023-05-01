@@ -1,0 +1,95 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+.collapseble-accordion .accordion-item
+{
+	background: #fff;
+	border:none;
+	margin-bottom: 10px;
+}
+
+.collapseble-accordion .accordion-button:not(.collapsed)
+{
+	background: #fff;
+}
+
+.accordion-item
+{
+border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 32px;
+  height: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid #55db4e;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #55db4e;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(100%);
+  background: #00ed64;
+  right: 10px;
+  left: unset;
+}
+
+input[type="checkbox"]:checked {
+  background: #fff;
+  opacity: 0.4;
+}
+
+
+.accordion-button::after
+{
+	font-family: FontAwesome;
+    content: "\f0d7";
+    width: 0;
+    position: absolute;
+    right: 17px;
+    top:10px;
+    font-size: 23px;
+    color: #5e5e5e;
+}
+
+.accordion-button:not(.collapsed)::after
+{
+		font-family: FontAwesome;
+    content: "\f0d7";
+    width: 0;
+    position: absolute;
+    right: 5px;
+    top:8px;
+    font-size: 23px;
+    color: #5e5e5e;
+}
+
+.accordion-collapse.show
+{
+	border:none !important;
+}
+
+.accordion
+{
+	border:none !important;
+}
+
+.accordion{
+--bs-accordion-border-color: none;
+}
+

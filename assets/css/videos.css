@@ -1,0 +1,62 @@
+.video-story
+{
+	position: relative;
+}
+
+.video-story span {
+    position: absolute;
+    background: #d4373d;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 4px;
+    padding: 0px 4px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.video-story:after {
+    border: 2px solid #cf1f25
+    }
+
+    .video-overlay-text span.red-badge {
+    background: #d4373d;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+    .video-overlay-text span.grey-badge {
+    background: #a1a1a1;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.video-thumbnail
+{
+	position: relative;
+}
+
+.video-overlay-text {
+    position: absolute;
+    top: 5px;
+    left: 10px
+}

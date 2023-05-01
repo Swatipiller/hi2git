@@ -30,3 +30,13 @@
   border-radius: 50%;
   height: 90px;
 }
+
+
+.dark-blue-btn
+{
+      background: #131c61;
+    border: 1px solid #131c61;
+    font-size: 11px;
+    padding: 5px 13px;
+    line-height: normal;
+}
