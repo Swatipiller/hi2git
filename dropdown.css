@@ -129,3 +129,21 @@
 .cus-drop-memu.dropdown-menu > li.logout > a:hover i{
 	color: #fff;
 }
+
+
+
+
+.sub-cus-drop-memu-two > li > a {
+    color: #1f273f;
+    font-size: 14px;
+}
+
+.sub-cus-drop-memu-two
+{
+    padding-left: 20px;
+}
+
+.sub-cus-drop-memu-two > li
+{
+    list-style: none;
+}

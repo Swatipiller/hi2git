@@ -785,3 +785,27 @@ h4.blog_titles {
     position: relative;
     margin-bottom: 10px;
 }
+
+.widget_recent_posts li
+{
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+.post_short
+{
+	position: relative;
+	padding-left: 10px;
+}
+
+.post_short:before
+{
+	position: absolute;
+	content: "";
+	left: 0;
+    background: #a7a7a7;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    top: 8px;
+}
