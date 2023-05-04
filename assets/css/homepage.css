@@ -16,3 +16,9 @@
   border-radius: 50%;
   height: 90px;
 }
+
+.fixed-div
+{
+  position: fixed;
+  width: 313px;
+}
