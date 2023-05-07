@@ -31,3 +31,60 @@
   border-radius: 50%;
   height: 90px;
 }
+
+/*like button css*/
+.like-icon {
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.like-icon.liked {
+  color: blue;
+}
+
+
+
+
+#like-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#like-button i {
+  color: blue;
+  transition: color 0.3s;
+}
+/* Add any desired styles to the like count element */
+#likeCount {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+#popupContainer {
+  position: relative;
+}
+
+#popup {
+position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    background-color: #fff;
+    bottom: 30px;
+    border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.reaction {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.reaction-popup
+{
+  padding: 10px;
+      border-radius: 8px;
+}

@@ -40,3 +40,13 @@
     padding: 5px 13px;
     line-height: normal;
 }
+
+.form-control
+{
+  color: #fff !important;
+}
+
+.form-control:placeholder
+{
+  color: #fff !important;
+}

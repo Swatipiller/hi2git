@@ -7,5 +7,71 @@
 .light-grrn-gradient {
     background: #cef5a2;
     border-radius: 8px;
-    padding: 30px 30px
+    padding: 20px 20px
+}
+
+.play-btn
+{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding: 0;
+    font-size: 21px;
+    line-height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+}
+
+.border-btn 
+{
+    width: 37px;
+    height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    border:1px solid #131c61;
+    padding: 2px;
+    position: relative;
+}
+
+
+.music-player {
+  width: 100%;
+  background-color: transparent;
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 2px;
+  background-color: #131c61;
+}
+
+#progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+}
+
+.mute-button,
+.play-pause-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  outline: none;
+}
+
+.mute-button:hover,
+.play-pause-button:hover {
+  color: #4caf50;
 }
