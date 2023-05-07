@@ -74,7 +74,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -120,7 +120,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -347,7 +347,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -839,9 +839,9 @@
                     </ul>
                         </div>
                         <div class="tab-pane container fade" id="workAndEducation">
-                          <a href="#" class="addworkplace d-flex align-items-center" >
-                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
-                          <span class="text-success ms-3">Add a workplace</span>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalWork" type="button">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"  style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a workplace</span>
                         </a>      
                     <ul class="list-unstyled my-3">
                       <li class="mb-2 d-flex justify-content-between align-items-center">
@@ -869,17 +869,18 @@
                         </div>
                       </li>
                     </ul>
-                    <a href="#" 
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalCollege"
-                        type="button">
-                          <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
-                          <span class="text-success ms-3">Add a College</span>
+                    <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalCollege" type="button">
+                        <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a College</span>
                         </a>
-                        <a href="#" class="addworkplace d-flex align-items-center">
+                        </div>
+                        <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalHighschool" type="button">
                           <i class="bi bi-plus-circle-fill text-success fs-3"></i>
-                          <span class="text-success ms-3">Add a Highschool</span>
+                          <span class="text-success ms-2">Add a Highschool</span>
                         </a>
+                      </div>
                         </div>
                        
                         <div class="tab-pane container fade" id="placedLived">
@@ -2675,13 +2676,8 @@
     </div>
 
 
-        <div
-      class="modal fade"
-      id="modalCollege"
-      tabindex="-1"
-      aria-labelledby="modalLabelFilterPosts"
-      aria-hidden="true"
-    >
+
+<div class="modal fade" id="modalCollege" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <form>
@@ -2776,116 +2772,184 @@
                   </div>
                 </div>
               </div>
+            </form>
             </div>
+          </div>
+        </div>
 
+<div class="modal fade" id="modalWork" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Work
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
 
-                    <div
-      class="modal fade"
-      id="modalWork"
-      tabindex="-1"
-      aria-labelledby="modalLabelFilterPosts"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form>
-            <div class="modal-header bg-info border-bottom-0 py-1">
-              <h5 class="modal-title" id="modalLabelFilterPosts">
-                Workplace
-              </h5>
-              <button
-                type="button"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                class="btn p-0 text-black"
-              >
-                <i class="bi bi-x-circle fs-3"></i>
-              </button>
-            </div>
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
 
-            <div class="modal-body">
-              <div class="mb-0">
-                <div class="editprofilephoto-section my-0">
-                  <div class="d-flex justify-content-between">
-                    <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
-                    <div class="dropdown">
-                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-three-dots"></i>
-                          </a>
-                         
-                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
-                            <li>
-                              <a class="dropdown-item py-0" href="#">
-                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-
-                            <li>
-                              <a class="dropdown-item py-0" href="#">
-                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
-                            </li>
-                          </ul>
-                        </div>
-                  </div>
-                <div class="editcoverphoto-section my-3">
-                  <div class="d-flex justify-content-between">
-                    <p class="text-dark fw-semibold">Graduated</p>
-                    <input type="checkbox"/>
-                  </div>
-                </div>
-                <div class="editbio-section my-3">
-                  <div class="">
-                    <p class="text-dark fw-semibold">From</p>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <p class="h6 small text-muted">Start Date</p>
-                        <select class="w-100">
-                          <option>Year</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-4">
-                        <p class="h6 small text-muted">End Date</p>
-                        <select class="w-100">
-                          <option>Year</option>
-                        </select>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="text-left">
-                      <a
-                        class="alert-text d-flex justify-content-start text-danger small mt-2"
-                        >Delete College</a
-                      >
-                    </div>
-                  <div class="editbio-bio">
-                      <div class="modal-footer border-0 justify-content-right">
-                        <button
-                          type="reset"
-                          class="btn btn-outline-primary  w-100px"
-                          data-bs-toggle="collapse"
-                          data-bs-target=".biodisc-collapse"
-                          aria-expanded="false"
-                        >
-                          Cancel
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-gradient  w-100px"
-                        >
-                          Save
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-          </form>
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Company</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Company</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalHighschool" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add a Highschool
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Highschool</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Highschool</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+         
+
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -2896,109 +2960,6 @@
 
     <script src="assets/js/functions.js"></script>
 
-
-<div class="modal fade"
-      id="modalWork"
-      tabindex="-1"
-      aria-labelledby="modalLabelFilterPosts"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form>
-            <div class="modal-header bg-info border-bottom-0 py-1">
-              <h5 class="modal-title" id="modalLabelFilterPosts">
-                Workplace
-              </h5>
-              <button
-                type="button"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                class="btn p-0 text-black"
-              >
-                <i class="bi bi-x-circle fs-3"></i>
-              </button>
-            </div>
-
-            <div class="modal-body">
-              <div class="mb-0">
-                <div class="editprofilephoto-section my-0">
-                  <div class="d-flex justify-content-between">
-                    <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
-                    <div class="dropdown">
-                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-three-dots"></i>
-                          </a>
-                         
-                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
-                            <li>
-                              <a class="dropdown-item py-0" href="#">
-                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-
-                            <li>
-                              <a class="dropdown-item py-0" href="#">
-                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
-                            </li>
-                          </ul>
-                        </div>
-                  </div>
-                <div class="editcoverphoto-section my-3">
-                  <div class="d-flex justify-content-between">
-                    <p class="text-dark fw-semibold">Graduated</p>
-                    <input type="checkbox"/>
-                  </div>
-                </div>
-                <div class="editbio-section my-3">
-                  <div class="">
-                    <p class="text-dark fw-semibold">From</p>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <p class="h6 small text-muted">Start Date</p>
-                        <select class="w-100">
-                          <option>Year</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-4">
-                        <p class="h6 small text-muted">End Date</p>
-                        <select class="w-100">
-                          <option>Year</option>
-                        </select>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="text-left">
-                      <a
-                        class="alert-text d-flex justify-content-start text-danger small mt-2"
-                        >Delete College</a
-                      >
-                    </div>
-                  <div class="editbio-bio">
-                      <div class="modal-footer border-0 justify-content-right">
-                        <button
-                          type="reset"
-                          class="btn btn-outline-primary  w-100px"
-                          data-bs-toggle="collapse"
-                          data-bs-target=".biodisc-collapse"
-                          aria-expanded="false"
-                        >
-                          Cancel
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-gradient  w-100px"
-                        >
-                          Save
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
 
 
 

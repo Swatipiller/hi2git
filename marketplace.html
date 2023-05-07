@@ -58,6 +58,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
+      <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
   </head>
 
@@ -74,7 +79,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -120,7 +125,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -347,7 +352,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -576,10 +581,10 @@
                 id="offcanvasNavbar"
               >
                 <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
-                  <div class="card shadow w-100 h-100vh bg-primary">
+                  <div class="card shadow w-100 h-100vh bg-primary custom-scrollbar h-100vh" style="max-height: 100vh">
                     <div class="card-body">
                       <p class="h6 text-light fw-bold">Marketplace</p>
-
+                      <div class="">
                       <ul
                         class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0 border-bottom border-secondary"
                       >
@@ -687,6 +692,7 @@
                           </ul>
                         </li>
                       </ul>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -812,5 +818,6 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+            <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
   </body>
 </html>

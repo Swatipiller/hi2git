@@ -70,13 +70,14 @@
       </div>
     </div>
 
+
  <header class="navbar-light fixed-top header-static bg-mode">
       <nav
         class="navbar navbar-expand-lg navbar-top px-3 py-2 text-bg-primary shadow fixed-top"
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -122,7 +123,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -349,7 +350,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -603,7 +604,11 @@
                         class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0"
                       >
                         <li class="nav-item">
-                          <a class="nav-link d-flex mb-0" href="#">
+                          <a class="nav-link d-flex px-0 mt-3 mb-0"  href="#" 
+                        class="btn btn-outline-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalEditProfile"
+                        type="button">
                             <img
                               src="./assets/images/icon/icon-addgreen.png"
                               class="me-2 h-20px fs-5 fa-fw"
@@ -1018,6 +1023,87 @@
         </div>
       </div>
     </main>
+
+<div class="modal fade" id="modalEditProfile" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-info border-bottom-0 py-1">
+              <h5 class="modal-title" id="modalLabelFilterPosts">
+                Create Event
+              </h5>
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="btn p-0 text-black"
+              >
+                <i class="bi bi-x-circle fs-3"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                <div style="text-align: right;">
+                  <a href="#">
+                          <i class="bi bi-camera text-success fs-5" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a workplace</span>
+                        </a>
+                </div>
+                <div class="editcoverphoto-section my-3">
+                  <div class="form-group mb-2">
+                    <input class="form-control" placeholder="Event Title/Name" />
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea class="form-control" placeholder="Event Description"></textarea>
+                  </div>
+                  <div class="row">
+                  <div class="col-lg-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="date" placeholder="Start Date" />
+                  </div>
+                  </div>
+                  <div class="col-lg-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" type="date" placeholder="End Date" />
+                  </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-lg-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" placeholder="Approx Attending" />
+                  </div>
+                  </div>
+                  <div class="col-lg-6">
+                  <div class="form-group mb-2">
+                    <input class="form-control" placeholder="Venue"/>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="form-group mb-2">
+                    <input class="form-control" placeholder="Host Name" />
+                  </div>
+                  <div class="form-group mb-2">
+                    <input class="form-control" placeholder="Email Id" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer border-0 justify-content-right">
+              <button type="button" class="btn btn-outline-primary px-5">
+                Cancel
+              </button>
+              <button type="button" class="btn btn-gradient px-5">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

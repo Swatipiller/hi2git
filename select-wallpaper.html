@@ -57,9 +57,15 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/general.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/group.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/marketplace.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/creatw-new-listing.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/create-story.css" />
+        <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/notifications.css" />
   </head>
 
   <body>
@@ -552,336 +558,12 @@
       </nav>
     </header>
 
+
+
     <main class="group-main mb-3">
       <div class="container-fluid">
         <div class="row">
-       
-
-          <div class="col-lg-6 vstack gap-4">
-            <div class="tab-content py-0 mb-0">
-              <div class="tab-pane show active fade" id="group-feed-tab-1">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mt-2">
-                      <p class="h5 mb-2 mt-3 text-dark fw-bold">Notification Settings</p>
-                      <p class="h6 text-secondary fw-normal">Hi2 will send you all the important notifications related to your account.</p>
-                      <p class="h5 mb-2 mt-3 text-primary fw-bold">What Notificatoins you Recieve</p>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                    <div class="card shadow bg-info mt-3 p-3 border-corner overflow-hidden">
-                    <div class="">
-                        <div class="">
-                          <div class="accordion collapseble-accordion" id="accordionExample">
-  <div class="accordion-item card-body border-corner">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-       <div class="d-flex align-items-center">
-          <div class="">
-            <span class="bi bi-chat-left text-dark fs-3"></span>
-          </div>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Comments</p>
-            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
-          </div>
-       </div>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body px-0 pb-0">
-        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
-        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox" checked="">
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-envelope text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-        <div class="d-flex align-items-center"  style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item card-body border-corner border-0">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed  px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <div class="d-flex align-items-center">
-          <div class="">
-            <span class="bi bi-people text-dark fs-3"></span>
-          </div>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">People You May Know</p>
-            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
-          </div>
-       </div>
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body  px-0 pb-0">
-        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
-        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox" checked="">
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-envelope text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-        <div class="d-flex align-items-center"  style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item card-body border-corner border-0">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed px-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <div class="d-flex align-items-center">
-          <div class="">
-            <span class="bi bi-people text-dark fs-3"></span>
-          </div>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Groups</p>
-            <p class="h6 text-secondary fw-normal">Push, Email, SMS</p>
-          </div>
-       </div>
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body  px-0 pb-0">
-        <p class="h6 text-secondary mb-3 fw-semibold">These are notifications receive on your posts and replies.</p>
-        <p class="h6 text-dark mt-2 mb-3 fw-bold">Where you recieve notifications</p>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Push</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox" checked="">
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-2" style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-envelope text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">Email</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-        <div class="d-flex align-items-center"  style="justify-content: space-between">
-          <div class="d-flex align-items-center">
-            <span class="bi bi-chat-left text-dark fs-6"></span>
-          <div class="px-3">
-            <p class="h6 mb-1 text-dark fw-seibold">SMS</p>
-          </div>
-          </div>
-          <div class="px-3">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="group-discover-tab-2">
-                <div class="containet-fluid">
-                  <div class="row">
-                    <p class="h5 text-dark fw-semibold mb-0">All Groups</p>
-                    <p class="samll text-dark">
-                      Groups you might be interested in
-                    </p>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/gaming.jpg"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">
-                          Gaming
-                        </p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/travel-concept-with-baggage.png"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">
-                          Travel
-                        </p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/gk.jpg"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">GK</p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/kids.jpg"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">
-                          Kids fun
-                        </p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/art.jpg"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">Art</p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="card shadow my-3 mt-3">
-                        <img
-                          src="./assets/images/design.jpg"
-                          class="mb-3 h-150px rounded-2"
-                          alt=""
-                        />
-                        <p class="imgname fw-bold h5 text-center mb-0">
-                          Design
-                        </p>
-                        <p class="imgsubheading text-center small">
-                          10 members
-                        </p>
-                        <button
-                          type="button"
-                          class="btn btn-info py-4 fs-5 fw-semibold"
-                        >
-                          Join Group
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-             <div class="col-lg-3">
+          <div class="col-lg-3">
             <div class="d-flex align-items-center mb-4 d-lg-none">
               <button
                 class="border-0 bg-transparent"
@@ -897,86 +579,342 @@
               </button>
             </div>
 
-            <nav class="navbar navbar-light navbar-expand-lg mx-0">
+            <nav class="navbar navbar-light navbar-expand-lg mx-0  custom-scrollbar" style="min-height: 300px">
               <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
                 id="offcanvasNavbar"
               >
-                <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
-                  <div class="card shadow w-100 h-100vh bg-primary">
+                <div class="offcanvas-body p-0 position-fixed w-25 pe-2 mb-3">
+                  <div class="card shadow w-100 h-100vh bg-primary custom-scrollbar" style="max-height: 130vh">
                     <div class="card-body">
-                      <p class="h6 text-light fw-bold p-3 border-bottom">
-                        Settings
-                      </p>
+                     <div class="d-flex align-items-center justify-content-between mb-3">
+                     <p class="h5  fw-bold text-light mb-0">Select Wallpaper</p>
+                     </div>
+                     <form>
+                      <div class="row align-items-center">
+                             <div class="col-12">
+                              <div class="mb-2 white-box px-2 py-2">
+                                <h3 class="h6 fw-bold text-dark mb-2">Frame</h3>
+                                  <div class="color-grid d-flex"  id="imageContainer">
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-1.png" onclick="showImage('assets/images/frames/f-1.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-2.png" onclick="showImage('assets/images/frames/f-2.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-3.png" onclick="showImage('assets/images/frames/f-3.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-4.png" onclick="showImage('assets/images/frames/f-4.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-5.png" onclick="showImage('assets/images/frames/f-5.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-6.png" onclick="showImage('assets/images/frames/f-6.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-7.png" onclick="showImage('assets/images/frames/f-7.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-8.png" onclick="showImage('assets/images/frames/f-8.png')"/>
+                                    </div>
+                                    <div class="single-frame">
+                                      <img  src="assets/images/frames/f-9.png" onclick="showImage('assets/images/frames/f-9.png')"/>
+                                    </div>
+                                  </div>
+                              </div>
+                             </div>
+                             <div class="col-lg-12 mt-2 mb-4 mx-2">
+                                <div class="btn btn-light btn-transparent width-equal-btn fw-semibold"data-bs-toggle="modal" data-bs-target="#modalCreateFeed" id="modalLabelCreateFeed">Discard</div>
+                                <div class="btn btn-gradient fw-semibold width-equal-btn">Add to Story</div>
+                             </div>
 
-                      <ul
-                        class="nav nav-tabs gap-2 nav-pills nav-pills-soft flex-column fw-bold border-0"
-                      >
-                        <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <a
-                            class="nav-link d-flex mb-0"
-                            href="#group-feed-tab-1"
-                            data-bs-toggle="tab"
-                          >
-                            <i class="bi bi-person-gear me-2 h-20px fs-5 fa-fw"></i
-                            ><span class="">Account settings</span></a
-                          >
-                        </li>
-                        <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <a
-                            class="nav-link d-flex mb-0"
-                            href="privacy-checkup.html"
-                          >
-                            <i class="bi bi-shield-shaded me-2 h-20px fs-5 fa-fw"></i
-                            ><span class="">Privacy Checkup </span></a
-                          >
-                        </li>
-                        <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <a
-                            class="nav-link d-flex mb-0"
-                            href="public-posts.html"
-                          >
-                            <i class="bi bi-globe-asia-australia me-2 h-20px fs-5 fa-fw"></i
-                            ><span class="">Public posts </span></a
-                          >
-                        </li>                 
-                        <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <a
-                            class="nav-link d-flex mb-0"
-                            href="blocking.html"
-                          >
-                            <i class="bi bi-slash-circle me-2 h-20px fs-5 fa-fw"></i
-                            ><span class="">Blocking </span></a
-                          >
-                        </li>
-                        <li class="nav-item" data-bs-dismiss="offcanvas">
-                          <a
-                            class="nav-link d-flex mb-0 active"
-                            href="notifications.html"
-                          >
-                            <i class="bi bi-bell me-2 h-20px fs-5 fa-fw"></i
-                            ><span class="">Notifications </span></a
-                          >
-                        </li>
-                        </ul>
+          
+                            </div>
+
+                            </form>
                     </div>
                   </div>
                 </div>
               </div>
             </nav>
           </div>
-        </div>
+
+<div class="col-lg-9 vstack gap-4">
+            <div class="mb-0">
+              <div class="">
+                <div class="containet-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card shadow preview-box position-relative"  id="selectedImageContainer">
+                        <img id="selectedImage" class="frame-back-image" src="" />
+                      <p class="h5 text-light px-3 pt-3 fw-semibold">Preview</p>
+                        <div class="card-body mb-5 mt-2 pb-3"  id="image-container">
+                           <div
+                    class="fade tab-pane show active h-100"
+                    id="chat-1"
+                    role="tabpanel"
+                    aria-labelledby="chat-1-tab"
+                  >
+                    <div
+                      class="d-sm-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex mb-2 mb-sm-0 align-items-center">
+                        <div class="flex-shrink-0 avatar me-2">
+                          <img
+                            class="avatar-img rounded-circle"
+                            src="assets/images/avatar/10.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="d-block flex-grow-1">
+                          <h6 class="mb-0 mt-1">Frances</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chat-conversation-content custom-scrollbar">
+                      <div class="text-center small my-4">Today</div>
+
+                      <div class="d-flex mb-1">
+                        <div class="flex-shrink-0 avatar avatar-xs me-2">
+                          <img
+                            class="avatar-img rounded-circle"
+                            src="assets/images/avatar/10.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="flex-grow-1">
+                          <div class="w-100">
+                            <div class="d-flex flex-column align-items-start">
+                              <div
+                                class="bg-light text-secondary p-2 px-3 rounded-2"
+                              >
+                                Hi
+                              </div>
+                              <div class="small my-2">6:15 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end text-end mb-1">
+                        <div class="w-100">
+                          <div class="d-flex flex-column align-items-end">
+                            <div
+                              class="bg-primary text-white p-2 px-3 rounded-2"
+                            >
+                              How are you
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end text-end mb-1">
+                        <div class="w-100">
+                          <div class="d-flex flex-column align-items-end">
+                            <div
+                              class="bg-primary text-white p-2 px-3 rounded-2"
+                            >
+                              I am fine!!!
+                            </div>
+                            <div class="d-flex my-2">
+                              <div class="small text-secondary">6:20 AM</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                  <div class="avatar avatar-xs me-2">
+                    <a href="#!">
+                      <img class="avatar-img rounded-circle" src="assets/images/avatar/15.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <form class="nav nav-item w-100 position-relative">
+                    <textarea data-autoresize="" class="form-control pe-5 rounded-pill bg-info border-0 comment-box" rows="1" placeholder="Add a public comment..."></textarea>
+                    <button class="nav-link bg-transparent px-3 position-absolute top-50 end-0 translate-middle-y border-0" type="button">
+                      <i class="bi bi-emoji-laughing text-darksuccess"> </i>
+                    </button>
+                  </form>
+                </div>
+                  </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="group-discover-tab-2" role="tabpanel">
+                <div class="containet-fluid">
+                  <div class="row">
+                    <p class="h5 text-dark fw-semibold mb-0">All Groups</p>
+                    <p class="samll text-dark">
+                      Groups you might be interested in
+                    </p>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/gaming.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Gaming
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/travel-concept-with-baggage.png" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Travel
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/gk.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">GK</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/kids.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Kids fun
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/art.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">Art</p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card shadow my-3 mt-3">
+                        <img src="./assets/images/design.jpg" class="mb-3 h-150px rounded-2" alt="">
+                        <p class="imgname fw-bold h5 text-center mb-0">
+                          Design
+                        </p>
+                        <p class="imgsubheading text-center small">
+                          10 members
+                        </p>
+                        <button type="button" class="btn btn-info py-4 fs-5 fw-semibold">
+                          Join Group
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
     </main>
 
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
     <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+    <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
+<script type="text/javascript">
+  // Function to show selected image in another div
+function showImage(imageUrl) {
+  // Update the source of the selected image
+  document.getElementById('selectedImage').src = imageUrl;
+  
+  // Store the selected image URL in localStorage
+  localStorage.setItem('selectedImage', imageUrl);
+}
+
+// Check if a selected image is stored in localStorage
+var storedImage = localStorage.getItem('selectedImage');
+if (storedImage) {
+  // If a selected image is found, display it in the selected image container
+  document.getElementById('selectedImage').src = storedImage;
+}
+
+
+</script>
+
+                           <div
+      class="modal fade"
+      id="modalCreateFeed"
+      tabindex="-1"
+      aria-labelledby="modalLabelCreateFeed"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-info border-bottom-0 py-1">
+            <h5 class="modal-title" id="modalLabelCreateFeed">Discard Story</h5>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              class="btn p-0 text-black"
+            >
+              <i class="bi bi-x-circle fs-3"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+               <p class="mb-0">Are you sure you want to discard settings?</p>
+          </div>
+
+          <div class="modal-footer row border-0">
+           
+            <div class="col-lg-12">
+              <div class="text-right" style="text-align: right;">
+              <button type="button" style="border: 1px solid #131c61;height: 38px;" class="btn">Continue Editing</button>
+              <button type="button" class="btn btn-gradient">Discard</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>

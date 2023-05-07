@@ -75,7 +75,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -121,7 +121,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -348,7 +348,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -739,23 +739,43 @@
                             Best Dance!!!
                           </p>
 
-                          <img
-                            class="card-img"
-                            src="assets/images/post/3by2/01.jpg"
-                            alt="Post"
-                          />
+                           <div class="post card-img">
+  <div class="video-container">
+    <video id="post-video" loop muted>
+      <source src="assets/sound/MISSION-IMPOSSIBLE.mp4" type="video/mp4">
+      <!-- Add additional source tags for different video formats if needed -->
+    </video>
+    <div class="play-button" onclick="toggleVideoPlayback()"></div>
+  </div>
+  <div class="post-content">
+    <!-- Your post content here -->
+  </div>
+</div>
 
                           <ul
                             class="nav nav-stack small  border-secondary-subtle fw-bold justify-content-between mt-3"
                           >
                             <li class="nav-item">
                               <a
-                                class="text-secondary d-inline-flex align-items-center"
+                                class="text-secondary mx-0 d-inline-flex align-items-center"
                                 href="#!"
                               >
-                                <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i
-                                >Like
-                              </a>
+                               <span id="likeButton">
+                                <span style="cursor: pointer;">
+                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                                  <span class="like-text">Like</span>
+                                </span>
+                                  <div id="popupContainer" class="shadow">
+                                    <div id="popup" class="hidden">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
+                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
+                                      <span class="reaction  bi bi-emoji-smile"></span>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </span>
+                                </a>
                               <a
                                 class="text-secondary mx-3 d-inline-flex align-items-center"
                                 href="#!"
@@ -767,8 +787,21 @@
                                 class="text-secondary mx-2 d-inline-flex align-items-center"
                                 href="#!"
                               >
-                                <i class="bi bi-reply pe-2 fs-5"></i
-                                >Share
+                               <span id="shareButton">
+                                <span style="cursor: pointer;">
+                                  <i class="like-icon bi bi-reply pe-1 fs-5"></i>
+                                  <span class="like-text">Share</span>
+                                </span>
+                                  <div id="popupContainer2" class="shadow">
+                                    <div id="popup2" class="hidden">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
+                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
+                                      <span class="reaction  bi bi-emoji-smile"></span>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </span>
                               </a>
                             </li>
                               <li class="nav-item d-flex align-items-center">
@@ -2176,5 +2209,85 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+
+    <script type="text/javascript">
+// Get the elements
+const likeButton = document.getElementById('likeButton');
+const popup = document.getElementById('popup');
+
+// Toggle the popup when the like button is clicked
+likeButton.addEventListener('click', function() {
+  popup.classList.toggle('hidden');
+});
+
+// Hide the popup when clicking outside of it
+document.addEventListener('click', function(event) {
+  if (!popup.contains(event.target) && !likeButton.contains(event.target)) {
+    popup.classList.add('hidden');
+  }
+});
+
+// Handle reaction selection
+popup.addEventListener('click', function(event) {
+  const reaction = event.target.textContent;
+  if (reaction) {
+    console.log('Selected reaction:', reaction);
+    // Perform any other action you want with the selected reaction
+  }
+});
+
+    </script>
+        <script type="text/javascript">
+// Get the elements
+const likeButton = document.getElementById('shareButton');
+const popup = document.getElementById('popup2');
+
+// Toggle the popup when the like button is clicked
+likeButton.addEventListener('click', function() {
+  popup.classList.toggle('hidden');
+});
+
+// Hide the popup when clicking outside of it
+document.addEventListener('click', function(event) {
+  if (!popup.contains(event.target) && !likeButton.contains(event.target)) {
+    popup.classList.add('hidden');
+  }
+});
+
+// Handle reaction selection
+popup.addEventListener('click', function(event) {
+  const reaction = event.target.textContent;
+  if (reaction) {
+    console.log('Selected reaction:', reaction);
+    // Perform any other action you want with the selected reaction
+  }
+});
+
+    </script>
+    <script type="text/javascript">
+      const video = document.getElementById('post-video');
+
+function toggleVideoPlayback() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
+
+// Additional JS code for autoplaying the video when scrolled into view
+window.addEventListener('scroll', checkVideoVisibility);
+
+function checkVideoVisibility() {
+  const videoPosition = video.getBoundingClientRect().top;
+  const windowPosition = window.innerHeight || document.documentElement.clientHeight;
+  
+  if (videoPosition - windowPosition < 0) {
+    video.play();
+    window.removeEventListener('scroll', checkVideoVisibility);
+  }
+}
+
+    </script>
   </body>
 </html>

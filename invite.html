@@ -81,13 +81,14 @@
       </div>
     </div>
 
- <header class="navbar-light fixed-top header-static bg-mode">
+
+  <header class="navbar-light fixed-top header-static bg-mode">
       <nav
         class="navbar navbar-expand-lg navbar-top px-3 py-2 text-bg-primary shadow fixed-top"
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -133,7 +134,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -360,7 +361,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -672,7 +673,7 @@
           </div>
 
           <div class="col-md-8 col-lg-6 vstack gap-4">
-            <div class="d-flex gap-2 mb-n1">
+                        <div class="d-flex gap-2 mb-n1">
               <div
                 class="create-story-btn position-relative text-center fw-semibold"
               >
@@ -682,20 +683,73 @@
                     alt="Create Story"
                     class="story-img w-90px"
                   />
+                  <a href="story.html">
                   <img
                     src="./assets/images/icon/icon-addgreen.png"
                     class="position-absolute bottom-0 ms-n2 translate-middle-x"
                     alt=""
                   />
+                </a>
                 </div>
-                <span class="text-indigo small">Your Story</span>
+                <a href="story.html"><span class="text-indigo small">Your Story</span></a>
               </div>
+<style type="text/css">
+  .small-profile {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+</style>
+    <style type="text/css">
+      ::-webkit-scrollbar {
+    display: none;
+      scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+      scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollba
+.hide-native-scrollbar {
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+// hides scrollbars while allowing to scroll
+div::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.hide-native-scrollbar::-webkit-scrollbar { /** WebKit */
+  display: none;
+}r-thumb {
+    background: #FF0000;
+}
+.hide-native-scrollbar {
+  scrollbar-width: none; /* Firefox 64 */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+.hide-native-scrollbar::-webkit-scrollbar { /** WebKit */
+  display: none;
+}
+    </style>
 
               <div
                 id="stories"
                 class="storiesWrapper stories user-icon carousel scroll-enable"
               ></div>
             </div>
+
 
             <div class="card card-body text-bg-info">
               <div class="d-flex align-items-center">
@@ -4506,6 +4560,119 @@
       </div>
     </div>
 
+    <div
+      class="modal fade"
+      id="popup"
+      tabindex="-1"
+      aria-labelledby="modalLabelCreateFeed"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-info border-bottom-0 py-1">
+            <h5 class="modal-title" id="modalLabelCreateFeed">Invite Friends</h5>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              class="btn p-0 text-black"
+            >
+              <i class="bi bi-x-circle fs-3"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="d-flex mb-3">
+              <div class="avatar avatar-xs me-2">
+                <img
+                  class="avatar-img rounded-circle"
+                  src="assets/images/avatar/15.jpg"
+                  alt=""
+                />
+              </div>
+
+              <form class="w-100">
+                <textarea
+                  class="form-control pe-4 fs-3 lh-1 border-0"
+                  rows="4"
+                  placeholder="Say something..."
+                  autofocus
+                ></textarea>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- Modal HTML -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <form>
+            <div class="modal-header bg-info border-bottom-0 py-1">
+              <h5 class="modal-title" id="modalLabelFilterPosts">
+                Invite Friends
+              </h5>
+              <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+                <i class="bi bi-x-circle fs-3"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                
+                <div class="editcoverphoto-section my-3">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fs-6 fw-semibold">Enter the email address of a friend to join Hi2</p>
+                  </div>
+                  <input type="" name="" placeholder="Email Address" class="form-control shadow border-0">
+
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#modalWork" type="button">
+                        <div class="d-flex align-items-center mt-3">
+                          <i class="bi bi-share fs-3" style="vertical-align: middle;    vertical-align: middle;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #131c61;
+    color: #fff !important;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px !important;
+    padding: 5px;"></i>
+                          <span class="ms-2 fs-6" style="color: #131c61">Share link to Whatsapp</span>
+                  </div>
+                  </a>
+                </div>
+                
+                
+                
+              </div>
+            </div>
+
+          <div class="modal-footer border-0 text-end">
+              <button type="reset" class="btn btn-outline-primary px-5 me-3">
+                Cancel
+              </button>
+              <button type="button" class="btn btn-gradient px-5">Save</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Function to show the modal when the page loads
+    window.addEventListener('DOMContentLoaded', function () {
+      var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+      myModal.show();
+    });
+  </script>
+
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/tiny-slider/dist/tiny-slider.js"></script>
@@ -4519,5 +4686,15 @@
     <script src="assets/js/zuck-stories.js"></script>
 
     <script src="assets/js/functions.js"></script>
+
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
+    <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+
+    <script src="assets/js/functions.js"></script>
+            <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
   </body>
 </html>

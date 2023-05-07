@@ -77,7 +77,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -123,7 +123,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -350,7 +350,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -600,9 +600,9 @@
                       <img src="./assets/images/avatar/10.jpg" alt="" class="squre-image">
                       <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
                       </div>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          <span class="bi bi-play"></span>
+                      <div class="border-btn">
+                        <button type="button" class="btn btn-primary play-btn">
+                          <span class="bi bi-play-fill"></span>
                         </button>
                       </div>
                     </div>
@@ -611,9 +611,9 @@
                       <img src="./assets/images/avatar/09.jpg" alt="" class="squre-image">
                       <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
                       </div>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          <span class="bi bi-play"></span>
+                      <div class="border-btn">
+                        <button type="button" class="btn btn-primary play-btn">
+                          <span class="bi bi-play-fill"></span>
                         </button>
                       </div>
                     </div>
@@ -622,9 +622,9 @@
                       <img src="./assets/images/avatar/08.jpg" alt="" class="squre-image">
                       <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
                       </div>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          <span class="bi bi-play"></span>
+                      <div class="border-btn">
+                        <button type="button" class="btn btn-primary play-btn">
+                          <span class="bi bi-play-fill"></span>
                         </button>
                       </div>
                     </div>
@@ -633,9 +633,9 @@
                       <img src="./assets/images/avatar/06.jpg" alt="" class="squre-image">
                       <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
                       </div>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          <span class="bi bi-play"></span>
+                      <div class="border-btn">
+                        <button type="button" class="btn btn-primary play-btn">
+                          <span class="bi bi-play-fill"></span>
                         </button>
                       </div>
                     </div>
@@ -644,9 +644,9 @@
                       <img src="./assets/images/avatar/05.jpg" alt="" class="squre-image">
                       <p class="fw-bold text-dark small h6 mx-3 mb-0">Morning No 1 with Raunac</p>
                       </div>
-                      <div>
-                        <button type="button" class="btn btn-primary">
-                          <span class="bi bi-play"></span>
+                      <div class="border-btn">
+                        <button type="button" class="btn btn-primary play-btn">
+                          <span class="bi bi-play-fill"></span>
                         </button>
                       </div>
                     </div>
@@ -656,11 +656,15 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-lg-12">
+
+
+
+                <div class="light-grrn-gradient mb-3">
                 <div class="d-flex align-items-center mb-3 light-grrn-gradient">
                 <img src="assets/images/radio/n_8433.png" class="border-corner" alt="" style="width: 160px;height: 110px;border-radius: 8px">
               <div class="future-event-para mb-2 mx-4 text-center">
                 <p class="imgname fw-bold h6 small mb-2 text-dark my-2">
-                  Imagine - John Lennon
+                  Imagine - John Lennon</p>
                 <p class="text-dark small fw-bold mb-0 my-1 h6 mt-3">
                   Red FM
                 </p>
@@ -668,7 +672,29 @@
                   93.5
                 </p>
               </div>
+        
+      
             </div>
+
+                    <div class="music-player">
+  <div class="controls">
+    <div class="left-controls">
+      <button id="muteButton" class="mute-button">
+        <i class="fa fa-volume-up"></i>
+      </button>
+    </div>
+    <div class="right-controls">
+      <button id="playPauseButton" class="play-pause-button">
+        <i class="fa fa-play"></i>
+      </button>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+</div>
+</div>
+
               </div>
             </div>
             <div class="row">
@@ -733,5 +759,54 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+
+    <script type="text/javascript">
+      // Variables
+const muteButton = document.getElementById("muteButton");
+const playPauseButton = document.getElementById("playPauseButton");
+const progressBar = document.getElementById("progress");
+
+let isMuted = false;
+let isPlaying = false;
+let progress = 0;
+let intervalId;
+
+// Mute Button Click Event
+muteButton.addEventListener("click", function() {
+  if (isMuted) {
+    muteButton.innerHTML = '<i class="fa fa-volume-up"></i>';
+    isMuted = false;
+  } else {
+    muteButton.innerHTML = '<i class="fa fa-volume-off"></i>';
+    isMuted = true;
+  }
+});
+
+// Play/Pause Button Click Event
+playPauseButton.addEventListener("click", function() {
+  if (isPlaying) {
+    playPauseButton.innerHTML = '<i class="fa fa-play"></i>';
+    clearInterval(intervalId);
+    isPlaying = false;
+  } else {
+    playPauseButton.innerHTML = '<i class="fa fa-pause"></i>';
+    intervalId = setInterval(updateProgressBar, 500);
+    isPlaying = true;
+  }
+});
+
+// Function to update progress bar
+function updateProgressBar() {
+  progress += 10;
+  if (progress > 100) {
+    progress = 0;
+    clearInterval(intervalId);
+    isPlaying = false;
+    playPauseButton.innerHTML = '<i class="fa fa-play"></i>';
+  }
+  progressBar.style.width = progress + "%";
+}
+
+    </script>
   </body>
 </html>

@@ -74,7 +74,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -120,7 +120,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -347,7 +347,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -608,7 +608,7 @@
                         </li>
                         <li class="nav-item">
                           <a
-                            class="nav-link d-flex mb-0"
+                            class="nav-link d-flex mb-2"
                             href="./group-create.html"
                           >
                             <img
@@ -625,16 +625,16 @@
                         class="border-0 list-unstyled border-bottom gap-2 nav-pills nav-pills-soft"
                       >
                         <li class="nav-item">
-                          <a class="nav-link d-flex mb-0" href="#">
+                          <div class="nav-link d-flex mb-0" style="cursor: initial;">
                             <i
                               class="bi bi-people-fill me-2 h-20px fs-5 fa-fw"
                             ></i
-                            ><span class="">Your Groups</span></a
+                            ><span class="fw-semibold">Your Groups</span></div
                           >
                           <div
                             class="group-member d-flex my-2 align-items-center ms-3"
                           >
-                            <ul class="list-unstyled d-flex mb-0">
+                            <ul class="list-unstyled d-flex mb-2">
                               <li class="group-member-item-1">
                                 <div class="group-member-img">
                                   <img src="./assets/images/bob-1.png" alt="" />
@@ -647,7 +647,7 @@
                               </li>
                             </ul>
                             <span
-                              class="group-member-name muted ms-2 text-light fw-light"
+                              class="group-member-name muted ms-2 text-light fw-light small fw-semibold"
                               >Bob and Sofia</span
                             >
                           </div>
@@ -674,10 +674,9 @@
               </div>
             </nav>
           </div>
-
           <div class="col-lg-6 vstack gap-4">
             <div class="tab-content py-0 mb-0">
-              <div class="tab-pane show active fade" id="group-feed-tab-1">
+               <div class="tab-pane fade show active" id="group-feed-tab-1">
                 <div class="containet-fluid">
                   <div class="row">
                     <div class="col-8">
@@ -781,13 +780,27 @@
                             class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between my-3"
                           >
                             <li class="nav-item">
-                              <a
-                                class="text-secondary d-inline-flex align-items-center"
-                                href="#!"
+                              <a   class="text-secondary d-inline-flex align-items-center"
+                               
                               >
-                                <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i
-                                >Like
-                              </a>
+                              <span id="likeButton2">
+                                <span style="cursor: pointer;">
+                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                                  <span class="like-text">Like</span>
+                                </span>
+                                </a>
+                                  <div id="popupContainer" class="shadow">
+                                    <div id="popup2" class="hidden">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
+                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
+                                      <span class="reaction  bi bi-emoji-smile"></span>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </span>
+
+
                             </li>
                             <li class="nav-item">
                               <a
@@ -1256,8 +1269,8 @@
                               </a>
                             </li>
                             <li class="nav-item ms-sm-auto">
-                              <a class="nav-link text-secondary" href="#!">
-                                <i class="bi bi-chat-right pe-2"></i>(12)</a
+                              <a class="nav-link text-secondary" style="cursor: pointer;"  id="toggleButton">
+                                <i class="bi bi-chat-right pe-2"></i>(1)</a
                               >
                             </li>
                           </ul>
@@ -1266,13 +1279,27 @@
                             class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between mb-3"
                           >
                             <li class="nav-item">
-                              <a
-                                class="text-secondary d-inline-flex align-items-center"
-                                href="#!"
+                              <a   class="text-secondary d-inline-flex align-items-center"
+                               
                               >
-                                <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i
-                                >Like
-                              </a>
+                              <span id="likeButton">
+                                <span style="cursor: pointer;">
+                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                                  <span class="like-text">Like</span>
+                                </span>
+                                </a>
+                                  <div id="popupContainer" class="shadow">
+                                    <div id="popup" class="hidden">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
+                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
+                                      <span class="reaction  bi bi-emoji-smile"></span>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </span>
+
+
                             </li>
                             <li class="nav-item">
                               <a
@@ -1371,7 +1398,7 @@
                             </form>
                           </div>
 
-                          <ul class="comment-wrap list-unstyled">
+                          <ul class="comment-wrap list-unstyled hidden"  id="myDiv">
                             <li class="comment-item">
                               <div class="d-flex">
                                 <div class="avatar avatar-xs">
@@ -1468,7 +1495,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="tab-pane fade" id="group-discover-tab-2">
                 <div class="containet-fluid">
                   <div class="row">
@@ -1604,9 +1630,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </main>
-
+</div>
+</main>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
@@ -1615,5 +1640,45 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
 
     <script src="assets/js/functions.js"></script>
+
+    <script type="text/javascript">
+// Get the elements
+const likeButton = document.getElementById('likeButton');
+const popup = document.getElementById('popup');
+
+// Toggle the popup when the like button is clicked
+likeButton.addEventListener('click', function() {
+  popup.classList.toggle('hidden');
+});
+
+// Hide the popup when clicking outside of it
+document.addEventListener('click', function(event) {
+  if (!popup.contains(event.target) && !likeButton.contains(event.target)) {
+    popup.classList.add('hidden');
+  }
+});
+
+// Handle reaction selection
+popup.addEventListener('click', function(event) {
+  const reaction = event.target.textContent;
+  if (reaction) {
+    console.log('Selected reaction:', reaction);
+    // Perform any other action you want with the selected reaction
+  }
+});
+
+    </script>
+<script type="text/javascript">
+  // Get the elements
+const toggleButton = document.getElementById('toggleButton');
+const myDiv = document.getElementById('myDiv');
+
+// Toggle the visibility of the div when the button is clicked
+toggleButton.addEventListener('click', function() {
+  myDiv.classList.toggle('hidden');
+});
+
+</script>
+
   </body>
 </html>

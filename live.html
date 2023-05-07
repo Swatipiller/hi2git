@@ -89,7 +89,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -135,7 +135,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -362,7 +362,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -586,37 +586,45 @@
                     <div class="marketplace-card">
                       <div class="d-flex">
                         <div class="card shadow w-200px me-3 mb-3">
-                          <img src="./assets/images/marketplace-1.jpg" alt="" class="mb-3 h-100px rounded-2">
+                         <a href="marketplace-details.html">
+                          <img src="./assets/images/marketplace-1.jpg" alt="" class="mb-3 h-100px rounded-2 w-100">
                           <p class="h6 fw-bold text-dark ps-2">
                             Book <span class="small muted">Rs-20</span>
                           </p>
+                        </a>
                         </div>
                         <div class="card shadow w-200px mb-3">
-                          <img src="./assets/images/marketplace-2.jpg" alt="" class="mb-3 h-100px rounded-2">
+                         <a href="marketplace-details.html">
+                          <img src="./assets/images/marketplace-2.jpg" alt="" class="mb-3 h-100px rounded-2 w-100">
                           <p class="h6 fw-bold text-dark ps-2">
                             Laptop <span class="small muted">Rs-100</span>
                           </p>
+                        </a>
                         </div>
                       </div>
                       <div class="d-flex">
                         <div class="card shadow w-200px me-3 mb-3">
-                          <img src="./assets/images/marketplace-3.jpg" alt="" class="mb-3 h-100px rounded-2">
+                         <a href="marketplace-details.html">
+                          <img src="./assets/images/marketplace-3.jpg" alt="" class="mb-3 h-100px rounded-2 w-100">
                           <p class="h6 fw-bold text-dark ps-2">
                             Car <span class="small muted">Rs-9,200</span>
                           </p>
+                        </a>
                         </div>
                         <div class="card shadow w-200px mb-3">
-                          <img src="./assets/images/marketplace-4.jpg" alt="" class="mb-3 h-100px rounded-2">
+                          <a href="marketplace-details.html">
+                          <img src="./assets/images/marketplace-4.jpg" alt="" class="mb-3 h-100px rounded-2 w-100">
                           <p class="h6 fw-bold text-dark ps-2">
                             Flower Plant <span class="small muted">Rs-20</span>
                           </p>
+                        </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="btn btn-info py-4 fs-5 fw-bold text-darksuccess">
+                  <a href="marketplace.html" class="btn btn-info py-4 fs-5 fw-bold text-darksuccess">
                     See All
-                  </button>
+                  </a>
                 </div>
                 <div class="card  shadow my-2">
               <div class="card-body">
@@ -637,7 +645,7 @@
                       </div>
                     </li>
                   </ul>
-                  <span class="group-member-name muted ms-2">Bob and Sofia</span>
+                  <a href="group-details.html"><span class="group-member-name muted ms-2">Bob and Sofia</span></a>
                 </div>
               </div>
             </div>
@@ -647,7 +655,7 @@
                   class="h6 fw-bold text-dark d-flex justify-content-space-between align-items-center"
                 >
                   Friends Suggestions
-                  <a href="#" class="small fw-semibold text-darksuccess ms-auto"
+                  <a href="friends.html" class="small fw-semibold text-darksuccess ms-auto"
                     >See All</a
                   >
                 </h3>
@@ -692,13 +700,13 @@
               <div class="card-header border-0 pb-0">
                     <p class="h4 mb-4 mt-3 text-dark fw-bold">Live Video Broadcasting</p>
                 <div class="d-flex row align-items-center justify-content-between">
-                 <div class="col-lg-9">
+                 <div class="col-lg-10">
                   <form class="nav nav-item w-100 position-relative">
                     <input  class="form-control pt-3 pb-3 primary-placeholder bg-white border-0  shadow " rows="1" placeholder="Enter Your Live Stream Name!"/>
                   </form>
                 </div>
-                <div class="col-lg-3">
-                    <button type="submit" class="btn btn-gradient px-5 pt-3 pb-3 fw-bold w-100">Start Streaming</button>
+                <div class="col-lg-2">
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#liveModal" class="btn btn-gradient px-2 pt-3 pb-3 fw-bold w-100">Start Streaming</button>
                 </div>
               </div>
               <p class="h6 text-secondary fw-normal mt-3 mb-5">Start a NEW Live Stream, or Wait Until The Stream Has Downloaded To Join! </p>
@@ -3224,6 +3232,110 @@
       </div>
     </div>
 
+
+  <!-- Modal HTML -->
+  <div class="modal fade" id="liveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <form>
+            <div class="modal-header bg-info border-bottom-0 py-1">
+              <h5 class="modal-title" id="modalLabelFilterPosts">
+                Live Streaming
+              </h5>
+              <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+                <i class="bi bi-x-circle fs-3"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                
+                <div class="editcoverphoto-section my-3">
+                    <p class="text-dark fs-6 fw-semibold mb-2">Here's the link to live streaming!</p>
+                    <p class="text-dark fs-6  text-muted">Copy this link and send it with the people you want to share live streaming!</p>
+                   <div class="d-flex justify-content-between align-items-center">
+                    <p class="fw-semibold fs-6 mb-0 text-success">hi2.com/pagename/grddps/live</p>
+                    <div class="d-flex align-items-center">
+                      <span class="ms-2 fs-6 text-success mx-2" id="copyButton">Copy</span>
+                      <i class="bi bi-share fs-6" style="vertical-align: middle;color: #131c61;"></i>
+                  </div>
+                  </div>
+
+                  <div class="mt-3">
+                      <div class="nav">
+                        <h6 class="nav-item card-title mb-0">
+                            Select Audience
+                        </h6>
+                      </div>
+                      <span class="small text-muted">
+ 
+                       <div class="dropdown">
+                          <button type="button" class="dropdown-toggle mb-2" style="padding: 0;border:none;background:transparent;" onclick="toggleSelect()"  data-bs-toggle="dropdown">
+                             <span class="nav-item fw-semibold small text-muted">
+                                                  <i class="bi bi-people text-success"></i>
+                                                  Friends</span>
+                          </button>
+
+                          
+                          <div class="px-3 py-3" id="toggleDiv">
+                            <h6 class="nav-item text-center card-title mb-3">
+                            With whom you can share?
+                        </h6>
+                             <div class="d-flex mb-2 justify-content-between">
+                                <span><i class="bi bi-globe-asia-australia text-success fs-6"></i><span class="fs-6 mx-2 small">Public</span></span>
+                                <input type="radio">
+                             </div>
+                             <div class="d-flex justify-content-between">
+                                <span><i class="bi bi-people text-success fs-6"></i><span class="fs-6 mx-2 small">Friends</span></span>
+                                <input type="radio">
+                             </div>
+                          </div>
+
+                        </div>
+                        </span>
+
+                    </div>
+
+                        <h6 class="nav-item card-title mb-0 mt-3">
+                           <span class="text-success">Aa</span><span class="mx-2">Theme</span>
+                        </h6>
+                        <div class="color-grid d-flex">
+                                    <div class="single-color color-1">
+                                    </div>
+                                    <div class="single-color color-2">
+                                    </div>
+                                    <div class="single-color color-3">
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-1.png">
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-2.png">
+                                    </div>
+                                    <div class="single-frame">
+                                      <img src="assets/images/frames/f-3.png">
+                                    </div>
+                                  </div>
+
+                </div>
+                
+                
+                
+              </div>
+            </div>
+
+          <div class="modal-footer border-0 text-end">
+              <button type="reset" class="btn btn-outline-primary px-5 me-3">
+                Cancel
+              </button>
+              <button type="button" class="btn btn-gradient px-5">Start</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/tiny-slider/dist/tiny-slider.js"></script>
@@ -3237,5 +3349,13 @@
     <script src="assets/js/zuck-stories.js"></script>
 
     <script src="assets/js/functions.js"></script>
+
+    <script type="text/javascript">
+      function toggleSelect() {
+  var div = document.getElementById("toggleDiv");
+  div.classList.toggle("hidden");
+}
+
+    </script>
   </body>
 </html>

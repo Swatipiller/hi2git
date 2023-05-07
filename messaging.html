@@ -52,7 +52,7 @@
         >
         <div class="container-xxl">
           <a
-            href="/"
+            href="index.html"
             class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
             >
           <img src="./assets/images/logo.png" alt="hi2" class="navbar-logo" />
@@ -98,7 +98,7 @@
             <ul
               class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled px-4 px-lg-0 my-3 my-lg-0 ms-lg-auto"
               >
-              <li class="nav-item ms-4 dropdown">
+              <li class="nav-item ms-4 px-3 dropdown">
                 <a
                   class="nav-link icon-md btn btn-link p-0"
                   href="#"
@@ -325,7 +325,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <a href="" class="text-success text-center fw-bold h6 small">See All</a>
+                    <a href="messaging.html" class="text-success text-center fw-bold h6 small">See All</a>
                   </div>
                 </ul>
               </li>
@@ -786,7 +786,7 @@
                   data-arrow="true"
                   data-dots="false"
                   data-autoplay="false"
-                  data-items-xl="6"
+                  data-items-xl="7"
                   data-items-lg="5"
                   data-items-md="4"
                   data-items-sm="3"
@@ -813,7 +813,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/03.jpg"
                           alt=""
                         />
                       </a>
@@ -829,7 +829,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/02.jpg"
                           alt=""
                         />
                       </a>
@@ -845,7 +845,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/01.jpg"
                           alt=""
                         />
                       </a>
@@ -861,7 +861,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/03.jpg"
                           alt=""
                         />
                       </a>
@@ -877,7 +877,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/01.jpg"
                           alt=""
                         />
                       </a>
@@ -893,7 +893,7 @@
                       <a href="#!">
                         <img
                           class="avatar-img rounded-circle"
-                          src="assets/images/avatar/04.jpg"
+                          src="assets/images/avatar/02.jpg"
                           alt=""
                         />
                       </a>
@@ -940,15 +940,16 @@
               </div>
             </div>
 
-            <div class="card card-chat rounded border-start-lg-0 shadow m-4">
-              <div class="card-body h-100">
-                <div class="tab-content py-0 mb-0 h-100" id="chatTabsContent">
+            <div class="card card-chats rounded border-start-lg-0 shadow m-4">
+              <div class="card-body">
+                <div class="tab-content py-0 mb-0" id="chatTabsContent">
                   <div
-                    class="fade tab-pane show active h-100"
+                    class="fade tab-pane show active"
                     id="chat-1"
                     role="tabpanel"
                     aria-labelledby="chat-1-tab"
                   >
+                    
                     <div
                       class="d-sm-flex justify-content-between align-items-center"
                     >
@@ -965,7 +966,7 @@
                         </div>
                       </div>
                       <div class="d-flex align-items-center">
-                        <div class="dropdown">
+                        <!-- <div class="dropdown">
                           <a
                             class="btn fs-5 p-0 text-dark"
                             href="#"
@@ -976,11 +977,41 @@
                             aria-expanded="false"
                             ><i class="bi bi-three-dots-vertical"></i
                           ></a>
-                        </div>
+                        </div> -->
+                        <div class="dropdown">
+                    <a href="#" class="btn btn-secondary-soft-hover fs-5 p-0 text-dark" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="true">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 39px);">
+
+                      <li>
+                        <a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-bell-slash fa-fw pe-2"></i>Turn on
+                          notification</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a class="dropdown-item py-0" href="select-wallpaper.html">
+                          <i class="bi bi-images fa-fw pe-2"></i>Wallpaper</a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-card-text fa-fw pe-2"></i>Report
+                        </a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a class="dropdown-item py-0" href="#">
+                          <i class="bi bi-slash-circle fa-fw pe-2"></i>Block</a>
+                      </li>
+                    </ul>
+                  </div>
                       </div>
                     </div>
 
-                    <div class="chat-conversation-content custom-scrollbar">
+                    <div class="chat-conversation-content custom-scrollbar" style="height: 250px">
                       <div class="text-center small my-4">Today</div>
 
                       <div class="d-flex mb-1">
@@ -1032,6 +1063,20 @@
                         </div>
                       </div>
                     </div>
+                    <div class="d-flex">
+                  <div class="avatar avatar-xs me-2">
+                    <a href="#!">
+                      <img class="avatar-img rounded-circle" src="assets/images/avatar/15.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <form class="nav nav-item w-100 position-relative">
+                    <textarea data-autoresize="" class="form-control pe-5 rounded-pill bg-info border-0 comment-box" rows="1" placeholder="Add a public comment..."></textarea>
+                    <button class="nav-link bg-transparent px-3 position-absolute top-50 end-0 translate-middle-y border-0" type="button">
+                      <i class="bi bi-emoji-laughing text-darksuccess"> </i>
+                    </button>
+                  </form>
+                </div>
                   </div>
                 </div>
               </div>
