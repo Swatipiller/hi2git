@@ -574,6 +574,7 @@
                 >
                 <div class="offcanvas-body p-0 position-fixed w-25 pe-4">
                   <div class="card shadow w-100 h-100vh bg-primary custom-scrollbar" style="max-height: 100vh;padding-bottom: 90px">
+                    <div id="showOrHide">
                     <div class="card-body">
                       <nav
                         style="--bs-breadcrumb-divider: '<'"
@@ -591,6 +592,9 @@
                           </li>
                         </ol>
                       </nav>
+
+
+<div>
                       <p class="h6 text-light fw-bold">Whats the name of your page?</p>
                       <p class="h6 text-light fw-semibold small fs-6">Use the name of your brand, business, or organization that helps explain your page.</p>
                       <div class="create-group-form">
@@ -617,15 +621,17 @@
                             </div>
                           </div>
                           <div class="mb-3 text-center">
-                            <button type="submit"  class="btn btn-gradient px-5">
+                            <a  onclick="showOrHideDiv()" class="btn btn-gradient px-5">
                             Create Page
-                            </button>
+                            </a>
                           </div>
                         </form>
                       </div>
                     </div>
+                  </div>
+                </div>
 
-
+<div id="showOrHide2" style="display: none;">
                     <div class="card-body">
                       <nav
                         style="--bs-breadcrumb-divider: '<'"
@@ -691,20 +697,21 @@
                       </div>
 
                           <div class="mb-3 text-center">
-                            <button type="submit"  class="btn btn-gradient px-5">
+                            <a  onclick="showOrHideDiv2()" class="btn btn-gradient px-5">
                             Next
-                            </button>
+                            </a>
                           </div>
                         </form>
                       </div>
                    
 
                     </div>
+</div>
 
 
-                                        <div class="card-body">
-                     
-                    </div>
+
+<div id="showOrHide3" style="display: none;">
+                          
 
                      <div class="card-body">
                       <nav
@@ -781,15 +788,17 @@
                                 </div>
                           </div>
                           <div class="mb-3 text-center">
-                            <button type="submit"  class="btn btn-gradient px-5">
+                            <a onclick="showOrHideDiv3()" class="btn btn-gradient px-5">
                             Send Invites
-                            </button>
+                            </a>
                           </div>
                         </form>
                       </div>
                     </div>
+</div>
 
 
+<div id="showOrHide4" style="display: none;">
 <div class="card-body">
                       <nav style="--bs-breadcrumb-divider: '<'" aria-label="breadcrumb">
                         <ol class="breadcrumb border-bottom">
@@ -830,6 +839,30 @@
               </div>
             </nav>
           </div>
+
+
+<script>
+    function showOrHideDiv() {
+      document.getElementById("showOrHide").style.display = "none";
+      document.getElementById("showOrHide2").style.display = "block";
+     }
+</script>
+
+<script>
+    function showOrHideDiv2() {
+      document.getElementById("showOrHide2").style.display = "none";
+      document.getElementById("showOrHide3").style.display = "block";
+     }
+</script>
+
+<script>
+    function showOrHideDiv3() {
+      document.getElementById("showOrHide3").style.display = "none";
+      document.getElementById("showOrHide4").style.display = "block";
+     }
+</script>
+
+
           <div class="col-lg-6 vstack">
             <div class="create-group-banner">
               <img
@@ -919,5 +952,6 @@
     <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
     <script src="assets/js/functions.js"></script>
             <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
+ 
   </body>
 </html>

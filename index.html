@@ -73,6 +73,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/homepage.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
 
   </head>
   <body>
@@ -609,7 +610,7 @@ div::-webkit-scrollbar {
     </style>
 
     <main class="mt-3 pt-72">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="row g-4">
           <div class="col-lg-3">
             <div class="fixed-div">
@@ -617,11 +618,13 @@ div::-webkit-scrollbar {
             <div class="card border-0 shadow mb-3">
               <div class="card-body">
                 <h3 class="h6 fw-bold text-dark">Advertisement</h3>
+                <a href="https://www.google.com/" target="_blank">
                 <img
                   src="./assets/images/advertisement-img.jpg"
                   alt="Advertisement"
                   class="card-img rounded-0"
                 />
+              </a>
               </div>
             </div>
             <div class="card border-0 shadow mb-3">
@@ -779,7 +782,7 @@ div::-webkit-scrollbar {
                   <li class="nav-item">
                     <a
                       class="nav-link text-black-50 py-1 px-2 mb-0 d-inline-flex justify-content-center align-items-center text-center flex-column"
-                      href="#!"
+                      href="live.html"
                     >
                       <img
                         src="./assets/images/icon/icon-live.svg"
@@ -916,12 +919,27 @@ div::-webkit-scrollbar {
                   class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between my-3"
                 >
                   <li class="nav-item">
-                    <a
-                      class="text-secondary d-inline-flex align-items-center"
-                      href="#!" id="textChange"
-                    >
-                      <i id="liked" onclick="like()" class="bi bi-hand-thumbs-up pe-2 fs-5"></i>Like
-                    </a>
+                     <a   class="text-secondary position-relative d-inline-flex align-items-center">
+                                <span>
+                                <span onclick="showEmoji()" style="cursor: pointer;">
+                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                                  <span class="like-text">Like</span>
+                                </span>
+                                  <div id="emojiPopup" class="shadow emojiDiv" style="display: none;">
+                                    <div class="hidden2s">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction me-1 icon-sm fs-6 emoji"><img src="assets/images/imoji/like.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji2"><img src="assets/images/imoji/1.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji3"><img src="assets/images/imoji/2.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji4"><img src="assets/images/imoji/angry.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji5"><img src="assets/images/imoji/care.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji6"><img src="assets/images/imoji/love.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji7"><img src="assets/images/imoji/wow.png"></span>
+                                </div>
+                              </div>
+                             </div>
+                            </a>
+         
                   </li>
                   <li class="nav-item">
                     <a
@@ -1357,12 +1375,27 @@ div::-webkit-scrollbar {
                   class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between mb-3"
                 >
                   <li class="nav-item">
-                    <a
-                      class="text-secondary d-inline-flex align-items-center"
-                      href="#!"
-                    >
-                      <i class="bi bi-hand-thumbs-up pe-2 fs-5"></i>Like
-                    </a>
+                                         <a   class="text-secondary position-relative d-inline-flex align-items-center">
+                                <span>
+                                <span onclick="showEmoji2()" style="cursor: pointer;">
+                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                                  <span class="like-text">Like</span>
+                                </span>
+                                  <div id="emojiPopup2" class="shadow emojiDiv" style="display: none;">
+                                    <div class="hidden2s">
+                                      <div class="d-flex shadow reaction-popup">
+                                      <span class="reaction me-1 icon-sm fs-6 emoji"><img src="assets/images/imoji/like.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji2"><img src="assets/images/imoji/1.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji3"><img src="assets/images/imoji/2.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji4"><img src="assets/images/imoji/angry.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji5"><img src="assets/images/imoji/care.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji6"><img src="assets/images/imoji/love.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji7"><img src="assets/images/imoji/wow.png"></span>
+                                </div>
+                              </div>
+                             </div>
+
+                            </a>
                   </li>
                   <li class="nav-item">
                     <a
@@ -4618,13 +4651,26 @@ div::-webkit-scrollbar {
     <script src="assets/js/zuck-stories.js"></script>
 
     <script src="assets/js/functions.js"></script>
-
-    <script type="text/javascript">
-      function like(){
-  var upVoteBtn = document.getElementById("liked");
-  upVoteBtn.style.color = "#b5f3a6";
-    var textChange = document.getElementById("liked").innerHTML = "Liked";
+<script>
+function showEmoji() {
+  var x = document.getElementById("emojiPopup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
-    </script>
+</script>
+<script>
+function showEmoji2() {
+  var x = document.getElementById("emojiPopup2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
   </body>
 </html>

@@ -780,25 +780,27 @@
                             class="nav nav-stack py-2 small border-bottom border-secondary-subtle border-top fw-bold justify-content-between my-3"
                           >
                             <li class="nav-item">
-                              <a   class="text-secondary d-inline-flex align-items-center"
-                               
-                              >
-                              <span id="likeButton2">
-                                <span style="cursor: pointer;">
+                              <a   class="text-secondary position-relative d-inline-flex align-items-center">
+                                <span>
+                                <span onclick="showEmoji()" style="cursor: pointer;">
                                   <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
                                   <span class="like-text">Like</span>
                                 </span>
-                                </a>
-                                  <div id="popupContainer" class="shadow">
-                                    <div id="popup2" class="hidden">
+                                  <div id="emojiPopup" class="shadow emojiDiv" style="display: none;">
+                                    <div class="hidden2s">
                                       <div class="d-flex shadow reaction-popup">
-                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
-                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
-                                      <span class="reaction  bi bi-emoji-smile"></span>
-                                    </div>
-                                  </div>
-                                  </div>
-                                </span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji"><img src="assets/images/imoji/like.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji2"><img src="assets/images/imoji/1.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji3"><img src="assets/images/imoji/2.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji4"><img src="assets/images/imoji/angry.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji5"><img src="assets/images/imoji/care.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji6"><img src="assets/images/imoji/love.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji7"><img src="assets/images/imoji/wow.png"></span>
+                                </div>
+                              </div>
+                             </div>
+
+                            </a>
 
 
                             </li>
@@ -1287,17 +1289,22 @@
                                   <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
                                   <span class="like-text">Like</span>
                                 </span>
-                                </a>
                                   <div id="popupContainer" class="shadow">
                                     <div id="popup" class="hidden">
                                       <div class="d-flex shadow reaction-popup">
-                                      <span class="reaction  bi bi-hand-thumbs-up  me-1 icon-sm fs-6 bg-indigo text-white rounded-circle"></span>
-                                      <span class="reaction  bi bi-heart-fill bg-danger  me-1 icon-sm fs-6  text-white rounded-circle"></span>
-                                      <span class="reaction  bi bi-emoji-smile  me-1 icon-sm fs-6 bg-warning text-white rounded-circle"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji"><img src="assets/images/imoji/like.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji2"><img src="assets/images/imoji/1.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji3"><img src="assets/images/imoji/2.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji4"><img src="assets/images/imoji/angry.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji5"><img src="assets/images/imoji/care.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji6"><img src="assets/images/imoji/love.png"></span>
+                                      <span class="reaction me-1 icon-sm fs-6 emoji emoji7"><img src="assets/images/imoji/wow.png"></span>
+                                </span>
                                     </div>
                                   </div>
                                   </div>
                                 </span>
+                                </a>
 
 
                             </li>
@@ -1641,7 +1648,7 @@
 
     <script src="assets/js/functions.js"></script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 // Get the elements
 const likeButton = document.getElementById('likeButton');
 const popup = document.getElementById('popup');
@@ -1666,8 +1673,35 @@ popup.addEventListener('click', function(event) {
     // Perform any other action you want with the selected reaction
   }
 });
+</script>
 
-    </script>
+<script type="text/javascript">
+// Get the elements
+const likeButton2 = document.getElementById('likeButton2');
+const popup2 = document.getElementById('popup2');
+
+// Toggle the popup when the like button is clicked
+likeButton2.addEventListener('click', function() {
+  popup2.classList.toggle('hidden');
+});
+
+// Hide the popup when clicking outside of it
+document.addEventListener('click', function(event) {
+  if (!popup2.contains(event.target) && !likeButton2.contains(event.target)) {
+    popup2.classList.add('hidden2');
+  }
+});
+
+// Handle reaction selection
+popup2.addEventListener('click', function(event) {
+  const reaction = event.target.textContent;
+  if (reaction) {
+    console.log('Selected reaction:', reaction);
+    // Perform any other action you want with the selected reaction
+  }
+});
+</script>
+
 <script type="text/javascript">
   // Get the elements
 const toggleButton = document.getElementById('toggleButton');
@@ -1679,6 +1713,20 @@ toggleButton.addEventListener('click', function() {
 });
 
 </script>
+
+
+
+<script>
+function showEmoji() {
+  var x = document.getElementById("emojiPopup");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 
   </body>
 </html>
