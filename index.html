@@ -614,7 +614,7 @@ div::-webkit-scrollbar {
         <div class="row g-4">
           <div class="col-lg-3">
             <div class="fixed-div">
-            <div class="custom-scrollbar" style="max-height: 100vh;padding: 15px">
+            <div class="custom-scrollbar" style="max-height: 90vh;padding: 15px">
             <div class="card border-0 shadow mb-3">
               <div class="card-body">
                 <h3 class="h6 fw-bold text-dark">Advertisement</h3>
@@ -944,8 +944,7 @@ div::-webkit-scrollbar {
                   <li class="nav-item">
                     <a
                       class="text-secondary d-inline-flex align-items-center"
-                      href="#!"
-                    >
+                      href="#!">
                       <i class="bi bi-chat-right-text pe-2 fs-5"></i>Comment</a
                     >
                   </li>
@@ -1028,7 +1027,7 @@ div::-webkit-scrollbar {
                   </form>
                 </div>
 
-                <ul class="comment-wrap list-unstyled d-none">
+                <ul class="comment-wrap list-unstyled hidden"  id="myDiv">
                   <li class="comment-item">
                     <div class="d-flex position-relative">
                       <div class="avatar avatar-xs">
@@ -1365,7 +1364,7 @@ div::-webkit-scrollbar {
                     </a>
                   </li>
                   <li class="nav-item ms-sm-auto">
-                    <a class="nav-link text-secondary" href="#!">
+                    <a class="nav-link text-secondary" href="#!" style="cursor: pointer;"  id="toggleButton2">
                       <i class="bi bi-chat-right pe-2"></i>(12)</a
                     >
                   </li>
@@ -1400,8 +1399,7 @@ div::-webkit-scrollbar {
                   <li class="nav-item">
                     <a
                       class="text-secondary d-inline-flex align-items-center"
-                      href="#!"
-                    >
+                      href="#!">
                       <i class="bi bi-chat-right-text pe-2 fs-5"></i>Comment</a
                     >
                   </li>
@@ -1484,7 +1482,7 @@ div::-webkit-scrollbar {
                   </form>
                 </div>
 
-                <ul class="comment-wrap list-unstyled">
+                <ul class="comment-wrap list-unstyled" id="myDiv2">
                   <li class="comment-item">
                     <div class="d-flex">
                       <div class="avatar avatar-xs">
@@ -3040,7 +3038,7 @@ div::-webkit-scrollbar {
 
           <div class="col-lg-3">
             <div class="fixed-div">
-            <div class="custom-scrollbar" style="max-height: 100vh;padding: 15px">
+            <div class="custom-scrollbar" style="max-height: 90vh;padding: 15px">
 
             <div class="card border-0 mb-3 bg-teal bg-opacity-50">
               <div class="card-body">
@@ -3208,7 +3206,7 @@ div::-webkit-scrollbar {
                 </div>
               </div>
               <div class="card-footer text-center bg-transparent border-0">
-                <a href="#" class="text-darksuccess">See All</a>
+                <a href="friends.html" class="text-darksuccess">See All</a>
               </div>
             </div>
           </div>
@@ -4670,6 +4668,29 @@ function showEmoji2() {
     x.style.display = "none";
   }
 }
+</script>
+<script type="text/javascript">
+  // Get the elements
+const toggleButton = document.getElementById('toggleButton');
+const myDiv = document.getElementById('myDiv');
+
+// Toggle the visibility of the div when the button is clicked
+toggleButton.addEventListener('click', function() {
+  myDiv.classList.toggle('hidden');
+});
+
+</script>
+
+<script type="text/javascript">
+  // Get the elements
+const toggleButton2 = document.getElementById('toggleButton2');
+const myDiv2 = document.getElementById('myDiv2');
+
+// Toggle the visibility of the div when the button is clicked
+toggleButton2.addEventListener('click', function() {
+  myDiv2.classList.toggle('hidden');
+});
+
 </script>
 
   </body>
