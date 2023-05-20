@@ -758,26 +758,26 @@
                             class="nav nav-stack small  border-secondary-subtle fw-bold justify-content-between mt-3"
                           >
                             <li class="nav-item">
-                              <a
-                                class="text-secondary mx-0 d-inline-flex align-items-center"
-                                href="#!"
-                              >
-                               <span id="likeButton">
-                                <span style="cursor: pointer;">
-                                  <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
-                                  <span class="like-text">Like</span>
-                                </span>
-                                  <div id="popupContainer" class="shadow">
-                                    <div id="popup" class="hidden">
-                                      <div class="d-flex shadow reaction-popup">
-                                      <span class="reaction  bi bi-hand-thumbs-up"></span>
-                                      <span class="reaction  bi bi-heart-fill text-danger"></span>
-                                      <span class="reaction  bi bi-emoji-smile"></span>
-                                    </div>
-                                  </div>
-                                  </div>
-                                </span>
-                                </a>
+                              <a   class="text-secondary position-relative d-inline-flex align-items-center">
+                      <span>
+                      <span onclick="showEmoji()" style="cursor: pointer;">
+                      <i class="like-icon bi bi-hand-thumbs-up pe-1 fs-5"></i>
+                      <span class="like-text">Like</span>
+                      </span>
+                      <div id="emojiPopup" class="shadow emojiDiv" style="display: none;">
+                        <div class="hidden2s">
+                          <div class="d-flex shadow reaction-popup">
+                            <span class="reaction me-1 icon-sm fs-6 emoji"><img src="assets/images/imoji/like.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji2"><img src="assets/images/imoji/1.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji3"><img src="assets/images/imoji/2.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji4"><img src="assets/images/imoji/angry.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji5"><img src="assets/images/imoji/care.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji6"><img src="assets/images/imoji/love.png"></span>
+                            <span class="reaction me-1 icon-sm fs-6 emoji emoji7"><img src="assets/images/imoji/wow.png"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                               <a
                                 class="text-secondary mx-3 d-inline-flex align-items-center"
                                 href="#!"
@@ -2429,6 +2429,26 @@ function checkVideoVisibility() {
   }
 }
 
+    </script>
+    <script>
+      function showEmoji() {
+        var x = document.getElementById("emojiPopup");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function showEmoji2() {
+        var x = document.getElementById("emojiPopup2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
