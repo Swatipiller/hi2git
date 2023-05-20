@@ -214,7 +214,8 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="#"
+                      href="#" data-bs-toggle="modal"
+                      data-bs-target="#myPopUpIdeas"
                       >
                     <i class="fa-fw bi bi-card-text me-2  text-success"></i>Pop Your Ideas
                     </a>
@@ -378,7 +379,7 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
                         <li>
-                          <a class="dropdown-item py-0 small" href="#">
+                          <a class="dropdown-item py-0 small" href="all-notifications.html">
                           <i class="bi bi-bookmark text-success fa-fw pe-2"></i>View all notifications</a>
                         </li>
                         <li>
@@ -519,7 +520,8 @@
                     <img src="assets/images/icon/icons8-online-store-48.png">
                     </i>Marketplace</a>
                   </li>
-                  <li><a href="invite.html" title=""  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Invite" data-bs-original-title="Invite"><i class="icofont-user-alt-3">
+                  <li><a  href="#" data-bs-toggle="modal"
+                      data-bs-target="#myInviteModal"  title=""  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Invite" data-bs-original-title="Invite"><i class="icofont-user-alt-3">
                     <img src="assets/images/icon/icons8-invite-48.png">
                     </i>Invite</a>
                   </li>
@@ -1860,7 +1862,145 @@
         </div>
       </div>
     </main>
+    <!-- Modal HTML -->
+  <div class="modal fade" id="myInviteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <form>
+            <div class="modal-header bg-info border-bottom-0 py-1">
+              <h5 class="modal-title" id="modalLabelFilterPosts">
+                Invite Friends
+              </h5>
+              <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+                <i class="bi bi-x-circle fs-3"></i>
+              </button>
+            </div>
 
+            <div class="modal-body">
+              <div class="mb-3">
+                
+                <div class="editcoverphoto-section my-3">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fs-6 fw-semibold">Enter the email address of a friend to join Hi2</p>
+                  </div>
+                  <input type="" name="" placeholder="Email Address" class="form-control shadow border-0">
+
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#modalWork" type="button">
+                        <div class="d-flex align-items-center mt-3">
+                          <i class="bi bi-share fs-3" style="vertical-align: middle;    vertical-align: middle;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #131c61;
+    color: #fff !important;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px !important;
+    padding: 5px;"></i>
+                          <span class="ms-2 fs-6" style="color: #131c61">Share link to Whatsapp</span>
+                  </div>
+                  </a>
+                </div>
+                
+                
+                
+              </div>
+            </div>
+
+          <div class="modal-footer border-0 text-end">
+              <button type="reset" class="btn btn-outline-primary px-5 me-3">
+                Cancel
+              </button>
+              <button type="button" class="btn btn-gradient px-5">Save</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+ <!-- Modal HTML -->
+                <div class="modal fade" id="myPopUpIdeas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <form>
+                        <div class="modal-header bg-info border-bottom-0 py-1">
+                          <h5 class="modal-title" id="modalLabelFilterPosts">
+                            Pop your Ideas
+                          </h5>
+                          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+                          <i class="bi bi-x-circle fs-3"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <div class="editcoverphoto-section my-3">
+                              <div class="d-flex justify-content-between">
+                                <p class="fs-5 fw-semibold" style="color: #131c61">Tell us how can we improve?</p>
+                              </div>
+                              <textarea type="" style="height: 100px" name="" placeholder="Email Address" class="form-control shadow border-0">Mention details here..</textarea>
+                              <div class="file-upload">
+                                <input type="file" class="form-control shadow border-0" id="upload-input" accept="image/*">
+                                <label for="upload-input" class="form-control shadow border-0">
+                                <span class="icon bi bi-paperclip"></span>
+                                <span class="text">Add a screenshot or video (recommended)</span>
+                                </label>
+                              </div>
+                              <style type="text/css">
+                                .file-upload {
+                                position: relative;
+                                display: inline-block;
+                                width: 100%;
+                                margin-top: 10px;
+                                }
+                                #upload-input {
+                                display: none;
+                                }
+                                .label {
+                                display: inline-block;
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                border-radius: 5px;
+                                background-color: #f5f5f5;
+                                cursor: pointer;
+                                color: #131c61
+                                }
+                                .icon {
+                                display: inline-block;
+                                font-size: 20px;
+                                margin-right: 5px;
+                                color: #131c61
+                                }
+                                .text {
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #131c61
+                                }
+                              </style>
+                              <script type="text/javascript">
+                                const uploadInput = document.getElementById('upload-input');
+                                const textElement = document.querySelector('.text');
+                                
+                                uploadInput.addEventListener('change', handleFileSelect);
+                                
+                                function handleFileSelect(event) {
+                                const file = event.target.files[0];
+                                if (file) {
+                                  textElement.textContent = file.name;
+                                } else {
+                                  textElement.textContent = 'Choose a file';
+                                }
+                                }
+                                
+                              </script>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                          <button type="button" class="btn btn-gradient px-5">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
