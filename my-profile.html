@@ -59,6 +59,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/myprofile.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
   </head>
 
   <body>
@@ -715,32 +716,34 @@
               </div>
 
               <div class="card-footer mt-3 pt-2 pb-0">
+   
                 <ul
-                  class="nav nav-bottom-line align-items-center justify-content-center mb-0 border-0"
+                  class="nav  nav-tabs nav-bottom-line align-items-center justify-content-center mb-0 border-0"
                 >
-                  <li class="nav-item">
-                    <a class="nav-link active" href="my-profile.html">
-                      Posts
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home">Posts</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About </a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">About</a>
                   </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="friend.html"> Friends </a>
+                    <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu2">Friends</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="photos.html"> Photos</a>
+                    <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu3">Photos</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="videos.html"> Videos</a>
+                    <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu4">Videos</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container-fluid active" id="home">
+    <div class="row">
           <div class="col-lg-8 vstack gap-4 align-self-start">
             <div class="card card-body text-bg-info shadow">
               <div class="d-flex align-items-center">
@@ -1494,7 +1497,7 @@
               </div>
 
               <div class="col-md-6 col-lg-12">
-                <div class="card shadow">
+                <div class="card shadow mb-4">
                   <div
                     class="card-header d-sm-flex justify-content-between border-0"
                   >
@@ -1812,10 +1815,1220 @@
               </div>
             </div>
           </div>
+  </div>
+  </div>
+  <div class="tab-pane container-fluid fade" id="menu1">
+    <div class="row">
+<div class="col-md-12 col-lg-12">
+                <div class="card shadow">
+                 
+
+                  <div class="card-body position-relative pt-0 pb-0">
+                  <div class="row">
+                    <div class="col-lg-4">
+                    <div class="left-side-menulist pb-3">
+                    <h5 class="card-title text-primary mb-3 pt-3">About</h5>
+                      <ul class="nav nav-tabs cus-nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#overview" aria-selected="true" role="tab">Overview</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#workAndEducation" aria-selected="false" tabindex="-1" role="tab">Work and Education</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#placedLived" aria-selected="false" tabindex="-1" role="tab">Placed Lived</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#contactsAndBasicInfo" aria-selected="false" tabindex="-1" role="tab">Contacts and basic info</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#detailsAboutYou" aria-selected="false" tabindex="-1" role="tab">Details about you</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#lifeEvents" aria-selected="false" tabindex="-1" role="tab">Life events</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                    <div class="col-lg-8">
+                      <div class="tab-content mb-0 pb-0">
+                        <div class="tab-pane container active" id="overview" role="tabpanel">
+                    <!-- <a href="#" class="addworkplace d-flex align-items-center">
+                      <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                      <span class="text-success ms-3">Add a workplace</span>
+                    </a> -->      
+                    <ul class="list-unstyled my-3">
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-house-door fa-fw pe-1"></i> Lives in
+                        <strong> Paris, France </strong>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-geo-alt fa-fw pe-1"></i> From
+                        <strong> Marseille </strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                       <div class="label-det">
+                        <i class="bi bi-building fa-fw pe-1"></i> Works at
+                        <strong> BNP Paribas</strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-telephone fa-fw pe-1"></i> 8585858585
+                      </div>
+                                            <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="workAndEducation" role="tabpanel">
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalWork" type="button">
+                          <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a workplace</span>
+                        </a>      
+                    <ul class="list-unstyled my-3">
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                       <div class="label-det">
+                        <i class="bi bi-building fa-fw pe-1"></i> Works at
+                        <strong> BNP Paribas</strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalCollege" type="button">
+                        <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a College</span>
+                        </a>
+                        </div>
+                        <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalHighschool" type="button">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-2">Add a Highschool</span>
+                        </a>
+                      </div>
+                        </div>
+                       
+                        <div class="tab-pane container fade" id="placedLived" role="tabpanel">
+                          <h5 class="card-title">Placed Lived</h5>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalCity" type="button" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add current city</span>
+                        </a>
+                          <ul class="list-unstyled my-3">
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-house-door fa-fw pe-1"></i> Lives in
+                        <strong> Paris, France </strong>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-geo-alt fa-fw pe-1"></i> From
+                        <strong> Marseille </strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="contactsAndBasicInfo" role="tabpanel">
+                           <h5 class="card-title">Contacts and basic info</h5>
+                          <ul class="list-unstyled my-3">
+                      <li class="d-flex justify-content-between mb-2 align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-telephone fa-fw pe-1"></i> 8585858585
+                      </div>
+                                            <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLanguage" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add a Language</span>
+                        </a>      
+
+                      <h6 class="mb-2">Basic Info</h6>  
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-person fa-fw pe-1"></i> Female
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-calendar-event fa-fw pe-1"></i> 10 December, 1996
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="detailsAboutYou" role="tabpanel">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalQuote" type="button" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add some quotes</span>
+                        </a>      
+                        </div>
+                        <div class="tab-pane container fade" id="lifeEvents" role="tabpanel">
+<a href="#" data-bs-toggle="modal" data-bs-target="#modalLifeEvent" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add some events</span>
+                        </a>     
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                 
+                  </div>
+                </div>
+              </div>
+
+                  <div class="col-lg-8">
+                      <div class="tab-content mb-0 pb-0">
+                        <div class="tab-pane container active" id="overview" role="tabpanel">
+                
+                        </div>
+                        <div class="tab-pane container fade" id="workAndEducation" role="tabpanel">
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalWork" type="button">
+                          <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a workplace</span>
+                        </a>      
+                    <ul class="list-unstyled my-3">
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                       <div class="label-det">
+                        <i class="bi bi-building fa-fw pe-1"></i> Works at
+                        <strong> BNP Paribas</strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalCollege" type="button">
+                        <i class="bi bi-plus-circle-fill text-success fs-3" style="vertical-align: middle;"></i>
+                          <span class="text-success ms-2">Add a College</span>
+                        </a>
+                        </div>
+                        <div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalHighschool" type="button">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-2">Add a Highschool</span>
+                        </a>
+                      </div>
+                        </div>
+                       
+                        <div class="tab-pane container fade" id="placedLived" role="tabpanel">
+                          <h5 class="card-title">Placed Lived</h5>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#modalCity" type="button" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add current city</span>
+                        </a>
+                          <ul class="list-unstyled my-3">
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-house-door fa-fw pe-1"></i> Lives in
+                        <strong> Paris, France </strong>
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-geo-alt fa-fw pe-1"></i> From
+                        <strong> Marseille </strong>
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="contactsAndBasicInfo" role="tabpanel">
+                           <h5 class="card-title">Contacts and basic info</h5>
+                          <ul class="list-unstyled my-3">
+                      <li class="d-flex justify-content-between mb-2 align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-telephone fa-fw pe-1"></i> 8585858585
+                      </div>
+                                            <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalLanguage" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add a Language</span>
+                        </a>      
+
+                      <h6 class="mb-2">Basic Info</h6>  
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-person fa-fw pe-1"></i> Female
+                        </div>
+                        <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="mb-2 d-flex justify-content-between align-items-center">
+                        <div class="label-det">
+                        <i class="bi bi-calendar-event fa-fw pe-1"></i> 10 December, 1996
+                      </div>
+                      <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="detailsAboutYou" role="tabpanel">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalQuote" type="button" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add some quotes</span>
+                        </a>      
+                        </div>
+                        <div class="tab-pane container fade" id="lifeEvents" role="tabpanel">
+<a href="#" data-bs-toggle="modal" data-bs-target="#modalLifeEvent" class="addworkplace mb-2 d-flex align-items-center">
+                          <i class="bi bi-plus-circle-fill text-success fs-3"></i>
+                          <span class="text-success ms-3">Add some events</span>
+                        </a>     
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Friends</h5>
+                    <a class="btn fw-semibold text-darksuccess btn-sm" href="#!">
+                      Add Photos/Video</a>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="assets/images/avatar/02.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Amanda Reed </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/01.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Jorge </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/03.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Bob </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/05.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Maria </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/10.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Rhea</a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/11.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Sofia </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/06.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Loy </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/13.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!">James </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/01.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Jorge </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/03.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Bob </a>
+                          </h6>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/05.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Maria </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/10.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Rhea</a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <a href="friends.html" class="btn btn-info py-4 fs-5 fw-bold text-dark">
+                                  See All
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Photos</h5>
+                    <a class="btn fw-semibold text-darksuccess btn-sm" href="#!">
+                      Add Photos/Video</a>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/02.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/02.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/03.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/03.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/04.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/05.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/06.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/07.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/07.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/08.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/08.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/09.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/09.jpg" alt="">
+                        </a>
+                      </div>
+
+                                            <div class="col-2">
+                        <a href="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/04.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/05.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/06.jpg" alt="">
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                  <a href="photos.html" class="btn btn-info py-4 fs-5 fw-bold text-dark">
+                                  See All
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Videos</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Likes</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Events</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Groups</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+  </div>
+  <div class="tab-pane container-fluid fade" id="menu2">
+<div class="row g-4">
+<div class="col-md-12 col-lg-12">
+                <div class="card shadow">
+                  <div class="card-header d-sm-flex align-items-center justify-content-between border-0">
+                   <div class="d-flex align-items-center">
+                    <h5 class="card-title text-primary mb-0">Friends <span class="small text-secondary fs-6">30 Friends</span></h5>
+                    <form class="rounded position-relative col-12 col-lg-auto mb-2 mb-lg-0 ms-lg-3">
+                <input class="form-control ps-5 rounded-pill border-0" style="background: #e9fce4" type="search" placeholder="Search freinds" aria-label="Search">
+                <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit">
+                  <i class="bi bi-search fs-5"> </i>
+                </button>
+              </form>
+            </div>
+                    <a class="btn fw-semibold text-success btn-sm" href="#!">
+                      Friend Requests</a>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="assets/images/avatar/02.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Amanda Reed </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/01.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Jorge </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/03.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Bob </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/05.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Maria </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/10.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Rhea</a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/11.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Sofia </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/06.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Loy </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/13.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!">James </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/01.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Jorge </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/03.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Bob </a>
+                          </h6>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/05.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Maria </a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="card shadow-none h-100">
+                        <div class="card-body p-2 pb-0 text-center my-3">
+                          <div class="friendall friendall-story w-75 m-auto">
+                            <a href="#!"><img class="friendall-img rounded-circle bg-info" src="./assets/images/avatar/10.jpg" alt=""></a>
+                          </div>
+                          <h6 class="card-title mb-1 mt-3">
+                            <a href="#!"> Rhea</a>
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+  </div>
+  <div class="tab-pane container-fluid fade" id="menu3">
+    <div class="row g-4">
+
+              <div class="col-md-12 col-lg-12">
+                <div class="card shadow">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Photos</h5>
+                    <a class="btn fw-semibold text-darksuccess btn-sm" href="#!">
+                      Add Photos/Video</a>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/02.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/02.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/03.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/03.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/04.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/05.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/06.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/07.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/07.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/08.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/08.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/09.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/09.jpg" alt="">
+                        </a>
+                      </div>
+
+                                            <div class="col-2">
+                        <a href="assets/images/albums/04.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/04.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/05.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/05.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/06.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/06.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/07.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/07.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/08.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/08.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/09.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/09.jpg" alt="">
+                        </a>
+                      </div>
+
+                      
+                      <div class="col-2">
+                        <a href="assets/images/albums/07.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/07.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/08.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/08.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="col-2">
+                        <a href="assets/images/albums/09.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/09.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+  </div>
+  <div class="tab-pane container-fluid fade" id="menu4">
+    <div class="row g-4">
+
+
+            <div class="col-md-12 col-lg-12">
+                <div class="card shadow">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Videos</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                          <div class="col-md-12 col-lg-12">
+                <div class="card shadow">
+                  <div class="card-header d-sm-flex justify-content-between border-0">
+                    <h5 class="card-title text-primary">Likes</h5>
+                  </div>
+
+                  <div class="card-body position-relative pt-0">
+                    <div class="row g-2">
+                      <div class="col-2">
+                        <a href="assets/images/albums/01.jpg" data-gallery="image-popup" data-glightbox="">
+                          <img class="rounded img-fluid" src="assets/images/albums/01.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+  </div>
+</div>
+
         </div>
       </div>
     </main>
-    <!-- Modal HTML -->
+<!-- Modal HTML -->
   <div class="modal fade" id="myInviteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -1870,90 +3083,6 @@
         </div>
     </div>
   </div>
- <!-- Modal HTML -->
-                <div class="modal fade" id="myPopUpIdeas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <form>
-                        <div class="modal-header bg-info border-bottom-0 py-1">
-                          <h5 class="modal-title" id="modalLabelFilterPosts">
-                            Pop your Ideas
-                          </h5>
-                          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
-                          <i class="bi bi-x-circle fs-3"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="mb-3">
-                            <div class="editcoverphoto-section my-3">
-                              <div class="d-flex justify-content-between">
-                                <p class="fs-5 fw-semibold" style="color: #131c61">Tell us how can we improve?</p>
-                              </div>
-                              <textarea type="" style="height: 100px" name="" placeholder="Email Address" class="form-control shadow border-0">Mention details here..</textarea>
-                              <div class="file-upload">
-                                <input type="file" class="form-control shadow border-0" id="upload-input" accept="image/*">
-                                <label for="upload-input" class="form-control shadow border-0">
-                                <span class="icon bi bi-paperclip"></span>
-                                <span class="text">Add a screenshot or video (recommended)</span>
-                                </label>
-                              </div>
-                              <style type="text/css">
-                                .file-upload {
-                                position: relative;
-                                display: inline-block;
-                                width: 100%;
-                                margin-top: 10px;
-                                }
-                                #upload-input {
-                                display: none;
-                                }
-                                .label {
-                                display: inline-block;
-                                padding: 10px;
-                                border: 1px solid #ccc;
-                                border-radius: 5px;
-                                background-color: #f5f5f5;
-                                cursor: pointer;
-                                color: #131c61
-                                }
-                                .icon {
-                                display: inline-block;
-                                font-size: 20px;
-                                margin-right: 5px;
-                                color: #131c61
-                                }
-                                .text {
-                                display: inline-block;
-                                vertical-align: middle;
-                                color: #131c61
-                                }
-                              </style>
-                              <script type="text/javascript">
-                                const uploadInput = document.getElementById('upload-input');
-                                const textElement = document.querySelector('.text');
-                                
-                                uploadInput.addEventListener('change', handleFileSelect);
-                                
-                                function handleFileSelect(event) {
-                                const file = event.target.files[0];
-                                if (file) {
-                                  textElement.textContent = file.name;
-                                } else {
-                                  textElement.textContent = 'Choose a file';
-                                }
-                                }
-                                
-                              </script>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer border-0 justify-content-center">
-                          <button type="button" class="btn btn-gradient px-5">Submit</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
     <div
       class="modal fade"
       id="modalEditProfile"
@@ -2203,10 +3332,78 @@
                       </div>
                       <a href="#"><i class="bi bi-pencil-fill"></i></a>
                     </div>
-                    <a href="#" class="addworkplace d-flex align-items-center">
+                    <a style="cursor: pointer;" id="addworkplacebtn" class="addworkplace d-flex align-items-center">
                       <i class="bi bi-plus-circle-fill text-success fs-3"></i>
                       <span class="text-success ms-3">Add a workplace</span>
                     </a>
+                    <div class="modal-body p-0 pt-3 border-bottom border-top" id="addworkplaceDiv" style="display: none;">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Company</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Company</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px collapsed" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
                   </div>
                 </div>
 
@@ -2230,19 +3427,156 @@
                       <a href="#"><i class="bi bi-pencil-fill"></i></a>
                     </div>
                     <a
-                      href="#"
+                       style="cursor: pointer;" id="addCollegebtn" 
                       class="addeducationcer d-flex align-items-center"
                     >
                       <i class="bi bi-plus-circle-fill text-success fs-3"></i>
                       <span class="text-success ms-3">Add a College</span>
                     </a>
+
+                    <div class="modal-body p-0 pt-3 border-top border-bottom" id="addCollegeDiv"  style="display: none;">
+              <div class="mb-0">
+                <div class="editprofilephoto-section my-0">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                    <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </div>
+                <div class="editcoverphoto-section my-3">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fw-semibold">Graduated</p>
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="editbio-section my-3">
+                  <div class="">
+                    <p class="text-dark fw-semibold">From</p>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="h6 small text-muted">Start Date</p>
+                        <select class="w-100">
+                          <option>Year</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4">
+                        <p class="h6 small text-muted">End Date</p>
+                        <select class="w-100">
+                          <option>Year</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="text-left">
+                      <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete College</a>
+                    </div>
+                  <div class="editbio-bio">
+                      <div class="modal-footer border-0 justify-content-right">
+                        <button type="reset" class="btn btn-outline-primary  w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                          Cancel
+                        </button>
+                        <button type="button" class="btn btn-gradient  w-100px">
+                          Save
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
                     <a
-                      href="#"
+                      style="cursor: pointer;" id="addhighschoolbtn"
                       class="addeducationcer d-flex align-items-center"
                     >
                       <i class="bi bi-plus-circle-fill text-success fs-3"></i>
-                      <span class="text-success ms-3">Add a heighschool</span>
+                      <span class="text-success ms-3">Add a Highschool</span>
                     </a>
+                    <div class="modal-body p-0 pt-3 border-top border-bottom" id="addhighschoolDiv"  style="display: none;">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Highschool</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Highschool</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
                   </div>
                 </div>
                 <div class="edituser-city-section my-3">
@@ -3114,6 +4448,648 @@
       </div>
     </div>
 
+
+
+<div class="modal fade" id="modalCollege" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-info border-bottom-0 py-1">
+              <h5 class="modal-title" id="modalLabelFilterPosts">
+                Work and Education
+              </h5>
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                class="btn p-0 text-black"
+              >
+                <i class="bi bi-x-circle fs-3"></i>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-0">
+                <div class="editprofilephoto-section my-0">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                    <div class="dropdown">
+                          <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                         
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                              <a class="dropdown-item py-0" href="#">
+                                <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </div>
+                <div class="editcoverphoto-section my-3">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-dark fw-semibold">Graduated</p>
+                    <input type="checkbox"/>
+                  </div>
+                </div>
+                <div class="editbio-section my-3">
+                  <div class="">
+                    <p class="text-dark fw-semibold">From</p>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="h6 small text-muted">Start Date</p>
+                        <select class="w-100">
+                          <option>Year</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-4">
+                        <p class="h6 small text-muted">End Date</p>
+                        <select class="w-100">
+                          <option>Year</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="text-left">
+                      <a
+                        class="alert-text d-flex justify-content-start text-danger small mt-2"
+                        >Delete College</a
+                      >
+                    </div>
+                  <div class="editbio-bio">
+                      <div class="modal-footer border-0 justify-content-right">
+                        <button
+                          type="reset"
+                          class="btn btn-outline-primary  w-100px"
+                          data-bs-toggle="collapse"
+                          data-bs-target=".biodisc-collapse"
+                          aria-expanded="false"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-gradient  w-100px"
+                        >
+                          Save
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+
+<div class="modal fade" id="modalWork" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Work
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Company</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Company</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalHighschool" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add a Highschool
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-mortarboard fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Highschool</p>
+                <input type="checkbox">
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div>
+                <p class="text-dark fw-semibold">From</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">Start Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="h6 small text-muted">End Date</p>
+                    <select class="w-100">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="text-left">
+                <a class="alert-text d-flex justify-content-start text-danger small mt-2">Delete Highschool</a>
+              </div>
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalQuote" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Quote
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-quote fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold">Favourite Quotes</p>
+                <input type="text" class="form-control" placeholder="Write quates" />
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCity" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Current City
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-building fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-dark fw-semibold mb-0">City</p>
+                <input type="text" class="form-control mx-2" placeholder="Current town/city" />
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalLifeEvent" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Life Event
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-calendar-event fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="row">
+              <div class="col-lg-12 mb-3">
+                <p class="text-dark fw-semibold mb-2">Workt Event</p>
+                <input type="text" class="form-control" placeholder="Work" />
+              </div>
+              <div class="col-lg-12 mb-3">
+                <p class="text-dark fw-semibold mb-2">Education Event</p>
+                <input type="text" class="form-control" placeholder="Education" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <p class="text-dark fw-semibold mb-2">Relationship Event</p>
+                <input type="text" class="form-control" placeholder="Relationship" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <p class="text-dark fw-semibold mb-2">Family Event</p>
+                <input type="text" class="form-control" placeholder="Family" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <p class="text-dark fw-semibold mb-2">Travel Event</p>
+                <input type="text" class="form-control" placeholder="Travel" />
+            </div>
+            </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalLanguage" tabindex="-1" aria-labelledby="modalLabelFilterPosts" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header bg-info border-bottom-0 py-1">
+          <h5 class="modal-title" id="modalLabelFilterPosts">
+            Add Language
+          </h5>
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+            <i class="bi bi-x-circle fs-3"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-0">
+            <div class="editprofilephoto-section my-0">
+              <div class="d-flex justify-content-between">
+                <p class="text-dark fw-semibold"><span class="bi bi-translate fs-3"></span></p>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-secondary-soft-hover fs-4 px-2 py-0 text-black text-secondary" id="cardFeedAction" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardFeedAction" style="">
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-pencil fa-fw pe-2"></i>Edit</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-0" href="#">
+                        <i class="bi bi-trash fa-fw pe-2"></i>Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="editcoverphoto-section my-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="text-dark fw-semibold mb-0">Langauge</p>
+                <input type="text" class="form-control mx-2" placeholder="Enter Language" />
+              </div>
+            </div>
+
+            <div class="editbio-section my-3">
+              <div class="editbio-bio">
+                <div class="modal-footer border-0 justify-content-right">
+                  <button type="reset" class="btn btn-outline-primary w-100px" data-bs-toggle="collapse" data-bs-target=".biodisc-collapse" aria-expanded="false">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-gradient w-100px">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+         
+ <!-- Modal HTML -->
+                <div class="modal fade" id="myPopUpIdeas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <form>
+                        <div class="modal-header bg-info border-bottom-0 py-1">
+                          <h5 class="modal-title" id="modalLabelFilterPosts">
+                            Pop your Ideas
+                          </h5>
+                          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn p-0 text-black">
+                          <i class="bi bi-x-circle fs-3"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <div class="editcoverphoto-section my-3">
+                              <div class="d-flex justify-content-between">
+                                <p class="fs-5 fw-semibold" style="color: #131c61">Tell us how can we improve?</p>
+                              </div>
+                              <textarea type="" style="height: 100px" name="" placeholder="Email Address" class="form-control shadow border-0">Mention details here..</textarea>
+                              <div class="file-upload">
+                                <input type="file" class="form-control shadow border-0" id="upload-input" accept="image/*">
+                                <label for="upload-input" class="form-control shadow border-0">
+                                <span class="icon bi bi-paperclip"></span>
+                                <span class="text">Add a screenshot or video (recommended)</span>
+                                </label>
+                              </div>
+                              <style type="text/css">
+                                .file-upload {
+                                position: relative;
+                                display: inline-block;
+                                width: 100%;
+                                margin-top: 10px;
+                                }
+                                #upload-input {
+                                display: none;
+                                }
+                                .label {
+                                display: inline-block;
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                border-radius: 5px;
+                                background-color: #f5f5f5;
+                                cursor: pointer;
+                                color: #131c61
+                                }
+                                .icon {
+                                display: inline-block;
+                                font-size: 20px;
+                                margin-right: 5px;
+                                color: #131c61
+                                }
+                                .text {
+                                display: inline-block;
+                                vertical-align: middle;
+                                color: #131c61
+                                }
+                              </style>
+                              <script type="text/javascript">
+                                const uploadInput = document.getElementById('upload-input');
+                                const textElement = document.querySelector('.text');
+                                
+                                uploadInput.addEventListener('change', handleFileSelect);
+                                
+                                function handleFileSelect(event) {
+                                const file = event.target.files[0];
+                                if (file) {
+                                  textElement.textContent = file.name;
+                                } else {
+                                  textElement.textContent = 'Choose a file';
+                                }
+                                }
+                                
+                              </script>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                          <button type="button" class="btn btn-gradient px-5">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/vendor/dropzone/dist/dropzone.js"></script>
@@ -3142,5 +5118,45 @@ function showEmoji4() {
   }
 }
 </script>
+                                  <script type="text/javascript">
+                // Get references to the button and div elements
+                    const button = document.getElementById('addworkplacebtn');
+                    const div = document.getElementById('addworkplaceDiv');
+                    const button2 = document.getElementById('addCollegebtn');
+                    const div2 = document.getElementById('addCollegeDiv');
+                    const button3 = document.getElementById('addhighschoolbtn');
+                    const div3 = document.getElementById('addhighschoolDiv');
+
+                    // Attach a click event listener to the button
+                    button.addEventListener('click', function() {
+                      // Toggle the display property of the div element
+                      if (div.style.display === 'none') {
+                        div.style.display = 'block';
+                      } else {
+                        div.style.display = 'none';
+                      }
+                    });
+
+                    // Attach a click event listener to the button
+                    button2.addEventListener('click', function() {
+                      // Toggle the display property of the div element
+                      if (div2.style.display === 'none') {
+                        div2.style.display = 'block';
+                      } else {
+                        div2.style.display = 'none';
+                      }
+                    });
+
+                   // Attach a click event listener to the button
+                    button3.addEventListener('click', function() {
+                      // Toggle the display property of the div element
+                      if (div3.style.display === 'none') {
+                        div3.style.display = 'block';
+                      } else {
+                        div3.style.display = 'none';
+                      }
+                    });
+
+              </script>
   </body>
 </html>
