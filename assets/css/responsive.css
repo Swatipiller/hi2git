@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+#megamenuDropdown .text-light {
+  color: #000 !important;
+}
+.fixed-div {
+  min-width: 23.5%;
+}
+.fixed-div {
+  position: relative;
+  width: 100%;
+}
+.cus-drop-memu-two.dropdown-menu.show {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+.w-25
+{
+	width: 270px !important;
+}
+}
